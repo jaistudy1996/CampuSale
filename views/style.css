@@ -49,14 +49,59 @@ li.dropdown {
     display: block;
 }
 
+.profile {
+	display: block;
+}
+.head-container {
+	margin-bottom: 10px;
+    overflow: hidden;
+
+}
 .content{
     background-color: white;
     width: 1000px;
 	height: 300px;
     padding: 25px;
     margin: 25px;
+	display:inline-block;
 }
 
+.user-details {
+	padding-left: 30px;
+    display: inline-block;
+    vertical-align: top;
+    max-width: 1000px;
+    margin-top: 10px;
+}
+.user-name {
+	letter-spacing: 0.8px;
+    margin-top: -5px;
+    margin-bottom: 12px;
+	display: inline-block;
+}
+.user-rating{
+	padding-left: 30px;
+	display: inline-block;
+	vertical-align: top;
+    max-width: 80px;
+    margin-top: 10px;
+}
+
+.user-message{
+	border: thin solid black;
+	max-width: 500px;
+	display: inline-block;
+	
+}
+.body-conent{
+	display: inline-block;
+    vertical-align: top;
+}
+
+.closet-tabs{
+	display: inline-block;
+	vertical-align: top;
+}
 body {
     background-color: lightgrey;
 }
