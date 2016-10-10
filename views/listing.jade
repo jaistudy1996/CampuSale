@@ -1,0 +1,59 @@
+doctype html
+html
+  title CampuSale
+  meta(name='viewport', content='width=device-width, initial-scale=1')
+  link(rel='stylesheet', href='http://www.w3schools.com/lib/w3.css')
+  link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Lato')
+  link(rel='stylesheet', href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css')
+  script(type='text/javascript', src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js')
+  script(type='text/javascript', src='/javascripts/smoothscroll.js')
+  link(rel='stylesheet', type='text/css', href='/stylesheets/style.css')
+
+  body#listing_page
+    // Navbar (sit on top)
+    .w3-top
+      ul#myNavbar.w3-navbar.w3-black
+        form#demo-2
+          input(type='search', placeholder='Search')
+    .menu
+      h2  Filters 
+    ul.rig.columns-4
+      li
+        img(src='img1.jpg')
+        h3 Image Title
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+      li
+        img(src='img2.jpg')
+        h3 Image Title
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+      li
+        img(src='img3')
+        h3 Image Title
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+      li
+        img(src='images/pri_004.jpg')
+        h3 Image Title
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+      li
+        img(src='images/pri_005.jpg')
+        h3 Image Title
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+      li
+        img(src='images/pri_006.jpg')
+        h3 Image Title
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+    // Footer
+    footer.w3-center.w3-dark-grey.w3-padding-48.w3-hover-red
+      p footer
+    script.
+      // Change style of navbar on scroll
+      window.onscroll = function() {myFunction()};
+      function myFunction() {
+      var navbar = document.getElementById("myNavbar");
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " w3-red";
+      } else {
+      //navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-red", "");
+      navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " w3-black";
+      }
+      }
