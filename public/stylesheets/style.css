@@ -237,6 +237,130 @@ span.psw {
 	margin-bottom:15px;
 }
 
+/* LISTING PAGE */
+#listing_page{
+	background-color:white;
+}
+/*Header Search box */
 
+ /* Demo 2 */
+input {
+	outline: none;
+}
+input[type=search] {
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	font-family: inherit;
+	font-size: 100%;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+	display: none; 
+}
+input[type=search] {
+	background: #ededed url(http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+	border: solid 1px #ccc;
+	padding: 9px 10px 9px 32px;
+	width: 55px;
 
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+	border-radius: 10em;
+
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+
+#demo-2 input[type=search] {
+	margin-left:350px;
+	width: 15px;
+	height:20px;
+	padding-left: 12px;
+	color: transparent;
+	cursor: pointer;
+}
+#demo-2 input[type=search]:hover {
+	background-color: #fff;
+}
+#demo-2 input[type=search]:focus {
+	width: 130px;
+	padding-left: 32px;
+	color: black;
+	background-color: white;
+	cursor: auto;
+}
+#demo-2 input:-moz-placeholder {
+	color: transparent;
+}
+#demo-2 input::-webkit-input-placeholder {
+	color: transparent;
+}
+/* End */
+.menu {
+    width: 100%;
+    
+    border: 1px solid red;
+	margin-top:5%;
+}
+/* Product Grid */
+ul.rig {
+	list-style: none;
+	font-size: 0px;
+	margin-left: -2.5%; /* should match li left margin */
+	
+	margin-top:3%;
+	
+}
+ul.rig li {
+	display: inline-block;
+	padding: 10px;
+	margin: 0 0 2.5% 2.5%;
+	background: #fff;
+	border: 1px solid #ddd;
+	font-size: 16px;
+	font-size: 1rem;
+	vertical-align: top;
+	box-shadow: 0 0 5px #ddd;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+ul.rig li img {
+	max-width: 100%;
+	height: auto;
+	margin: 0 0 10px;
+}
+ul.rig li h3 {
+	margin: 0 0 5px;
+}
+ul.rig li p {
+	font-size: .9em;
+	line-height: 1.5em;
+	color: #999;
+}
+
+/* class for 4 columns */
+ul.rig.columns-4 li {
+	width: 28%; /* this value + 2.5 should = 25% */
+}
+ 
+@media (max-width: 480px) {
+	ul.grid-nav li {
+		display: block;
+		margin: 0 0 5px;
+	}
+	ul.grid-nav li a {
+		display: block;
+	}
+	ul.rig {
+		margin-left: 0;
+	}
+	ul.rig li {
+		width: 100% !important; /* over-ride all li styles */
+		margin: 0 0 20px;
+	}
+}
+
+/* Grid END */
 </style>
