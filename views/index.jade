@@ -12,24 +12,26 @@ html
   body
     // Login Overlay
     #id01.modal
-      form.modal-content.animate(action='action_page.php')
-        .imgcontainer
-          span.close(onclick="document.getElementById('id01').style.display='none'", title='Close Modal') ×
-        .container
-          label
-            b Username
-          input(type='text', placeholder='uname@plattsburgh.edu', name='uname', required='')
-          label
-            b Password
-          input(type='password', placeholder='Enter Password', name='psw', required='')
-          button(type='submit') Login
-          input(type='checkbox', checked='checked')
-          |  Remember me
-        .container(style='background-color:#f1f1f1')
-          button.cancelbtn(type='button', onclick="document.getElementById('id01').style.display='none'") Cancel
-          span.psw
-            | Forgot 
-            a(href='#') password?
+  form.modal-content.animate(action='action_page.php')
+    .imgcontainer
+      span.close(onclick="document.getElementById('id01').style.display='none'", title='Close Modal') ×
+    .container
+      label
+        b Username
+      input(type='text', placeholder='uname@plattsburgh.edu', name='uname', required='')
+      label
+        b Password
+      input(type='password', placeholder='Enter Password', name='psw', required='')
+      a(href='listing.jade')
+        button(type='submit') Login
+      input(type='checkbox', checked='checked')
+      |  Remember me
+    .container(style='background-color:#f1f1f1')
+      button.cancelbtn(type='button', onclick="document.getElementById('id01').style.display='none'") Cancel
+      span.psw
+        | Forgot 
+        a(href='#') password?
+
     // Login Overlay Ending
     // Signup Overlay
     #id02.modal
