@@ -1,81 +1,105 @@
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: Georgia, Serif;}
-body, html {
-	position:relative;
-    height: 100%;
-    color: black;
-    line-height: 0.8;
-
-}
-
-/* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
-    opacity: 1;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/* First image (Logo. Full height) */
-.bgimg-1 {
-    background-image: url('img1.jpg');
-    min-height: 100%;
-}
-
-/* Second image (How it works!) */
-.bgimg-2 {
-    background-image: url("img2.jpg");
-    min-height: 400px;
-}
-
-/* Third image (Contact) */
-.bgimg-3 {
-    background-image: url("img3.jpg");
-    min-height: 400px;
-}
-
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
-
-
-/* Turn off parallax scrolling for tablets and mobiles */
-@media only screen and (max-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
-        background-attachment: scroll;
-    }
-}
-
-.button {
-  	border: none;
-  	color: black;
-  	padding: 15px 32px;
-  	text-align: center;
-  	text-decoration: none;
-  	display: inline-block;
-  	font-size: 16px;
-  	margin: 4px 2px;
-  	cursor: pointer;
-  	display: inline-block;
-  	vertical-align: middle;
-  	-webkit-transform: translateZ(0);
-  	transform: translateZ(0);
-  	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  	-webkit-backface-visibility: hidden;
-  	backface-visibility: hidden;
-  	-moz-osx-font-smoothing: grayscale;
-  	position: relative;
-  	background: white;
-  	-webkit-transition-property: color;
-  	transition-property: color;
-  	-webkit-transition-duration: 0.3s;
-  	transition-duration: 0.3s;
-  	margin-top:70px;
- 	background-color: white;
-    color: black;
-    border: 2px solid #555555;
-}
-.button:before {
+style.
+  body,h1,h2,h3,h4,h5,h6 {font-family: Georgia, Serif;}
+  body, html {
+  position:relative;
+  height: 100%;
+  color: black;
+  line-height: 0.8;
+  }
+  /* Color changing text logo */
+  #myNavbar .change{
+  -webkit-animation: color-change 1s infinite;
+  -moz-animation: color-change 1s infinite;
+  -o-animation: color-change 1s infinite;
+  -ms-animation: color-change 1s infinite;
+  animation: color-change 1s infinite;
+  }
+  @-webkit-keyframes color-change {
+  0% { color: red; }
+  50% { color: white; }
+  100% { color: yellow; }
+  }
+  @-moz-keyframes color-change {
+  0% { color: red; }
+  50% { color: white; }
+  100% { color: yellow; }
+  }
+  @-ms-keyframes color-change {
+  0% { color: red; }
+  50% { color: white; }
+  100% { color: yellow; }
+  }
+  @-o-keyframes color-change {
+  0% { color: red; }
+  50% { color: white; }
+  100% { color: yellow; }
+  }
+  @keyframes color-change {
+  0% { color: red; }
+  50% { color: white; }
+  100% { color: yellow; }
+  }
+  /* Create a Parallax Effect */
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+  opacity: 1;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+  /* First image (Logo. Full height) */
+  .bgimg-1 {
+  background-image: url('img1.jpg');
+  min-height: 100%;
+  }
+  /* Second image (How it works!) */
+  .bgimg-2 {
+  background-image: url("img2.jpg");
+  min-height: 250px;
+  }
+  /* Third image (Contact) */
+  .bgimg-3 {
+  background-image: url("img3.jpg");
+  min-height: 250px;
+  }
+  .w3-wide {letter-spacing: 10px;}
+  .w3-hover-opacity {cursor: pointer;}
+  /* Turn off parallax scrolling for tablets and mobiles */
+  @media only screen and (max-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: scroll;
+  }
+  }
+  .button {
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  background: white;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  margin-top:70px;
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+  }
+  .button:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -94,273 +118,239 @@ body, html {
   transition-duration: 0.3s;
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
-}
-.button:hover, .button:focus, .button:active {
+  }
+  .button:hover, .button:focus, .button:active {
   color: white;
-}
-.button:hover:before, .button:focus:before, .button:active:before {
+  }
+  .button:hover:before, .button:focus:before, .button:active:before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
-}
+  }
+  #button2
+  {
+  margin-left:200px;
+  }
+  #myNavbar li
+  {
+  float:right;
+  }
+  section{
+  width:960px;
+  }
+  /* The Login Overlay*/
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  }
+  /* Set a style for all buttons */
+  button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  }
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+  }
+  /* Center the image and position the close button */
+  .imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+  }
+  .container {
+  padding: 16px;
+  }
+  span.psw {
+  float: right;
+  padding-top: 16px;
+  }
+  /* The Modal (background) */
+  .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+  }
+  /* Modal Content/Box */
+  .modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+  }
+  /* The Close Button (x) */
+  .close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+  }
+  .close:hover,
+  .close:focus {
+  color: red;
+  cursor: pointer;
+  }
+  /* Add Zoom Animation */
+  .animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+  }
+  @-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+  }
+  @keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+  }
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+  span.psw {
+  display: block;
+  float: none;
+  }
+  .cancelbtn {
+  width: 100%;
+  }
+  }
+  #id02 .container h1{
+  color:red;
+  margin-bottom:15px;
+  }
 
-#button2
-{
- 	margin-left:200px;
-	
-}
-
-#myNavbar li
-{
-	float:right;
-	
-}
-section{
-	width:960px;
-}
-
-
-
-/* The Login Overlay*/
-input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
-
-/* Set a style for all buttons */
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-}
-
-/* Extra styles for the cancel button */
-.cancelbtn {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #f44336;
-}
-
-/* Center the image and position the close button */
-.imgcontainer {
-    text-align: center;
-    margin: 24px 0 12px 0;
-    position: relative;
-}
-
-.container {
-    padding: 16px;
-}
-
-span.psw {
-    float: right;
-    padding-top: 16px;
-}
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    padding-top: 60px;
-}
-
-/* Modal Content/Box */
-.modal-content {
-    background-color: #fefefe;
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-    border: 1px solid #888;
-    width: 50%; /* Could be more or less, depending on screen size */
-	
-}
-
-/* The Close Button (x) */
-.close {
-    position: absolute;
-    right: 25px;
-    top: 0;
-    color: #000;
-    font-size: 35px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: red;
-    cursor: pointer;
-}
-
-/* Add Zoom Animation */
-.animate {
-    -webkit-animation: animatezoom 0.6s;
-    animation: animatezoom 0.6s
-}
-
-@-webkit-keyframes animatezoom {
-    from {-webkit-transform: scale(0)}
-    to {-webkit-transform: scale(1)}
-}
-    
-@keyframes animatezoom {
-    from {transform: scale(0)}
-    to {transform: scale(1)}
-}
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-    span.psw {
-       display: block;
-       float: none;
-    }
-    .cancelbtn {
-       width: 100%;
-    }
-}
-
-
-#id02 .container h1{
-	color:red;
-	margin-bottom:15px;
-}
-
-/* LISTING PAGE */
-#listing_page{
-	background-color:white;
-}
-/*Header Search box */
-
- /* Demo 2 */
-input {
-	outline: none;
-}
-input[type=search] {
-	-webkit-appearance: textfield;
-	-webkit-box-sizing: content-box;
-	font-family: inherit;
-	font-size: 100%;
-}
-input::-webkit-search-decoration,
-input::-webkit-search-cancel-button {
-	display: none; 
-}
-input[type=search] {
-	background: #ededed url(http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
-	border: solid 1px #ccc;
-	padding: 9px 10px 9px 32px;
-	width: 55px;
-
-	-webkit-border-radius: 10em;
-	-moz-border-radius: 10em;
-	border-radius: 10em;
-
-	-webkit-transition: all .5s;
-	-moz-transition: all .5s;
-	transition: all .5s;
-}
-
-#demo-2 input[type=search] {
-	margin-left:350px;
-	width: 15px;
-	height:20px;
-	padding-left: 12px;
-	color: transparent;
-	cursor: pointer;
-}
-#demo-2 input[type=search]:hover {
-	background-color: #fff;
-}
-#demo-2 input[type=search]:focus {
-	width: 130px;
-	padding-left: 32px;
-	color: black;
-	background-color: white;
-	cursor: auto;
-}
-#demo-2 input:-moz-placeholder {
-	color: transparent;
-}
-#demo-2 input::-webkit-input-placeholder {
-	color: transparent;
-}
-/* End */
-.menu {
-    width: 100%;
-    
-    border: 1px solid red;
-	margin-top:5%;
-}
-/* Product Grid */
-ul.rig {
-	list-style: none;
-	font-size: 0px;
-	margin-left: -2.5%; /* should match li left margin */
-	
-	margin-top:3%;
-	
-}
-ul.rig li {
-	display: inline-block;
-	padding: 10px;
-	margin: 0 0 2.5% 2.5%;
-	background: #fff;
-	border: 1px solid #ddd;
-	font-size: 16px;
-	font-size: 1rem;
-	vertical-align: top;
-	box-shadow: 0 0 5px #ddd;
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-}
-ul.rig li img {
-	max-width: 100%;
-	height: auto;
-	margin: 0 0 10px;
-}
-ul.rig li h3 {
-	margin: 0 0 5px;
-}
-ul.rig li p {
-	font-size: .9em;
-	line-height: 1.5em;
-	color: #999;
-}
-
-/* class for 4 columns */
-ul.rig.columns-4 li {
-	width: 28%; /* this value + 2.5 should = 25% */
-}
- 
-@media (max-width: 480px) {
-	ul.grid-nav li {
-		display: block;
-		margin: 0 0 5px;
-	}
-	ul.grid-nav li a {
-		display: block;
-	}
-	ul.rig {
-		margin-left: 0;
-	}
-	ul.rig li {
-		width: 100% !important; /* over-ride all li styles */
-		margin: 0 0 20px;
-	}
-}
-
-/* Grid END */
-</style>
+  /* LISTING PAGE */
+  #listing_page{
+  background-color:white;
+  }
+  /*Header Search box */
+  /* Demo 2 */
+  input {
+  outline: none;
+  }
+  input[type=search] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  font-family: inherit;
+  font-size: 100%;
+  }
+  input::-webkit-search-decoration,
+  input::-webkit-search-cancel-button {
+  display: none;
+  }
+  input[type=search] {
+  background: #ededed url(http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+  border: solid 1px #ccc;
+  padding: 9px 10px 9px 32px;
+  width: 55px;
+  -webkit-border-radius: 10em;
+  -moz-border-radius: 10em;
+  border-radius: 10em;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+  }
+  #demo-2 input[type=search] {
+  margin-left:350px;
+  width: 15px;
+  height:20px;
+  padding-left: 12px;
+  color: transparent;
+  cursor: pointer;
+  }
+  #demo-2 input[type=search]:hover {
+  background-color: #fff;
+  }
+  #demo-2 input[type=search]:focus {
+  width: 130px;
+  padding-left: 32px;
+  color: black;
+  background-color: white;
+  cursor: auto;
+  }
+  #demo-2 input:-moz-placeholder {
+  color: transparent;
+  }
+  #demo-2 input::-webkit-input-placeholder {
+  color: transparent;
+  }
+  /* End */
+  .menu {
+  width: 100%;
+  border: 1px solid red;
+  margin-top:5%;
+  }
+  /* Product Grid */
+  ul.rig {
+  list-style: none;
+  font-size: 0px;
+  margin-left: -2.5%; /* should match li left margin */
+  margin-top:3%;
+  }
+  ul.rig li {
+  display: inline-block;
+  padding: 10px;
+  margin: 0 0 2.5% 2.5%;
+  background: #fff;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  font-size: 1rem;
+  vertical-align: top;
+  box-shadow: 0 0 5px #ddd;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  }
+  ul.rig li img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 0 10px;
+  }
+  ul.rig li h3 {
+  margin: 0 0 5px;
+  }
+  ul.rig li p {
+  font-size: .9em;
+  line-height: 1.5em;
+  color: #999;
+  }
+  /* class for 4 columns */
+  ul.rig.columns-4 li {
+  width: 28%; /* this value + 2.5 should = 25% */
+  }
+  @media (max-width: 480px) {
+  ul.grid-nav li {
+  display: block;
+  margin: 0 0 5px;
+  }
+  ul.grid-nav li a {
+  display: block;
+  }
+  ul.rig {
+  margin-left: 0;
+  }
+  ul.rig li {
+  width: 100% !important; /* over-ride all li styles */
+  margin: 0 0 20px;
+  }
+  }
+  /* Grid END */
