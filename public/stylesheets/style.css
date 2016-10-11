@@ -16,17 +16,17 @@ style.
   }
   /* First image (Logo. Full height) */
   .bgimg-1 {
-  background-image: url('img1.jpg');
+  background-image: url('images/img1.jpg');
   min-height: 100%;
   }
   /* Second image (How it works!) */
   .bgimg-2 {
-  background-image: url("img2.jpg");
+  background-image: url("images/img2.jpg");
   min-height: 250px;
   }
   /* Third image (Contact) */
   .bgimg-3 {
-  background-image: url("img3.jpg");
+  background-image: url("images/img3.jpg");
   min-height: 250px;
   }
   .w3-wide {letter-spacing: 10px;}
