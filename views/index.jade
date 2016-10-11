@@ -6,32 +6,31 @@ html
   link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Lato')
   link(rel='stylesheet', href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css')
   script(type='text/javascript', src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js')
-  script(type='text/javascript', src='/javascripts/smoothscroll.js')
-  link(rel='stylesheet', type='text/css', href='/stylesheets/style.css')
+  script(type='text/javascript', src='javascripts/smoothscroll.js')
+  link(rel='stylesheet', type='text/css', href='stylesheets/style.css')
   // <script src="script.js"></script>
   body
     // Login Overlay
     #id01.modal
-  form.modal-content.animate(action='action_page.php')
-    .imgcontainer
-      span.close(onclick="document.getElementById('id01').style.display='none'", title='Close Modal') ×
-    .container
-      label
-        b Username
-      input(type='text', placeholder='uname@plattsburgh.edu', name='uname', required='')
-      label
-        b Password
-      input(type='password', placeholder='Enter Password', name='psw', required='')
-      a(href='listing.jade')
-        button(type='submit') Login
-      input(type='checkbox', checked='checked')
-      |  Remember me
-    .container(style='background-color:#f1f1f1')
-      button.cancelbtn(type='button', onclick="document.getElementById('id01').style.display='none'") Cancel
-      span.psw
-        | Forgot 
-        a(href='#') password?
-
+      form.modal-content.animate(action='action_page.php')
+        .imgcontainer
+          span.close(onclick="document.getElementById('id01').style.display='none'", title='Close Modal') ×
+        .container
+          label
+            b Username
+          input(type='text', placeholder='uname@plattsburgh.edu', name='uname', required='')
+          label
+            b Password
+          input(type='password', placeholder='Enter Password', name='psw', required='')
+          a(href='listing.html')
+            button(type='submit') Login
+          input(type='checkbox', checked='checked')
+          |  Remember me
+        .container(style='background-color:#f1f1f1')
+          button.cancelbtn(type='button', onclick="document.getElementById('id01').style.display='none'") Cancel
+          span.psw
+            | Forgot 
+            a(href='#') password?
     // Login Overlay Ending
     // Signup Overlay
     #id02.modal
@@ -59,7 +58,7 @@ html
             a.w3-padding-large.smoothScroll(href='#how it works!') How it works!
           li
             a.w3-padding-large.smoothScroll(href='#home') Home
-    // First Parallax Image with Logo Text
+    // First Parallax Image
     #home.bgimg-1.w3-opacity.w3-display-container
       .w3-display-middle(style='white-space:nowrap;')
         h2  A sales platform for your college 
@@ -70,16 +69,6 @@ html
     .w3-content.w3-container.w3-padding-64(id='Our Team')
       h3.w3-center Our Team
       .w3-row
-        .w3-third
-          p
-            b Name
-          br
-          img.w3-circle(src='https://unsplash.it/235/235?image=91', alt='Photo of Me', style='width:40%;')
-        .w3-third
-          p
-            b Name
-          br
-          img.w3-circle(src='https://unsplash.it/235/235?image=91', alt='Photo of Me', style='width:40%;')
         .w3-third
           p
             b Name
@@ -122,7 +111,7 @@ html
         em We'd love your feedback!
       .w3-row.w3-padding-32
         .w3-col.m6.w3-large.w3-margin-bottom
-          img(src='burghy.png', style='width:55%;')
+          img(src='images/burghy.png', style='width:55%;')
         .w3-col.m6
           .w3-row-padding(style='margin:0 -16px 8px -16px')
             .w3-half
@@ -142,7 +131,8 @@ html
       if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
       navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " w3-red";
       } else {
-      navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-red", "");
+      //navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-red", "");
+      navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " w3-black";
       }
       }
       // Get the modal
