@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<title>CampuSale</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="smoothscroll.js"></script>
+<link rel="stylesheet" type="text/css" href="CSS/stylelist.css" />
+
+
+
+<body id="item_page">
+
+<!-- Navbar (sit on top) -->
+
+		<ul class="w3-navbar w3-black">
+			<li><a href="index.jade"><img src="images/logo.png" alt="logo">CAMPUSALES</a></li>
+			<li>
+				<form id="demo-2">
+					<input type="search" placeholder="Search">
+				</form>
+			</li>
+			<li class="dropdown" style="float:right">
+				<a href="#" class="dropbtn">Username</a>
+				<div class="dropdown-content">
+					<a href="#">Profile</a>
+						<a href="#">Settings</a>
+				<a href="#">Logout</a>
+				</div>
+			</li>
+		</ul>
+
+<div class="menu">
+	<h2> <%=$Item%> </h2>
+</div>
+
+<div id="green">Item Image</div>
+<div id="red">
+	<ul>
+		<li style="float:right"><%=Title%></li>
+		<li style="float:left"><%=$Price%></li>
+	
+	</ul>
+	<br><br><br><br>
+	<div><div id="yellow"><%description%></div>
+	</div>
+	<h2>Condition</h2>
+	<h3><%condition%></h3>
+	<h2>Preferred Payment</h2>
+	<h3><%paymentType%></h3>
+	<hr>
+	<h2>Seller</h3>
+	<h3><%Name%>: <%Rating%></h3>
+	
+</div>
+
+<div id="blue"></div> 
+
+<!-- Footer -->
+<footer class="w3-center w3-dark-grey w3-padding-48 w3-hover-red">
+  <p>footer</a></p>
+</footer>
+ 
+<script>
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " w3-red";
+    } else {
+        //navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-red", "");
+		navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " w3-black";
+    }
+}
+
+
+
+</script>
+
+</body>
+</html>
