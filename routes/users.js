@@ -14,14 +14,17 @@ dbpool.connect();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-    dbpool.query('select * from students', function(err, rows, fields) {
+    var fname = req.param("fname");
+    var lname = req.param("lname");
+    dbpool.query({sql: 'select * from students where firstName = ? and lastName = ?' , values: [fname, lname]}, function(err, rows, fields) {
         if(err){
                 throw err;
         }
         console.log("Lines are: ", rows);
         res.render('index', { title: rows });
     });
-    res.render('users', {title: 'These are users'});
+    console.log(req.param("fname"));
+    res.render('users', {title: 'Hello users'});
 });
 
 module.exports = router;
