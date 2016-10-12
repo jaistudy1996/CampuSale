@@ -322,7 +322,9 @@ style.
   }
 
   h1.title {
+    text-align: center;
     font-family: "Times New Roman", Georgia, Serif;
     font-variant: small-caps;
+    font-size: 300%;
   }
   /* Grid END */
