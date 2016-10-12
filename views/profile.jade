@@ -1,0 +1,46 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    link(rel='stylesheet', href='http://www.w3schools.com/lib/w3.css')
+    link(rel='stylesheet', type='text/css', href='./style.css')
+    title  Profile - CampuSales 
+  body
+    ul.w3-navbar.w3-black
+      li
+        a(href='/')
+          img(src='./images/logo.png', alt='logo')
+          | CAMPUSALES
+      li.dropdown(style='float:right')
+        a.dropbtn(href='#') Username
+        .dropdown-content
+          a(href='#') Profile
+          a(href='#') Settings
+          a(href='#') Logout
+    .profile
+      .head-container.w3-display-middle
+        .content
+          img(src="./images/profile.png", alt='profilePic', width='200', height='200')
+          .user-details
+            .user-name
+              h2
+                | Marie H.
+                // <%=first name %> <% last name initial. %>
+              h5
+                | @mhilp001
+                // <%= username %>
+            .user-message
+              p Personal Message box
+          div
+            img(src='./images/rating.png', alt='rating')
+      .body-content
+        .closet-tabs
+          li
+            a.active(href='profile/<%username%>')
+              span
+                u
+          li
+            a.inactive(href='profile/<%username%>')
+              span
+                u
+
