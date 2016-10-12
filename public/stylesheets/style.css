@@ -320,4 +320,9 @@ style.
   margin: 0 0 20px;
   }
   }
+
+  h1.title {
+    font-family: "Times New Roman", Georgia, Serif;
+    font-variant: small-caps;
+  }
   /* Grid END */
