@@ -327,4 +327,7 @@ style.
     font-variant: small-caps;
     font-size: 300%;
   }
+  h4.message {
+     text-align: center;
+}
   /* Grid END */
