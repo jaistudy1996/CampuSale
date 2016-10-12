@@ -13,7 +13,7 @@ html
   body
     // Login Overlay
     #id01.modal
-      form.modal-content.animate(action='action_page.php')
+      form.modal-content.animate(action='#')
         .imgcontainer
           span.close(onclick="document.getElementById('id01').style.display='none'", title='Close Modal') ×
         .container
@@ -35,7 +35,7 @@ html
     // Login Overlay Ending
     // Signup Overlay
     #id02.modal
-      form.modal-content.animate(action='action_page.php')
+      form.modal-content.animate(action='#')
         .imgcontainer
           span.close(onclick="document.getElementById('id02').style.display='none'", title='Close Modal') ×
         .container
@@ -97,7 +97,7 @@ html
     .w3-content.w3-container.w3-padding-64
       h3.w3-center How it works!
       p.w3-center
-        embed(src='movie1.mp4', autostart='true', loop='true', height='338', width='600')
+        embed(src='videos/new_video.mp4', autostart='true', loop='true', height='338', width='600')
     // Modal for full size images on click
     #modal01.w3-modal.w3-black(onclick="this.style.display='none'")
       span.w3-closebtn.w3-hover-red.w3-text-white.w3-xxxlarge.w3-container.w3-display-topright ×
