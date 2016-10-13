@@ -3,53 +3,56 @@
 <head>
 	<meta charset="UTF-8" />
 	<link rel='stylesheet' href='http://www.w3schools.com/lib/w3.css'/>
-	<link rel='stylesheet' type='text/css' href='style.css'/>
+	<link rel='stylesheet' type='text/css' href='stylesheets/profileStyle.css'/>
 	
-	<title> Profile - CampuSales </title>
+	
+	<title> Profile - CampuSale </title>
 </head>
 
 <body>
-	
-	<ul class="w3-navbar w3-black">
-		<li><a href="index.jade"><img src="images/logo.png" alt="logo">CAMPUSALES</a></li>
-		<li class="dropdown" style="float:right">
-			<a href="#" class="dropbtn">Username</a>
-			<div class="dropdown-content">
-				<a href="#">Profile</a>
-				<a href="#">Settings</a>
-				<a href="#">Logout</a>
-			</div>
-		</li>
-	</ul>
-	<div class="profile">
-	<div class="head-container w3-display-middle">
-		<div class="content">
-			<img src="images/profile.png" alt="profilePic" width="200" height="200"/>
+	<div class="profile"><!-----START OF PROFILE PAGE----->
+		<div id="profileNav"><!-----START OF NAV----->
+			<ul class="w3-navbar w3-black">
+				<li><a href="index.jade"><img src="images/logo.png" alt="logo">CAMPUSALE</a></li>
+				<li class="dropdown" style="float:right">
+					<a href="#" class="dropbtn">Username</a>
+					<div class="dropdown-content">
+						<a href="#">Profile</a>
+						<a href="#">Settings</a>
+						<a href="#">Logout</a>
+					</div>
+				</li>
+			</ul>
+		</div><!-----END OF NAV----->
+		
+		<div class="head-container w3-display-middle">
+			<div class="content">
+				<img src="images/profile.png" alt="profilePic" width="200" height="200"/>
 			
-			<div class="user-details">
-				<div class="user-name">
-					<h2>Marie H.<!--<%=first name %> <% last name initial. %>--></h2>
-					<h5>@mhilp001<!--<%= username %>--></h5>
+				<div class="user-details">
+					<div class="user-name">
+						<h2>Marie H.<!--<%=first name %> <% last name initial. %>--></h2>
+						<h5>@mhilp001<!--<%= username %>--></h5>
+					</div>
+					<div class="user-message">
+						<p>Personal Message box</p>
+					</div>
 				</div>
-				<div class="user-message">
-					<p>Personal Message box</p>
-				</div>
+				<div class "user-rating">
+					<img src="images/rating.png" alt="rating"/>
+				</div>	
 			</div>
-			<div class "user-rating">
-				<img src="images/rating.png" alt="rating"/>
-			</div>	
 		</div>
-	</div>
 	
-	<div class="body-content">
-		<div class="closet-tabs">
-			<li><a class="active" href="profile/<%username%>"><span><u><%num active items%>Items for Sale</u></span></a></li>
-			<li><a class="inactive" href="profile/<%username%>"><span><u><%num active items%>Items Sold</u></span></a></li>
+		<div class="body-content"><!-----START OF BODY----->
+			<div class="closet-tabs">
+				<li><a class="active" href="profile/<%username%>"><span><u><!--<%num active items%>-->Items for Sale</u></span></a></li>
+				<li><a class="inactive" href="profile/<%username%>"><span><u><!--<%num active items%>-->Items Sold</u></span></a></li>
 
-		</div>
-	</div>
+			</div>
+		</div><!-----END OF BODY----->
 	
-	</div>
+	</div><!-----END OF PROFILE PAGE----->
 	
 	
 </body>
