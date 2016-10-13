@@ -25,7 +25,7 @@
 			</ul>
 		</div><!-----END OF NAV----->
 		
-		<div class="head-container w3-display-middle">
+		<div class="head-container w3-display-middle"><!-----START OF USER INFO----->
 			<div class="content">
 				<img src="images/profile.png" alt="profilePic" width="200" height="200"/>
 			
@@ -42,15 +42,15 @@
 					<img src="images/rating.png" alt="rating"/>
 				</div>	
 			</div>
-		</div>
+		</div><!-----END OF USER INFO----->
 	
-		<div class="body-content"><!-----START OF BODY----->
+		<div class="body-content"><!-----START OF LISTINGS----->
 			<div class="closet-tabs">
 				<li><a class="active" href="profile/<%username%>"><span><u><!--<%num active items%>-->Items for Sale</u></span></a></li>
 				<li><a class="inactive" href="profile/<%username%>"><span><u><!--<%num active items%>-->Items Sold</u></span></a></li>
 
 			</div>
-		</div><!-----END OF BODY----->
+		</div><!-----END OF LISTINGS----->
 	
 	</div><!-----END OF PROFILE PAGE----->
 	
