@@ -53,12 +53,16 @@ li.dropdown {
 	display: block;
 	
 }
+#dropdown {
+	vertical-align: middle;
+	padding-left: 2px;
+	padding-bottom: 3px;
+}
 .head-container {
 	margin-bottom: 10px;
-    overflow: hidden;
-
+    overflow: hidden;	
 }
-.content{
+.top-content{
     background-color: white;
     width: 1000px;
 	height: 300px;
@@ -73,9 +77,11 @@ li.dropdown {
     vertical-align: top;
     max-width: 1000px;
     margin-top: 10px;
+	
 }
 .user-name {
 	letter-spacing: 0.8px;
+	padding-right: 190px;
     margin-top: -5px;
     margin-bottom: 12px;
 	display: inline-block;
@@ -88,9 +94,15 @@ li.dropdown {
     margin-top: 10px;
 }
 
+#rating {
+	margin-top: 10px;
+	padding-left: 50px;
+}
+
 .user-details p{
 	border: thin solid black;
 	max-width: 500px;
+	padding: 25px;
 	display: inline-block;
 	
 }
@@ -100,9 +112,23 @@ li.dropdown {
 }
 
 .closet-tabs{
+	margin-left: 10px;
 	display: inline-block;
 	vertical-align: top;
 }
+
+.closet-tabs li{
+	list-style: none;
+}
+.closet-tabs li a{
+	color: black;	
+}
+.closet-items {
+	display: inline-block;
+	vertical-align: top;
+}
+
+
 body {
     background-color: lightgrey;
 }
