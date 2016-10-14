@@ -328,6 +328,7 @@ style.
     font-size: 300%;
   }
   h4.message {
+     padding-top: 15px;
      text-align: center;
 }
   /* Grid END */
