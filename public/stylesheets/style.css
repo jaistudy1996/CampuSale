@@ -101,9 +101,7 @@ style.
   {
   float:right;
   }
-  section{
-  width:960px;
-  }
+  
   /* The Login Overlay*/
   input[type=text], input[type=password] {
   width: 100%;
