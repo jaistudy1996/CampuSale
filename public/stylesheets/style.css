@@ -324,11 +324,17 @@ style.
   h1.title {
     text-align: center;
     font-family: "Times New Roman", Georgia, Serif;
+    font-weight: bold;
     font-variant: small-caps;
-    font-size: 300%;
+    font-size: 500%;
   }
+
   h4.message {
      padding-top: 15px;
      text-align: center;
+     font-variant: small-caps;
+}
+  h1.title.S {
+    color: red;
 }
   /* Grid END */
