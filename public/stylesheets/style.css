@@ -332,7 +332,7 @@ style.
      text-align: center;
      font-variant: small-caps;
 }
-  h1.title.S {
+  h1.title #S {
     color: red;
 }
   /* Grid END */
