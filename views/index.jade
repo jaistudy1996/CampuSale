@@ -1,132 +1,129 @@
-doctype html
-html
-  #title
-  title CampSale
-  meta(name='viewport', content='width=device-width, initial-scale=1')
-  link(rel='stylesheet', href='http://www.w3schools.com/lib/w3.css')
-  link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Lato')
-  link(rel='stylesheet', href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css')
-  script(type='text/javascript', src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js')
-  script(type='text/javascript', src='javascripts/smoothscroll.js')
-  link(rel='stylesheet', type='text/css', href='stylesheets/style.css')
-  // <script src="script.js"></script>
-  body
-    // Login Overlay
-    #id01.modal
-      form.modal-content.animate(action='#')
-        .imgcontainer
-          span.close(onclick="document.getElementById('id01').style.display='none'", title='Close Modal') ×
-        .container
-          label
-            b Username
-          input(type='text', placeholder='uname@plattsburgh.edu', name='uname', required='')
-          label
-            b Password
-          input(type='password', placeholder='Enter Password', name='psw', required='')
-          a(href='listing.jade')
-            button(type='submit') Login
-          input(type='checkbox', checked='checked')
-          |  Remember me
-        .container(style='background-color:#f1f1f1')
-          button.cancelbtn(type='button', onclick="document.getElementById('id01').style.display='none'") Cancel
-          span.psw
-            | Forgot 
-            a(href='#') password?
-    // Login Overlay Ending
-    // Signup Overlay
-    #id02.modal
-      form.modal-content.animate(action='#')
-        .imgcontainer
-          span.close(onclick="document.getElementById('id02').style.display='none'", title='Close Modal') ×
-        .container
-          h1.w3-center  Welcome Cardinals!
-          input(type='text', placeholder='First name', name='fname', style='width:49%;', required='')
-          input(type='text', placeholder='Last name', name='lname', style='width:49%;', required='')
-          input(type='text', placeholder='uname@plattsburgh.edu', name='email', style='width:99%;', required='')
-          input(type='password', placeholder='Password', name='pass', style='width:99%;', required='')
-          input(type='password', placeholder='Confirm password', name='confirm_pass', style='width:99%;', required='')
-          button(type='submit') Signup
-        .container(style='background-color:#f1f1f1')
-          button.cancelbtn(type='button', onclick="document.getElementById('id02').style.display='none'") Cancel
-    // Signup Overlay Ending
-    // Navbar (sit on top)
-    .w3-top
-      ul#myNavbar.w3-navbar.w3-black
-        section
-          li(style="float:left")
-            a.w3-padding-large.smoothScroll(href='#home') CAMPUSALE
-          li(style="float:right")
-            a.w3-padding-large.smoothScroll(href='#contact us') Contact us
-          li(style="float:right")
-            a.w3-padding-large.smoothScroll(href='#how it works!') Learn More
-         
-    // First Parallax Image
-    #home.bgimg-1.w3-opacity.w3-display-container
-      .w3-display-middle(style='white-space:nowrap;')
-        h1.title
-          | campu
-            span#S s 
-          | ale
-
-        h4.message  a sales platform for your college 
-        nav.main-nav
-          button.button.button1(type='button', onclick="document.getElementById('id01').style.display='block'", style='width:auto;') Login
-          button#button2.button.button2(type='button', onclick="document.getElementById('id02').style.display='block'", style='width:auto;') Signup
-    // Container (Our Team Section)
-    .w3-content.w3-container.w3-padding-64(id='Our Team')
-      h3.w3-center Our Team
-      .w3-row
-        .w3-third
-          p
-            b Name
-          br
-          img.w3-circle(src='https://unsplash.it/235/235?image=91', alt='Photo of Me', style='width:40%;')
-        .w3-third
-          p
-            b Name
-          br
-          img.w3-circle(src='https://unsplash.it/235/235?image=91', alt='Photo of Me', style='width:40%;')
-        .w3-third
-          p
-            b Name
-          br
-          img.w3-circle(src='https://unsplash.it/235/235?image=91', alt='Photo of Me', style='width:40%;')
-        // Hide this text on small devices
-        .w3-col.m6.w3-hide-small.w3-section
-          p
-
-    // Container (How it works! Section)
-    .w3-content.w3-container.w3-padding-64
-      h3(id='how it works!').w3-center How it works!
-      p.w3-center
-        embed(src='videos/new_video.mp4', autostart='true', loop='true', height='338', width='600')
-    // Modal for full size images on click
-    #modal01.w3-modal.w3-black(onclick="this.style.display='none'")
-      span.w3-closebtn.w3-hover-red.w3-text-white.w3-xxxlarge.w3-container.w3-display-topright ×
-      .w3-modal-content.w3-animate-zoom.w3-center.w3-transparent.w3-padding-64
-        img#img01(style='max-width:100%')
-    
-    // Container (Contact Section)
-    .w3-content.w3-container.w3-padding-64
-        
-      h1(id='contact us').w3-center.w3-large CONTACT
-      h2.w3-center
-        em We'd love your feedback!
-      .w3-row.w3-padding-32
-        .w3-col.m6.w3-large.w3-margin-bottom
-          img(src='images/burghy.png', style='width:55%;')
-        .w3-col.m6
-          .w3-row-padding(style='margin:0 -16px 8px -16px')
-            .w3-half
-              input.w3-input.w3-border(type='text', placeholder='Name')
-            .w3-half
-              input.w3-input.w3-border(type='text', placeholder='Email')
-          input.w3-input.w3-border(type='text', placeholder='Comment')
-          button.w3-btn.w3-section.w3-right SEND
-    // Footer
-    footer.w3-center.w3-dark-grey.w3-padding-30.w3-hover-red
-      p footer
-    script.
+<!DOCTYPE html>
+<html>
+  <div id="title"></div>
+  <title>CampSale</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/smoothscroll.js"></script>
+  <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+  <!-- <script src="script.js"></script>-->
+  <body>
+    <!-- Login Overlay-->
+    <div id="id01" class="modal">
+      <form action="#" class="modal-content animate">
+        <div class="imgcontainer"><span onclick="document.getElementById('id01').style.display='none'" title="Close Modal" class="close">×</span></div>
+        <div class="container">
+          <label><b>Username</b></label>
+          <input type="text" placeholder="uname@plattsburgh.edu" name="uname" required="">
+          <label><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required=""><a href="listing.jade">
+            <button type="submit">Login</button></a>
+          <input type="checkbox" checked="checked"> Remember me
+        </div>
+        <div style="background-color:#f1f1f1" class="container">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button><span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+    <!-- Login Overlay Ending-->
+    <!-- Signup Overlay-->
+    <div id="id02" class="modal">
+      <form action="#" class="modal-content animate">
+        <div class="imgcontainer"><span onclick="document.getElementById('id02').style.display='none'" title="Close Modal" class="close">×</span></div>
+        <div class="container">
+          <h1 class="w3-center"> Welcome Cardinals!</h1>
+          <input type="text" placeholder="First name" name="fname" style="width:49%;" required="">
+          <input type="text" placeholder="Last name" name="lname" style="width:49%;" required="">
+          <input type="text" placeholder="uname@plattsburgh.edu" name="email" style="width:99%;" required="">
+          <input type="password" placeholder="Password" name="pass" style="width:99%;" required="">
+          <input type="password" placeholder="Confirm password" name="confirm_pass" style="width:99%;" required="">
+          <button type="submit">Signup</button>
+        </div>
+        <div style="background-color:#f1f1f1" class="container">
+          <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+        </div>
+      </form>
+    </div>
+    <!-- Signup Overlay Ending-->
+    <!-- Navbar (sit on top)-->
+    <div class="w3-top">
+      <ul id="myNavbar" class="w3-navbar w3-black">
+        <section>
+          <li style="float:left"><a href="#home" class="w3-padding-large smoothScroll">CAMPUSALE</a></li>
+          <li style="float:right"><a href="#contact us" class="w3-padding-large smoothScroll">Contact us</a></li>
+          <li style="float:right"><a href="#how it works!" class="w3-padding-large smoothScroll">Learn More</a></li>
+        </section>
+      </ul>
+    </div>
+    <!-- First Parallax Image-->
+    <div id="home" class="bgimg-1 w3-opacity w3-display-container">
+      <div style="white-space:nowrap;" class="w3-display-middle">
+        <h1 class="title">campu<span id="S">s </span>ale</h1>
+        <h4 class="message"> a sales platform for your college </h4>
+        <nav class="main-nav">
+          <button type="button" onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="button button1">Login</button>
+          <button id="button2" type="button" onclick="document.getElementById('id02').style.display='block'" style="width:auto;" class="button button2">Signup</button>
+        </nav>
+      </div>
+    </div>
+    <!-- Container (Our Team Section)-->
+    <div id="Our Team" class="w3-content w3-container w3-padding-64">
+      <h3 class="w3-center">Our Team</h3>
+      <div class="w3-row">
+        <div class="w3-third">
+          <p><b>Name</b></p><br><img src="https://unsplash.it/235/235?image=91" alt="Photo of Me" style="width:40%;" class="w3-circle">
+        </div>
+        <div class="w3-third">
+          <p><b>Name</b></p><br><img src="https://unsplash.it/235/235?image=91" alt="Photo of Me" style="width:40%;" class="w3-circle">
+        </div>
+        <div class="w3-third">
+          <p><b>Name</b></p><br><img src="https://unsplash.it/235/235?image=91" alt="Photo of Me" style="width:40%;" class="w3-circle">
+        </div>
+        <!-- Hide this text on small devices-->
+        <div class="w3-col m6 w3-hide-small w3-section">
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <!-- Container (How it works! Section)-->
+    <div class="w3-content w3-container w3-padding-64">
+      <h3 id="how it works!" class="w3-center">How it works!</h3>
+      <p class="w3-center">
+        <embed src="videos/new_video.mp4" autostart="true" loop="true" height="338" width="600">
+      </p>
+    </div>
+    <!-- Modal for full size images on click-->
+    <div id="modal01" onclick="this.style.display='none'" class="w3-modal w3-black"><span class="w3-closebtn w3-hover-red w3-text-white w3-xxxlarge w3-container w3-display-topright">×</span>
+      <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64"><img id="img01" style="max-width:100%"></div>
+    </div>
+    <!-- Container (Contact Section)-->
+    <div class="w3-content w3-container w3-padding-64">
+      <h1 id="contact us" class="w3-center w3-large">CONTACT</h1>
+      <h2 class="w3-center"><em>We'd love your feedback!</em></h2>
+      <div class="w3-row w3-padding-32">
+        <div class="w3-col m6 w3-large w3-margin-bottom"><img src="images/burghy.png" style="width:55%;"></div>
+        <div class="w3-col m6">
+          <div style="margin:0 -16px 8px -16px" class="w3-row-padding">
+            <div class="w3-half">
+              <input type="text" placeholder="Name" class="w3-input w3-border">
+            </div>
+            <div class="w3-half">
+              <input type="text" placeholder="Email" class="w3-input w3-border">
+            </div>
+          </div>
+          <input type="text" placeholder="Comment" class="w3-input w3-border">
+          <button class="w3-btn w3-section w3-right">SEND</button>
+        </div>
+      </div>
+    </div>
+    <!-- Footer-->
+    <footer class="w3-center w3-dark-grey w3-padding-30 w3-hover-red">
+      <p>footer</p>
+    </footer>
+    <script>
       // Change style of navbar on scroll
       window.onscroll = function() {myFunction()};
       function myFunction() {
@@ -146,3 +143,6 @@ html
       modal.style.display = "none";
       }
       }
+    </script>
+  </body>
+</html>
