@@ -53,38 +53,7 @@
 				</div>
 				
 				<div class="closet-items">
-					<ul class="rig columns-4">
-						<li>
-							<img src="img1.jpg" />
-							<h3>Image Title</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-						</li>
-					 	<li>
-					 		<img src="img2.jpg" />
-					 		<h3>Image Title</h3>
-					 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-					    </li>
-					    <li>
-							<img src="img3" />
-							<h3>Image Title</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-						</li>
-						<li>
-							<img src="images/pri_004.jpg" />
-							<h3>Image Title</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-						</li>
-						<li>
-							<img src="images/pri_005.jpg" />
-							<h3>Image Title</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-						</li>
-						<li>
-							<img src="images/pri_006.jpg" />
-							<h3>Image Title</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-						</li>
-					 </ul>
+					<!--Add existing code from listings page here when it is completed.-->
 				</div>
 			</div><!-----END OF LISTINGS----->
 			
