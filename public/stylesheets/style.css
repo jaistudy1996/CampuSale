@@ -101,7 +101,6 @@ style.
   {
   float:right;
   }
-  
   /* The Login Overlay*/
   input[type=text], input[type=password] {
   width: 100%;
@@ -202,7 +201,6 @@ style.
   color:red;
   margin-bottom:15px;
   }
-
   /* LISTING PAGE */
   #listing_page{
   background-color:white;
@@ -318,21 +316,28 @@ style.
   margin: 0 0 20px;
   }
   }
-
   h1.title {
-    text-align: center;
-    font-family: "Times New Roman", Georgia, Serif;
-    font-weight: bold;
-    font-variant: small-caps;
-    font-size: 500%;
+  text-align: center;
+  font-family: "Times New Roman", Georgia, Serif;
+  font-weight: bold;
+  font-variant: small-caps;
+  font-size: 500%;
   }
-
   h4.message {
-     padding-top: 15px;
-     text-align: center;
-     font-variant: small-caps;
-}
+  padding-top: 15px;
+  text-align: center;
+  font-variant: small-caps;
+  }
   h1.title #S {
-    color: red;
-}
+  color: red;
+  }
+  #howItWorks {
+  background-color: #d7d7d7;
+  }
+  #OurTeam {
+  background-color: #898989;
+  }
+  #contactUs {
+  background-color: #464646;
+  }
   /* Grid END */
