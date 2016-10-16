@@ -95,11 +95,14 @@ style.
   }
   #button2
   {
-  margin-left:100px;
+  margin-left:200px;
   }
   #myNavbar li
   {
   float:right;
+  }
+  section{
+  width:960px;
   }
   /* The Login Overlay*/
   input[type=text], input[type=password] {
@@ -205,8 +208,12 @@ style.
   #listing_page{
   background-color:white;
   }
+  /*Header*/
+  #logo{
+  float:left;
+  height:50px;
+  }
   /*Header Search box */
-  /* Demo 2 */
   input {
   outline: none;
   }
@@ -259,14 +266,13 @@ style.
   /* End */
   .menu {
   width: 100%;
-  border: 1px solid red;
   margin-top:5%;
   }
   /* Product Grid */
   ul.rig {
   list-style: none;
   font-size: 0px;
-  margin-left: -2.5%; /* should match li left margin */
+  margin-left: -0.5%; /* should match li left margin */
   margin-top:3%;
   }
   ul.rig li {
@@ -316,28 +322,43 @@ style.
   margin: 0 0 20px;
   }
   }
-  h1.title {
-  text-align: center;
-  font-family: "Times New Roman", Georgia, Serif;
-  font-weight: bold;
-  font-variant: small-caps;
-  font-size: 500%;
-  }
-  h4.message {
-  padding-top: 15px;
-  text-align: center;
-  font-variant: small-caps;
-  }
-  h1.title #S {
-  color: red;
-  }
-  #howItWorks {
-  background-color: #d7d7d7;
-  }
-  #OurTeam {
-  background-color: #898989;
-  }
-  #contactUs {
-  background-color: #464646;
-  }
   /* Grid END */
+  /*Filter Nav */
+  .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 100px;
+  }
+  .sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s
+  }
+  .sidenav a:hover, .offcanvas a:focus{
+  color: #f1f1f1;
+  }
+  .sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  }
+  #main {
+  transition: margin-left .5s;
+  padding: 16px;
+  }
+  @media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  }
