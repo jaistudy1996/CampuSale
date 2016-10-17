@@ -104,6 +104,10 @@ style.
   section{
   width:960px;
   }
+  /*How it works background*/
+  #howItWorks {
+  height: 870px;
+  }
   /* The Login Overlay*/
   input[type=text], input[type=password] {
   width: 100%;
@@ -203,10 +207,6 @@ style.
   #id02 .container h1{
   color:red;
   margin-bottom:15px;
-  }
-
-  #howItWorks {
-    height: 870px
   }
   /* LISTING PAGE */
   #listing_page{
