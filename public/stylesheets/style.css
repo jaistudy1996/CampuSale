@@ -106,18 +106,24 @@ style.
   }*/
   /*How it works background*/
   #howItWorks {
-  height: 870px;
+  height: 800px;
   background-color: #d7d7d7;
+  padding-right: 0px;
+  padding-left: 0px;
   }
   /*Our Team background*/
   #OurTeam {
-    height: 870px;
+    height: 800px;
     background-color: #898989;
+    padding-right: 0px;
+    padding-left: 0px;
   }
   /*Contact background*/
   #contactUs {
-    height: 870px;
+    height: 800px;
     background-color: #464646;
+    padding-right: 0px;
+    padding-left: 0px;
   }
   /*Logo text formating*/
   h1.title {
@@ -141,6 +147,10 @@ style.
   }
   li #learnMoreLink {
     padding-right: 20px;
+  }
+  /*Adjust content headers*/
+  h3.contentHeader {
+    padding-bottom: 30px;
   }
   /* The Login Overlay*/
   input[type=text], input[type=password] {
