@@ -107,6 +107,26 @@ style.
   /*How it works background*/
   #howItWorks {
   height: 870px;
+  background-color: #d7d7d7;
+  }
+  /*Our Team background*/
+  #OurTeam {
+    height: 870px;
+    background-color: #898989;
+  }
+  /*Contact background*/
+  #contactUs {
+    height: 870px;
+    background-color: #464646;
+  }
+  /*Logo text formating*/
+  h4.message {
+    padding-top: 15px;
+    text-align: center;
+    font-variant: small-caps;
+  }
+  h1.title #S {
+     color: red;
   }
   /* The Login Overlay*/
   input[type=text], input[type=password] {
