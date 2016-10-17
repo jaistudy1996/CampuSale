@@ -204,6 +204,10 @@ style.
   color:red;
   margin-bottom:15px;
   }
+
+  #howItWorks {
+    height: 870px
+  }
   /* LISTING PAGE */
   #listing_page{
   background-color:white;
