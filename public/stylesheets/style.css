@@ -101,9 +101,9 @@ style.
   {
   float:right;
   }
-  section{
+  /*section{
   width:960px;
-  }
+  }*/
   /*How it works background*/
   #howItWorks {
   height: 870px;
@@ -127,6 +127,13 @@ style.
   }
   h1.title #S {
      color: red;
+  }
+  /*Postioning nav links*/
+  li #campusaleLink {
+    padding-left: 20px;
+  }
+  li #learnMoreLink {
+    padding-right: 20px;
   }
   /* The Login Overlay*/
   input[type=text], input[type=password] {
