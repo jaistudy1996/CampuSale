@@ -108,21 +108,21 @@ style.
   }*/
   /*How it works background*/
   #howItWorks {
-  height: 680px;
+  height: 660px;
   background-color: #d7d7d7;
   padding-right: 0px;
   padding-left: 0px;
   }
   /*Our Team background*/
   #OurTeam {
-  height: 680px;
+  height: 660px;
   background-color: #898989;
   padding-right: 0px;
   padding-left: 0px;
   }
   /*Contact background*/
   #contactUs {
-  height: 680px;
+  height: 660px;
   background-color: #464646;
   padding-right: 0px;
   padding-left: 0px;
@@ -144,10 +144,10 @@ style.
   color: red;
   }
   /*Postioning nav links*/
-  li #campusaleLink {
+  li#campusaleLink {
   padding-left: 20px;
   }
-  li #learnMoreLink {
+  li#learnMoreLink {
   padding-right: 20px;
   }
   /*Adjust content headers*/
@@ -155,37 +155,49 @@ style.
   padding-bottom: 40px;
   }
   /*Fix baxkground color of sections*/
-  div #Back1 {
+  div#Back1 {
   background-color: #d7d7d7;
   }
-  div #Back2 {
+  div#Back2 {
   background-color: #898989;
   }
-  div #Back3 {
+  div#Back3 {
   background-color: #464646;
   }
-  div #banner {
-  vertical-align: bottom;
+  div#banner {
   }
   /*Social Media*/
+  div.center {
+  width: 100%;
+  margin:auto;
+  }
   div.social_media {
   display: inline-block;
   }
-  div #facebook {
+  div#facebook {
   display: inline-block;
   }
-  div #twitter {
+  div#twitter {
   display: inline-block;
   }
-  div #linkedin {
+  div#linkedin {
   display: inline-block;
   }
-  div.footer {
-  background-color: #464646;
+  /*footer formating*/
+  footer.footer {
+  background-color: #000000;
+  padding: 25px;
+  bottom: 0px;
   }
-  div #top {
+  div#copyright {
+  color: #898989;
+  float: left;
+  padding-left: 5px;
+  }
+  div#top {
   display:inline-block;
-  vertical-align: right;
+  float: right;
+  padding-right: 5px;
   }
   /* The Login Overlay*/
   input[type=text], input[type=password] {
