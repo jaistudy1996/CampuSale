@@ -115,44 +115,77 @@ style.
   }
   /*Our Team background*/
   #OurTeam {
-    height: 680px;
-    background-color: #898989;
-    padding-right: 0px;
-    padding-left: 0px;
+  height: 680px;
+  background-color: #898989;
+  padding-right: 0px;
+  padding-left: 0px;
   }
   /*Contact background*/
   #contactUs {
-    height: 680px;
-    background-color: #464646;
-    padding-right: 0px;
-    padding-left: 0px;
+  height: 680px;
+  background-color: #464646;
+  padding-right: 0px;
+  padding-left: 0px;
   }
   /*Logo text formating*/
   h1.title {
-    text-align: center;
-    font-family: "Times New Roman", Georgia, Serif;
-    font-weight: bold;
-    font-variant: small-caps;
-    font-size: 500%;
+  text-align: center;
+  font-family: "Times New Roman", Georgia, Serif;
+  font-weight: bold;
+  font-variant: small-caps;
+  font-size: 500%;
   }
   h4.message {
-    padding-top: 15px;
-    text-align: center;
-    font-variant: small-caps;
+  padding-top: 15px;
+  text-align: center;
+  font-variant: small-caps;
   }
   h1.title #S {
-     color: red;
+  color: red;
   }
   /*Postioning nav links*/
   li #campusaleLink {
-    padding-left: 20px;
+  padding-left: 20px;
   }
   li #learnMoreLink {
-    padding-right: 20px;
+  padding-right: 20px;
   }
   /*Adjust content headers*/
   h3.contentHeader {
-    padding-bottom: 40px;
+  padding-bottom: 40px;
+  }
+  /*Fix baxkground color of sections*/
+  div #Back1 {
+  background-color: #d7d7d7;
+  }
+  div #Back2 {
+  background-color: #898989;
+  }
+  div #Back3 {
+  background-color: #464646;
+  }
+  div #banner {
+  vertical-align: bottom;
+  }
+  /*Social Media*/
+  div.social_media {
+  display: inline-block;
+  }
+  div #facebook {
+  display: inline-block;
+  }
+  div #twitter {
+  display: inline-block;
+  }
+  div #linkedin {
+  display: inline-block;
+  }
+  div.footer {
+  background-color: #464646;
+  }
+  div #top {
+  display:inline-block;
+  vertical-align: right;
   }
   /* The Login Overlay*/
   input[type=text], input[type=password] {
