@@ -308,56 +308,114 @@ style.
   float:left;
   height:50px;
   }
+
   /*Header Search box */
-  input {
-  outline: none;
-  }
-  input[type=search] {
-  -webkit-appearance: textfield;
-  -webkit-box-sizing: content-box;
-  font-family: inherit;
-  font-size: 100%;
-  }
-  input::-webkit-search-decoration,
-  input::-webkit-search-cancel-button {
-  display: none;
-  }
-  input[type=search] {
-  background: #ededed url(http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
-  border: solid 1px #ccc;
-  padding: 9px 10px 9px 32px;
-  width: 55px;
-  -webkit-border-radius: 10em;
-  -moz-border-radius: 10em;
-  border-radius: 10em;
-  -webkit-transition: all .5s;
-  -moz-transition: all .5s;
-  transition: all .5s;
-  }
-  #demo-2 input[type=search] {
-  margin-left:350px;
-  width: 15px;
-  height:20px;
-  padding-left: 12px;
-  color: transparent;
-  cursor: pointer;
-  }
-  #demo-2 input[type=search]:hover {
-  background-color: #fff;
-  }
-  #demo-2 input[type=search]:focus {
-  width: 130px;
-  padding-left: 32px;
-  color: black;
-  background-color: white;
-  cursor: auto;
-  }
-  #demo-2 input:-moz-placeholder {
-  color: transparent;
-  }
-  #demo-2 input::-webkit-input-placeholder {
-  color: transparent;
-  }
+
+  html,
+.mode-search .form,
+.mode-search .icon-close {
+  opacity: 1;
+  transform: none;
+  pointer-events: all;
+}
+
+body.mode-search .control .icon-search { 
+	opacity: 0; 
+}
+
+body.mode-search .control .btn { 
+	transform: scale(70); 
+}
+
+
+.control {
+  	position: absolute;
+  	right: 50%;
+  	cursor: pointer;
+}
+
+.control .icon-search,
+.control .icon-close { 
+	transition: 0.2s ease-in-out; 
+}
+
+.control:hover .btn { 
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); 
+}
+
+/* Button */
+
+.btn {
+  	width: 44px;
+  	height: 44px;
+  	border-radius: 100%;
+  	box-sizing: border-box;
+  	padding: 20px;
+  	background: #e91e63;
+  	outline: 0;
+  	transform-origin: 50%;
+  	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  	transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-search {
+  	position: absolute;
+	top: 11px;
+	left: 13px;
+	font-size: 25px;
+}
+
+.icon-close {
+	
+  	position: fixed;
+  	top: 30px;
+  	right: 30px;
+  	color: #FFF;
+  	font-size: 80px;
+  	opacity: 0;
+  	transform: translate(10px, 0) rotate(90deg);
+  	transition: all 0.3s ease-in-out;
+}
+
+.form {
+	
+  	height: 80px;
+	margin-top:10%;
+	margin-left:10%;
+  	position: absolute;
+  	pointer-events: none;
+  	opacity: 0;
+  	transform: translate(40px, 0);
+  	transition: all 0.3s ease-in-out;
+}
+
+.form input {
+	
+  	color: #fff;
+  	font-size: 54px;
+  	border: 0;
+  	background: transparent;
+  	-webkit-appearance: none;
+  	box-sizing: border-box;
+  	outline: 0;
+  	font-weight: 200;
+}
+.form ::-webkit-input-placeholder {
+	
+ 	color: #EEE;
+}
+.form :-moz-placeholder {
+ 	color: #EEE;
+ 	opacity: 1;
+}
+.form ::-moz-placeholder {
+ 	color: #EEE;
+ 	opacity: 1;
+}
+.form :-ms-input-placeholder {
+ 	color: #EEE;
+}
+
   /* End */
   .menu {
   width: 100%;
