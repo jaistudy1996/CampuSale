@@ -12,19 +12,29 @@ var dbpool = db.createConnection({
 
 dbpool.connect();
 
-/* GET users listing. */
-router.get('/', function(req, res, next) {
+/* GET Users*/
+
+router.get('/', function(req, res, next){
+	res.render('users', {title: "Hello Users"});
+});
+
+/* POST users. */
+router.post('/', function(req, res, next) {
     var fname = req.param("fname");
     var lname = req.param("lname");
     dbpool.query({sql: 'select * from students where firstName = ? and lastName = ?' , values: [fname, lname]}, function(err, rows, fields) {
         if(err){
                 throw err;
         }
-        console.log("Lines are: ", rows);
-        res.render('index', { title: rows });
+        console.log(rows);
+	console.log("Type of rows: ", typeof(rows[0]));
+        console.log(rows[0].email);
+	//res.render('users', { title: rows });
+	res.send(rows);
     });
     console.log(req.param("fname"));
-    res.render('users', {title: 'Hello users'});
+    //res.send("well done.");
+    //res.render('users', {title: 'Hello users'});
 });
 
 module.exports = router;
