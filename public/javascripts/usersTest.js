@@ -6,7 +6,7 @@ function loginform(){
 	//var x = document.getElementById("form").submit();
 	//console.log("done this");
 	//console.log(x);
-	var url = "http://137.142.1.54:9000/users";
+	var url = "/users";
 	var fname = document.getElementById("fname").value;
 	var lname = document.getElementById("lname").value;
 	var params = "fname="+fname+"&lname="+lname;
