@@ -4,3 +4,4 @@ Helped a team member with HTML/CSS difficulty
 Researched how to encrypt password within the browser and then send the encrypted password to the server and verify it with the
 encrypted password in the database.
 Researched about triggers.
+Previously discussed with Professor Tyler Whitney about using the CAS server for our login server. That will allow users to login with their SUNY Plattsburgh Username and Password.
