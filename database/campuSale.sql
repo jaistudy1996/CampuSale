@@ -46,7 +46,7 @@ CREATE TABLE ratings (
 DROP TABLE IF EXISTS students;
 CREATE TABLE students (
   id int(11) NOT NULL,
-  email char(24) DEFAULT NULL,
+  email char(8) DEFAULT NULL,
   firstName char(20) DEFAULT NULL,
   lastName char(20) DEFAULT NULL,
   phone int(10) DEFAULT NULL,
