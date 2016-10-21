@@ -4,14 +4,14 @@ block content
   h1= title
   p Welcome to #{title}
 
-
+  script(type='text/javascript', src='javascripts/usersTest.js')
   body
-    form(action='/users', method='get')
+    form(action='/users', method='post', id='form')
       | First name:
-      input(type='text', name='fname')
+      input(type='text', id='fname' name='fname')
       br
       | Last name:
-      input(type='text', name='lname')
+      input(type='text', id='lname' name='lname')
       br
-      input(type='submit', value='Submit')
+      input(type='button', value='Submit' onclick="loginform()")
 
