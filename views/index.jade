@@ -42,9 +42,9 @@ html
           input(type='text', placeholder='First name', id="signup1", name='fname', style='width:49%;', required='')
           input(type='text', placeholder='Last name', name='lname', id="signup2", style='width:49%;', required='')
           input(type='text', placeholder='uname@plattsburgh.edu', name='email', id="signup3", style='width:99%;', required='')
-          input(type='password', placeholder='Password', name='pass', style='width:99%;', id="signup4", dequired='')
+          input(type='password', placeholder='Password', name='pass', style='width:99%;', id="signup4", required='')
           input(type='password', placeholder='Confirm password', name='confirm_pass', style='width:99%;', id="signup5", required='')
-          button(type='button') Signup
+          button(type='button', id="signupButton", onclick="signup()") Signup
         .container(style='background-color:#f1f1f1')
           button.cancelbtn(type='button', onclick="document.getElementById('id02').style.display='none'") Cancel
     // Signup Overlay Ending
