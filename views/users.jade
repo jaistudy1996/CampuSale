@@ -15,3 +15,7 @@ block content
       br
       input(type='button', value='Submit' onclick="loginform()")
 
+
+    form(action='/users/image', method='POST')
+      input(type='file', name='file' value="")
+      input(type='submit', name='Upload' value="Upload")
