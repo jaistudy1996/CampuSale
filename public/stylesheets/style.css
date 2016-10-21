@@ -199,6 +199,9 @@ style.
   float: right;
   padding-right: 5px;
   }
+  .test {
+  font-family: 'Open Sans Condensed', sans-serif;
+  }
   /* The Login Overlay*/
   input[type=text], input[type=password] {
   width: 100%;
