@@ -37,4 +37,8 @@ router.post('/', function(req, res, next) {
     //res.render('users', {title: 'Hello users'});
 });
 
+router.post('/image', function(req, res, next){
+	
+});
+
 module.exports = router;
