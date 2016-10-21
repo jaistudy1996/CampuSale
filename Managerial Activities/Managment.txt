@@ -6,3 +6,5 @@ encrypted password in the database.
 Researched about triggers.
 Discussed with Professor Tyler Whitney about using the CAS server for our login server. That will allow users to
 login with their SUNY Plattsburgh Username and Password.
+Jay and I met with Tyler to discuss the CAS API. He explained what needs to be done and forwared the page to read about the CAS
+protocol in order to implement it on out WebApp. Currently studying the protocol.
