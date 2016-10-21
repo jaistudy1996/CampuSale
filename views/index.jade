@@ -8,22 +8,23 @@ html
   link(rel='stylesheet', href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css')
   script(type='text/javascript', src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js')
   script(type='text/javascript', src='javascripts/smoothscroll.js')
+  script(type='text/javascript', src='javascripts/login.js')
   link(rel='stylesheet', type='text/css', href='stylesheets/style.css')
   // <script src="script.js"></script>
   body
     // Login Overlay
     #id01.modal
-      form.modal-content.animate(action='/login', method='POST')
+      form.modal-content.animate()
         .imgcontainer
           span.close(onclick="document.getElementById('id01').style.display='none'", title='Close Modal') ×
         .container
           label
             b Username
-          input(type='text', placeholder='uname@plattsburgh.edu', name='uname', required='')
+          input(type='text', placeholder='uname@plattsburgh.edu', name='uname', id="uname", required='')
           label
             b Password
-          input(type='password', placeholder='Enter Password', name='psw', required='')
-          button(type='submit') Login
+          input(type='password', placeholder='Enter Password', name='psw', id="psw", required='')
+          button(type='submit', onlclick="login()") Login
           input(type='checkbox', checked='checked')
           |  Remember me
         .container(style='background-color:#f1f1f1')
