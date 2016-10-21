@@ -1,7 +1,7 @@
 style.
   /*@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');*/
-  body,h1,h2,h4,h5,h6 {font-family: 'Open Sans  Condensed', sans-serif;}
-  h3 {font-family: 'Open Sans Condensed', sans-serif;}
+  body,h1,h2,h4,h5,h6 {font-family: 'Open Sans Condensed', sans-serif;}
+  /*h3 {font-family: 'Open Sans Condensed', sans-serif;}*/
   body, html {
   position:relative;
   height: 100%;
