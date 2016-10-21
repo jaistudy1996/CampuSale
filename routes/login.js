@@ -17,7 +17,7 @@ var dbpool = db.createConnection({
 router.post('/', function(req, res, next) {
 	console.log(req.param("uname"));
 	console.log(req.param("psw"));
-	res.render("listing", {});
+	res.send(true);
 });
 
 module.exports = router;
