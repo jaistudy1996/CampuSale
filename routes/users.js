@@ -48,6 +48,6 @@ router.post('/image', function(req, res, next){
 		throw err;
 	};
     });
-};
+});
 
 module.exports = router;
