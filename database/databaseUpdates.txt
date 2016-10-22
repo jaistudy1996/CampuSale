@@ -1,0 +1,5 @@
+Altered the students table email attribute to set a limit to just 8 characters for the first part of the email. That leaves the
+Aplattsburgh.edu out of the email.
+Also edited the students table id attribute to set the attribute to auto_increment since we decided to generate id for users.
+There are other changes that has been made to the database but I recently realized those are not showing up in the sqldump file.
+Updates on the database schema will be documented here moving forward.
