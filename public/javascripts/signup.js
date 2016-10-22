@@ -13,7 +13,7 @@ function signup() {
 	var params = "fname="+fname+"&lname="+lname+"&email="+email+"&password="+password;
 	if(typeof(email.slice(0, 5)) == "string" && typeof(Number(email.slice(6))) == "number"){
 		if(password === confirm_pass){
-			var params = "fname="+fname+"&lname="+lname+"&email="+email+"&password="+password;
+			var params = "fname="+fname+"&lname="+lname+"&email="+email+"&password="+password+"&confirm_pass="+confirm_pass;
 			http.open("POST", url, true);
 			http.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 			http.onreadystatechange = function() { 
