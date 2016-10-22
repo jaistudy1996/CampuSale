@@ -38,7 +38,16 @@ router.post('/', function(req, res, next) {
 });
 
 router.post('/image', function(req, res, next){
-	
+    var my_file = req.param("file");
+    var file = fopen(my_file, "r");
+    var file_contents = fread(file, filesize(my_file));
+    fclose(file);
+
+    dbpool.query({sql: 'insert into pictures set file='file_contents'){
+	if(err){
+		throw err;
+	}
+    } 
 });
 
 module.exports = router;
