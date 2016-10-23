@@ -1,5 +1,9 @@
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: Georgia, Serif;}
+p.cent {
+    text-align: center;
+}
+
 body, html {
 	position:relative;
     height: 100%;
