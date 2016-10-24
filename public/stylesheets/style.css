@@ -159,32 +159,32 @@ style.
   padding-bottom: 40px;
   }
   /*Fix baxkground color of sections*/
-  div#Back1 {
+  #Back1 {
   background-color: #d7d7d7;
   }
-  div#Back2 {
+  #Back2 {
   background-color: #898989;
   }
-  div#Back3 {
-  background-color: #464646;
+  #Back3 {
+  background-color: red;
   }
-  div#banner {
+  #banner {
   }
   /*Social Media*/
-  div.center {
+  .center {
   width: 100%;
   margin:auto;
   }
-  div.social_media {
+  .social_media {
   display: inline-block;
   }
-  div#facebook {
+  #facebook {
   display: inline-block;
   }
-  div#twitter {
+  #twitter {
   display: inline-block;
   }
-  div#linkedin {
+  #linkedin {
   display: inline-block;
   }
   /*footer formating*/
@@ -193,12 +193,12 @@ style.
   padding: 25px;
   bottom: 0px;
   }
-  div#copyright {
+  #copyright {
   color: #898989;
   float: left;
   padding-left: 5px;
   }
-  div#top {
+  #top {
   display:inline-block;
   float: right;
   padding-right: 5px;
