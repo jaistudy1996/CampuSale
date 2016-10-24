@@ -5,6 +5,8 @@ function signup() {
 	var fname = document.getElementById("signup1").value;
 	var lname = document.getElementById("signup2").value;
 	var email = document.getElementById("signup3").value;
+	var phone_number = document.getElementById("").value;
+	var zip_code = document.getElementById("").value;
 	// This is temporary. Will be removed after implementation of CAS protocol.
 	var password = document.getElementById("signup4").value;
 	var confirm_pass = document.getElementById("signup5").value;
