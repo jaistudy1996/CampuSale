@@ -8,7 +8,10 @@ dbconn = db.createConnection({
 	user: "amos",
 	password: "olasoji",
 	database: "campuSale",
+	//debug: true,
 });
+
+//dbconn.query("SHOW WARNINGS", function(err, result){});
 
 // POST sign up controller
 
@@ -22,15 +25,20 @@ router.post('/', function(req, res, next){
 	var pass2 = req.body.confirm_pass;
 
 	// SQL query
-	dbconn.query({sql: "INSERT INTO students SET ?", values: {firstName: fname, lastName: lname, email: email, phone: phone_num, zip: zip, password: pass1}}, function(err, result){
+	dbconn.query({sql: 'INSERT INTO students SET ?', values: {firstName: fname, lastName: lname, email: email, phone: phone_num, zip: zip, password: pass1}}, function(err, result){
 		if(err){
 			console.log(err);
 			res.send(err);
 		}
+		var result1 = result;
+		dbconn.query("SHOW WARNINGS", function(err, result){
+			result1.result2 = result;	
+		});
+		res.send(result1);
 	});
 	
 	console.log( fname, lname, email, phone_num, zip, pass1, pass2);
-	res.send("Reply from sign up controller: ", fname, lname, email, phone_num, zip, pass1, pass2);
+	//res.send("Reply from sign up controller: ", fname, lname, email, phone_num, zip, pass1, pass2);
 });
 
 
