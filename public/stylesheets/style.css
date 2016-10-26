@@ -126,7 +126,7 @@ style.
   /*Centering login sigup buttons*/
   .main-nav {
    margin: auto;
-   width: 50%;
+   width: 100%;
   }
   /*How it works background*/
   #howItWorks {
