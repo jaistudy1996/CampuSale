@@ -61,6 +61,7 @@ style.
   font-variant: small-caps;
   /*margin: 4px 2px*/
   margin: auto;
+  width: 50%;
   cursor: pointer;
   display: inline-block;
   vertical-align: middle;
@@ -112,6 +113,7 @@ style.
   #button2
   {
   margin: auto;
+  width: 50%;
   margin-top:50px;
   margin-left:50px;
   font-size: 35px;
@@ -124,6 +126,7 @@ style.
   /*Centering login sigup buttons*/
   .main-nav {
    margin: auto;
+   width: 50%;
   }
   /*How it works background*/
   #howItWorks {
