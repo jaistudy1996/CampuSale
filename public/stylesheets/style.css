@@ -60,7 +60,7 @@ style.
   font-size: 35px;
   font-variant: small-caps;
   /*margin: 4px 2px*/
-  /*margin: auto;*/
+  margin: auto;
   width: 30%;
   cursor: pointer;
   display: inline-block;
@@ -112,7 +112,7 @@ style.
   }
   #button2
   {
- /* margin: auto;*/
+  margin: auto;
   width: 30%;
   margin-top:50px;
   margin-left:50px;
