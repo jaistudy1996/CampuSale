@@ -5,10 +5,8 @@ style.
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 35px;
   text-align: center;
-
-  }
-  p.cent{
-    text-align: center;
+  font-variant: small-caps;
+  margin: 10px
   }
   body, html {
   position:relative;
@@ -113,9 +111,6 @@ style.
   {
   float:right;
   }
-  /*section{
-  width:960px;
-  }*/
   /*How it works background*/
   #howItWorks {
   height: 660px;
@@ -173,7 +168,7 @@ style.
   background-color: #898989;
   }
   #Back3 {
-  background-color: red;
+  background-color: #464646;
   }
   #banner {
   }
