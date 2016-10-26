@@ -6,7 +6,7 @@ style.
   font-size: 35px;
   text-align: center;
   font-variant: small-caps;
-  margin: 10px
+  padding-bottom: 10px
   }
   body, html {
   position:relative;
@@ -53,6 +53,7 @@ style.
   text-decoration: none;
   display: inline-block;
   font-size: 25px;
+  font-variant: small-caps;
   margin: 4px 2px;
   cursor: pointer;
   display: inline-block;
@@ -106,6 +107,7 @@ style.
   {
   margin-left:100px;
   font-size: 25px;
+  font-variant: small-caps;
   }
   #myNavbar li
   {
@@ -144,6 +146,7 @@ style.
   padding-top: 15px;
   text-align: center;
   font-variant: small-caps;
+  font-size: 30px;
   font-family: 'Open Sans Condensed', sans-serif;
   }
   h1.title #S {
