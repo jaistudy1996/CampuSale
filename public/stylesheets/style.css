@@ -61,7 +61,7 @@ style.
   font-variant: small-caps;
   /*margin: 4px 2px*/
   /*margin: auto;*/
-  width: 50%;
+  width: 30%;
   cursor: pointer;
   display: inline-block;
   vertical-align: middle;
@@ -112,8 +112,8 @@ style.
   }
   #button2
   {
- /* margin: auto;
-  width: 50%;*/
+ /* margin: auto;*/
+  width: 30%;
   margin-top:50px;
   margin-left:50px;
   font-size: 35px;
