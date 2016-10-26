@@ -10,7 +10,7 @@ style.
   }
   li a {
   font-family: 'Alegreya', serif;
-  font-size: 25px;
+  font-size: 18px;
   }
   body, html {
   position:relative;
@@ -76,8 +76,8 @@ style.
   transition-property: color;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  /*margin-top:70px;
-  margin-left: 10px;*/
+  margin-top:70px;
+  /*margin-left: 10px;*/
   background-color: white;
   color: black;
   border: 2px solid #555555;
@@ -112,7 +112,7 @@ style.
   #button2
   {
   margin: auto;
-  margin-left:100px;
+ /* margin-left:50px; */
   font-size: 35px;
   font-variant: small-caps;
   }
