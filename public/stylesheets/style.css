@@ -8,6 +8,9 @@ style.
   font-variant: small-caps;
   padding-bottom: 25px
   }
+  li a {
+  font-family: 'Alegreya', serif;
+  }
   body, html {
   position:relative;
   height: 100%;
@@ -122,14 +125,14 @@ style.
   }
   /*Our Team background*/
   #OurTeam {
-  height: 600px;
+  height: 660px;
   background-color: #898989;
   padding-right: 0px;
   padding-left: 0px;
   }
   /*Contact background*/
   #contactUs {
-  height: 660px;
+  height: 590px;
   background-color: #464646;
   padding-right: 0px;
   padding-left: 0px;
@@ -137,7 +140,7 @@ style.
   /*Logo text formating*/
   h1.title {
   text-align: center;
-  font-family: "Times New Roman", Georgia, Serif;
+  font-family: 'Alegreya', serif;
   font-weight: bold;
   font-variant: small-caps;
   font-size: 500%;
@@ -146,7 +149,7 @@ style.
   padding-top: 15px;
   text-align: center;
   font-variant: small-caps;
-  font-size: 40px;
+  font-size: 42px;
   font-family: 'Open Sans Condensed', sans-serif;
   }
   h1.title #S {
