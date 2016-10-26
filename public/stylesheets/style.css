@@ -60,7 +60,7 @@ style.
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 35px;
+  font-size: 30px;
   /*font-variant: small-caps;*/
   /*margin: 4px 2px*/
   margin: auto;
@@ -119,7 +119,7 @@ style.
   width: 30%;
   margin-top:50px;
   margin-left:50px;
-  font-size: 35px;
+  font-size: 30px;
   /*font-variant: small-caps;*/
   }
   #myNavbar li
