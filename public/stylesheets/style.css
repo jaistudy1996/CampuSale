@@ -6,10 +6,11 @@ style.
   font-size: 48px;
   text-align: center;
   font-variant: small-caps;
-  padding-bottom: 25px
+  padding-bottom: 25px;
   }
   li a {
   font-family: 'Alegreya', serif;
+  font-size: 30px;
   }
   body, html {
   position:relative;
@@ -57,7 +58,7 @@ style.
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 25px;
+  font-size: 30px;
   font-variant: small-caps;
   margin: 4px 2px;
   cursor: pointer;
@@ -146,6 +147,7 @@ style.
   font-weight: bold;
   font-variant: small-caps;
   font-size: 500%;
+  padding-bottom: 10px;
   }
   h4.message {
   padding-top: 15px;
