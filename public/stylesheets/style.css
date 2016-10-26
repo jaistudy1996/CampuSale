@@ -54,7 +54,6 @@ style.
   color: black;
   padding-top: 15px;
   padding-top: 15px;
-  padding-left: 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -118,6 +117,10 @@ style.
   #myNavbar li
   {
   float:right;
+  }
+  /*Centering login sigup buttons*/
+  .main-nav {
+   margin: auto;
   }
   /*How it works background*/
   #howItWorks {
