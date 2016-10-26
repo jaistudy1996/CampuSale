@@ -144,7 +144,7 @@ style.
   }
   /*Contact background*/
   #contactUs {
-  height: 590px;
+  height: 560px;
   background-color: #464646;
   padding-right: 0px;
   padding-left: 0px;
@@ -201,12 +201,15 @@ style.
   }
   #facebook {
   display: inline-block;
+  padding: 10px;
   }
   #twitter {
   display: inline-block;
+  padding: 10px;
   }
   #linkedin {
-  display: inline-block;
+  display: inline-block;  
+  padding: 10px;
   }
   /*footer formating*/
   footer.footer {
