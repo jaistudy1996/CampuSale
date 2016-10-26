@@ -76,7 +76,7 @@ style.
   transition-property: color;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  margin-top:70px;
+  margin-top:50px;
   /*margin-left: 10px;*/
   background-color: white;
   color: black;
@@ -112,7 +112,8 @@ style.
   #button2
   {
   margin: auto;
- /* margin-left:50px; */
+  margin-top:50px;
+  margin-left:50px;
   font-size: 35px;
   font-variant: small-caps;
   }
