@@ -25,16 +25,16 @@ router.post('/', function(req, res, next){
 	var pass2 = req.body.confirm_pass;
 
 	// SQL query
-	dbconn.query({sql: 'INSERT INTO students SET ?', values: {firstName: fname, lastName: lname, email: email, phone: phone_num, zip: zip, password: password(pass1)}}, function(err, result){
+	dbconn.query('INSERT INTO students (firstName, lastName, email, phone, zip, password) values (?, ?, ?, ?, ?, PASSWORD(?)) ', [fname, lname, email, phone_num, zip, pass1], function(err, result){
 		if(err){
 			console.log(err);
 			res.send(err);
 		}
-		var result1 = result;
-		dbconn.query("SHOW WARNINGS", function(err, result){
-			result1.result2 = result;	
-		});
-		res.send(result1);
+		//var result1 = result;
+		//dbconn.query("SHOW WARNINGS", function(err, result){
+		//	result1.result2 = result;	
+		//});
+		res.send(result);
 	});
 	
 	console.log( fname, lname, email, phone_num, zip, pass1, pass2);
