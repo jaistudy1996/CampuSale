@@ -25,7 +25,7 @@ router.post('/', function(req, res, next){
 	var pass2 = req.body.confirm_pass;
 
 	// SQL query
-	dbconn.query({sql: 'INSERT INTO students SET ?', values: {firstName: fname, lastName: lname, email: email, phone: phone_num, zip: zip, password: pass1}}, function(err, result){
+	dbconn.query({sql: 'INSERT INTO students SET ?', values: {firstName: fname, lastName: lname, email: email, phone: phone_num, zip: zip, password: password(pass1)}}, function(err, result){
 		if(err){
 			console.log(err);
 			res.send(err);
