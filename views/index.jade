@@ -15,17 +15,17 @@ html
   body
     // Login Overlay
     #id01.modal
-      form.modal-content.animate(action="/login", method="POST")
+      form.modal-content.animate(action='/login', method='POST')
         .imgcontainer
           span.close(onclick="document.getElementById('id01').style.display='none'", title='Close Modal') ×
         .container
           label
             b Username
-          input(type='text', placeholder='uname@plattsburgh.edu', name='uname', id="uname", required='')
+          input#uname(type='text', placeholder='uname@plattsburgh.edu', name='uname', required='')
           label
             b Password
-          input(type='password', placeholder='Enter Password', name='psw', id="psw", required='')
-          button(type='button', onclick="login()", id="loginButton") Login
+          input#psw(type='password', placeholder='Enter Password', name='psw', required='')
+          button#loginButton(type='button', onclick='login()') Login
           input(type='checkbox', checked='checked')
           |  Remember me
         .container(style='background-color:#f1f1f1')
@@ -41,15 +41,14 @@ html
           span.close(onclick="document.getElementById('id02').style.display='none'", title='Close Modal') ×
         .container
           h1.w3-center  Welcome Cardinals!
-          input(type='text', placeholder='First name', id="signup1", name='fname', style='width:49%;', required='')
-          input(type='text', placeholder='Last name', name='lname', id="signup2", style='width:49%;', required='')
-          input(type='text', placeholder='Phone Number', name='phone', id="signup3", style='width:49%;', required='')
-          input(type='text', placeholder='Zip Code', name='zip', id="signup4", style='width:49%;', required='')
-          input(type='text', placeholder='uname@plattsburgh.edu', name='email', id="signup5", style='width:99%;', required='')
-          input(type='password', placeholder='Password', name='pass', style='width:99%;', id="signup6", required='')
-          input(type='password', placeholder='Confirm password', name='confirm_pass', style='width:99%;', id="signup7", required='')
-
-          button(type='button', id="signupButton", onclick="signup()") Signup
+          input#signup1(type='text', placeholder='First name', name='fname', style='width:49%;', required='')
+          input#signup2(type='text', placeholder='Last name', name='lname', style='width:49%;', required='')
+          input#signup3(type='text', placeholder='Phone Number', name='phone', style='width:49%;', required='')
+          input#signup4(type='text', placeholder='Zip Code', name='zip', style='width:49%;', required='')
+          input#signup5(type='text', placeholder='uname@plattsburgh.edu', name='email', style='width:99%;', required='')
+          input#signup6(type='password', placeholder='Password', name='pass', style='width:99%;', required='')
+          input#signup7(type='password', placeholder='Confirm password', name='confirm_pass', style='width:99%;', required='')
+          button#signupButton(type='button', onclick='signup()') Signup
         .container(style='background-color:#f1f1f1')
           button.cancelbtn(type='button', onclick="document.getElementById('id02').style.display='none'") Cancel
     // Signup Overlay Ending
@@ -65,6 +64,8 @@ html
             a.w3-padding-large.smoothScroll(href='#OurTeam') About
           li#learnMoreLink(style='float:right')
             a.w3-padding-large.smoothScroll(href='#howItWorks') Learn More
+          li(style='float:right')
+            a.w3-padding-large.smoothScroll(href='item.jade') Item
     // First Parallax Image
     #home.bgimg-1.w3-opacity.w3-display-container
       .w3-display-middle(style='white-space:nowrap;')
