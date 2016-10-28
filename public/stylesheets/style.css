@@ -201,9 +201,8 @@ style.
   width: 100%;
   }
   .social_media {
-  display: block;
-  margin-left: auto;
-  margin-right: auto
+  display: inline-block;
+  margin-left: 50px;
   }
   #facebook {
   display: inline-block;
