@@ -202,7 +202,7 @@ style.
   }
   .social_media {
   display: inline-block;
-  margin-left: 100px;
+  margin: auto;
   }
   #facebook {
   display: inline-block;
