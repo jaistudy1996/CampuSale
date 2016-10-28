@@ -83,9 +83,11 @@ style.
   transition-duration: 0.3s;
   margin-top:50px;
   /*margin-left: 10px;*/
-  background-color: white;
+  background-color: grey;
   color: black;
   border: 2px solid #555555;
+  margin-left: 50px;
+  opacity: 0.5;
   }
   .button:before {
   content: "";
@@ -159,7 +161,7 @@ style.
   font-family: 'Alegreya', serif;
   font-weight: bold;
   font-variant: small-caps;
-  font-size: 500%;
+  font-size: 85px;
   padding-bottom: 10px;
   }
   h4.message {
@@ -176,7 +178,7 @@ style.
   li#campusaleLink {
   padding-left: 20px;
   }
-  li#learnMoreLink {
+  li#contactUsLink {
   padding-right: 20px;
   }
   /*Adjust content headers*/
@@ -202,6 +204,8 @@ style.
   }
   .social_media {
   display: inline-block;
+  margin: auto;
+  margin-right: 84px;
   }
   #facebook {
   display: inline-block;
