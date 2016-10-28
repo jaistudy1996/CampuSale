@@ -76,7 +76,7 @@ style.
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  background: white;
+  background: grey;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.3s;
