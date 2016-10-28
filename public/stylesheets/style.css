@@ -76,14 +76,14 @@ style.
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  background: grey;
+  background: white;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   margin-top:50px;
   /*margin-left: 10px;*/
-  background-color: white;
+  background-color: grey;
   color: black;
   border: 2px solid #555555;
   margin-left: 50px;
