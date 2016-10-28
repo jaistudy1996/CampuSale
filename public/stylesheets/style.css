@@ -86,6 +86,7 @@ style.
   background-color: white;
   color: black;
   border: 2px solid #555555;
+  margin-right: 60px;
   }
   .button:before {
   content: "";
