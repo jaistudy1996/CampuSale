@@ -32,9 +32,19 @@ html
           zoomWindowFadeOut: 750
           });
       .product_info
-        | Title
+        #left_1
+          h6 Name of the Product
+        #right_1
+          h6 Price
         hr
-        | 		sdsd
+        #left(style='float:left;')
+          h6#seller_text Seller
+          img(src='/images/profile.png', style='width:100px;height:100px;margin-left:25px;margin-top:5px;')
+          #about_seller(style='float:right;margin-right:80px;')
+            h6 Name
+            h6(style='margin-top:25px;') Rating
+        #right(style='float:right;')
+          h6#condition_text Condition
         hr
     // Footer
     footer.w3-center.w3-dark-grey.w3-padding.w3-hover-red
