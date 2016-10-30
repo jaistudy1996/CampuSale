@@ -1,5 +1,4 @@
 style.
-  /*@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');*/
   body,h1,h2,h4,h5,h6 {font-family: 'Open Sans Condensed', sans-serif;}
   p {
   font-family: 'Alegreya', serif;
@@ -124,6 +123,14 @@ style.
   margin-left:50px;
   font-size: 25px;
   /*font-variant: small-caps;*/
+  }
+
+  /*Semi-Transparent buttons*/
+  .semi-transparent-button {
+	  background: #fff;
+	  background: rgba(255, 255, 255, 0.5);
+	  border-radius: 8px;
+	  color: #fff;
   }
   #myNavbar li
   {
