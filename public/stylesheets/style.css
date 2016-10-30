@@ -128,9 +128,10 @@ style.
   /*Semi-Transparent buttons*/
   .semi-transparent-button {
 	  background: #fff;
-	  background: rgba(255, 255, 255, 0.5);
+	  background: rgba(211, 211, 211, 0.5);
 	  border-radius: 8px;
 	  color: #fff;
+	  transition: all 0.3s ease-out;
   }
   #myNavbar li
   {
