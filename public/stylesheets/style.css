@@ -553,9 +553,7 @@ body.mode-search .control .btn {
   }
 
 
-
-/*ITEM Page*/
-
+/* Item Page */
 
 .container_item{
 	width:100%;
@@ -582,6 +580,42 @@ body.mode-search .control .btn {
 }
 
 hr{
-	margin-top:50px;
+	margin-top:30%;
 }
+
+#seller_text{
+	margin-left:20%;
+	margin-top:25px;
+}
+#condition_text{
+	margin-top:25px;
+}
+#right{
+	width:40%;
+	height:50%;
+}
+#left{
+	width:60%;
+	height:50%;
+}
+#left_1{
+	float:left;
+	border:2px solid black;
+	margin-top:25px;
+	margin-left:5%;
+	width:60%;
+	height:20%;
+}
+#right_1{
+	float:right;
+	border:2px solid black;
+	margin-top:25px;
+	margin-right:5%;
+	width:20%;
+	height:20%;
+}
+
+
+
+
 
