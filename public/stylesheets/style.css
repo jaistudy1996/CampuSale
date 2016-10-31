@@ -365,14 +365,14 @@ style.
   }
 
   /*PROFILE PAGE*/
-  ul.profileNav {
+  ul.nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #333;
   }
-  li.Nav {
+  li.navLink {
   float: left;
   }
   li a, .dropbtn {
