@@ -1,4 +1,8 @@
 style.
+  body, html {
+  position: relative;
+  height: 100%;
+  }
   ul {
   list-style-type: none;
   margin: 0;
