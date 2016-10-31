@@ -195,13 +195,12 @@ style.
   }
   #scrollText {
 	color: rgb(128,128,128);
-	margin-top: 100px;
-	margin-bottom: 15px;
+	padding-top: 80px;
+	padding-bottom: 15px;
   }
   #scroll {
 	width: 100%;
-	margin-left:auto;
-   	margin-right:auto;
+	padding-left: 60px;
   }
   /*Fix baxkground color of sections*/
   #Back1 {
