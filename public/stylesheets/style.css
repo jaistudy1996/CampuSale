@@ -365,14 +365,14 @@ style.
   }
 
   /*PROFILE PAGE*/
-  ul {
+  ul.profileNav {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #333;
   }
-  li {
+  li.profileNav {
   float: left;
   }
   li a, .dropbtn {
@@ -408,6 +408,7 @@ style.
   }
   .profile {
   display: block;
+  background-color: lightgrey;
   }
   #dropdown {
   vertical-align: middle;
@@ -475,9 +476,6 @@ style.
   .closet-items {
   display: block;
   vertical-align: top;
-  }
-  body {
-  background-color: lightgrey;
   }
 
   /* LISTING PAGE */
