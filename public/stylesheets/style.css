@@ -193,6 +193,15 @@ style.
   h3.contentHeader {
   padding-bottom: 40px;
   }
+  #scrollText {
+	color: rgb(128,128,128);
+	margin-top: 50px;
+	margin-bottom: 15px;
+  }
+  #scroll {
+	margin: auto;
+	width: 100%;  
+  }
   /*Fix baxkground color of sections*/
   #Back1 {
   background-color: #d7d7d7;
