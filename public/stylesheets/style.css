@@ -198,6 +198,7 @@ style.
   }
   #more {
 	display: inline-block;
+	top: 100%;
   }
   #scrollText {
 	color: rgb(128,128,128);
