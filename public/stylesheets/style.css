@@ -193,8 +193,11 @@ style.
   h3.contentHeader {
   padding-bottom: 40px;
   }
+  #content {
+	display: inline-block;
+  }
   #more {
-	display: block;
+	display: inline-block;
   }
   #scrollText {
 	color: rgb(128,128,128);
