@@ -387,6 +387,7 @@ style.
   }
   li.dropdown {
   display: inline-block;
+  height: 47px;
   }
   .dropdown-content {
   display: none;
