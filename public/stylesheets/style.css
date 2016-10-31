@@ -200,7 +200,8 @@ style.
   }
   #scroll {
 	width: 100%;
-	padding-left: 100px;
+	margin-left: auto;
+	margin-right: auto;
   }
   /*Fix baxkground color of sections*/
   #Back1 {
