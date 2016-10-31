@@ -17,7 +17,7 @@ style.
   text-decoration: none;
   }
   li a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+    color: white;
   }
   li.dropdown {
   display: inline-block;
