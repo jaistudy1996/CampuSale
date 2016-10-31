@@ -27,6 +27,7 @@ router.post('/', function(req, res, next){
 			console.log(err);
 			res.send(err);
 		}
+		res.send(result);
 	});
 	
 	console.log( fname, lname, email, phone_num, zip, pass1, pass2);
