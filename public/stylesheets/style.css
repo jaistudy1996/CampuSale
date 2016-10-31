@@ -20,7 +20,7 @@ style.
   color: black;
   line-height: 0.8;
   }
-  p #text {
+  #text {
   	font-size: 25px;
 	padding-top: 25px;
   }
