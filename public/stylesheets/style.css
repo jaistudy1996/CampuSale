@@ -15,7 +15,7 @@ style.
   font-size: 18px;
   }
   body, html {
-  position:relative;
+  position: relative;
   height: 100%;
   color: black;
   line-height: 0.8;
@@ -463,7 +463,7 @@ style.
   }
   .body-conent{
   display: inline-block;
-  position:absolute;
+  /*position:absolute;*/
   }
   .closet-tabs{
   margin-left: 10px;
