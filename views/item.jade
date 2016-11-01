@@ -57,8 +57,19 @@ html
           h6#condition_text Condition
         hr
     // Footer
-    footer.w3-center.w3-dark-grey.w3-padding.w3-hover-red
-      p footer
+    footer.footer.w3-center
+      #copyright
+        p  © CampuSale Inc. 2016
+      .social_media 
+        #facebook
+          img(src='images/facebook.png', alt='facebook')
+        #twitter
+          img(src='images/Twitter.png', alt='twitter')
+        #linkedin
+          img(src='images/linkedin.png', alt='linkedin')
+      #top
+        a.smoothScroll(href='#home')
+          input(type='image', src='images/top-button.png', name='top')
     script(src='http://code.jquery.com/jquery-1.11.2.min.js')
     script.
       // Change style of navbar on scroll
