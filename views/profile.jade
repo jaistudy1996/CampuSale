@@ -45,18 +45,19 @@ html(lang='en')
       .body-content
         // ---START OF LISTINGS---
         .closet-tabs
-          li
-            a.active(href='profile/<%username%>')
-              span
-                u
-                  // <%num active items%>
-                  | Items for Sale
-          li
-            a.inactive(href='profile/<%username%>')
-              span
-                u
-                  // <%num active items%>
-                  | Items Sold
+          ul
+            li
+              a.active(href='profile/<%username%>')
+                span
+                  u
+                    // <%num active items%>
+                    | Items for Sale
+            li
+              a.inactive(href='profile/<%username%>')
+                span
+                  u
+                    // <%num active items%>
+                    | Items Sold
         .closet-items
           span
             ul.rig.columns-4
