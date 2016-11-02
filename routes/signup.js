@@ -36,7 +36,7 @@ router.post('/', function(req, res, next){
 		//dbconn.query("SHOW WARNINGS", function(err, result){
 		//	result1.result2 = result;	
 		//});
->>>>>>> 4ed55c26a887cd01cf162499f9e011f894a5759c
+>>>>>>> // 4ed55c26a887cd01cf162499f9e011f894a5759c
 		res.send(result);
 	});
 	
