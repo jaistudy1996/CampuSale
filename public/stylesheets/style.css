@@ -371,7 +371,7 @@ style.
   padding: 0;
   overflow: hidden;
   background-color: #333;
-  max-height: 50px;
+  max-height: 55px;
   }
   li.navLink {
   float: left;
@@ -522,6 +522,7 @@ body.mode-search .control .btn {
   	position: absolute;
   	right: 50%;
   	cursor: pointer;
+	margin-top: 5px;
 }
 
 .control .icon-search,
