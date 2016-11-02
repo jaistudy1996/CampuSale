@@ -466,8 +466,6 @@ style.
   display: inline-block;
   }
   .body-content{
-  display: inline-block;
-  position:absolute;
   padding: 30px;
   }
   .closet-tabs{
