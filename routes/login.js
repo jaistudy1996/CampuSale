@@ -15,8 +15,9 @@ var dbpool = db.createConnection({
 // This is for POST method in index.jade.
 
 router.post('/', function(req, res, next) {
-	console.log(req.param("uname"));
-	console.log(req.param("psw"));
+	console.log(req.body.uname);
+	console.log(req.body.psw);
+
 	res.send("Response from server");
 });
 
