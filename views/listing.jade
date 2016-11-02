@@ -11,17 +11,17 @@ html
   body#listing_page
     // Navbar (sit on top)
     .w3-top
+      .control(tabindex='1')
+        .btn
+        i.icon-search.ion-search
+      i.icon-close.ion-ios-close-empty
+       .form
+         input.input-search(placeholder='Start Typing', type='text')
       ul.w3-navbar.w3-black.nav
           li.navLink
             a(href='/listing')
               img(src='images/logo.png', alt='logo')
               | CAMPUSALE
-          .control(tabindex='1')
-            .btn
-            i.icon-search.ion-search
-          i.icon-close.ion-ios-close-empty
-          .form
-            input.input-search(placeholder='Start Typing', type='text')
           li.dropdown(style='float:right')
             a.dropbtn(href='#')
               | Username
@@ -31,12 +31,6 @@ html
               a(href='/sell') Sell
               a(href='/settings') Settings
               a(href='/logout') Logout
-        //.control(tabindex='1')
-         // .btn
-          //i.icon-search.ion-search
-        //i.icon-close.ion-ios-close-empty
-        //.form
-          //input.input-search(placeholder='Start Typing', type='text')
     .menu
       #mySidenav.sidenav
         a.closebtn(href='javascript:void(0)', onclick='closeNav()') ×
