@@ -422,7 +422,7 @@ style.
   /*overflow: hidden;*/
   }
   .top-content{
-  position: reletive;
+  position: relative;
   background-color: white;
   width: 1000px;
   height: 300px;
