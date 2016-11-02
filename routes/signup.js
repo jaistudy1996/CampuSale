@@ -30,15 +30,15 @@ router.post('/', function(req, res, next){
 			console.log(err);
 			res.send(err);
 		}
-<<<<<<< HEAD
-=======
+// <<<<<<< HEAD
+// =======
 		//var result1 = result;
 		//dbconn.query("SHOW WARNINGS", function(err, result){
 		//	result1.result2 = result;	
 		//});
->>>>>>> // 4ed55c26a887cd01cf162499f9e011f894a5759c
+// >>>>>>>  4ed55c26a887cd01cf162499f9e011f894a5759c
 		res.send(result);
-	});
+//	});
 	
 	console.log( fname, lname, email, phone_num, zip, pass1, pass2);
 	//res.send("Reply from sign up controller: ", fname, lname, email, phone_num, zip, pass1, pass2);
