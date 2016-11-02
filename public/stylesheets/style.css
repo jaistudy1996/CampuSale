@@ -371,6 +371,7 @@ style.
   padding: 0;
   overflow: hidden;
   background-color: #333;
+  max-height: 50px;
   }
   li.navLink {
   float: left;
