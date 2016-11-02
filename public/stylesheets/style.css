@@ -468,6 +468,7 @@ style.
   .body-conent{
   display: inline-block;
   position:absolute;
+  padding: 30px;
   }
   .closet-tabs{
   margin-left: 10px;
