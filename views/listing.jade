@@ -5,7 +5,7 @@ html
   link(rel='stylesheet', href='http://www.w3schools.com/lib/w3.css')
   link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Lato')
   link(rel='stylesheet', href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css')
-  <!--script(type='text/javascript', <script='', src='javascripts/smoothscroll.js')-->
+  //script(type='text/javascript', <script='', src='javascripts/smoothscroll.js')
   link(rel='stylesheet', type='text/css', href='stylesheets/style.css')
   link(rel='stylesheet', href='http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css')
   body#listing_page
@@ -16,6 +16,12 @@ html
             a(href='/listing')
               img(src='images/logo.png', alt='logo')
               | CAMPUSALE
+          .control(tabindex='1')
+            .btn
+            i.icon-search.ion-search
+          i.icon-close.ion-ios-close-empty
+          .form
+            input.input-search(placeholder='Start Typing', type='text')
           li.dropdown(style='float:right')
             a.dropbtn(href='#')
               | Username
@@ -25,11 +31,11 @@ html
               a(href='/sell') Sell
               a(href='/settings') Settings
               a(href='/logout') Logout
-        .control(tabindex='1')
+        //.control(tabindex='1')
           .btn
           i.icon-search.ion-search
-        i.icon-close.ion-ios-close-empty
-        .form
+        //i.icon-close.ion-ios-close-empty
+        //.form
           input.input-search(placeholder='Start Typing', type='text')
     .menu
       #mySidenav.sidenav
