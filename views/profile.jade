@@ -8,84 +8,83 @@ html(lang='en')
     script(type='text/javascript', src='javascripts/smoothscroll.js')
     title  Profile - CampuSale 
   body
-    // <div class="profile">
-    // ---START OF PROFILE PAGE---
-    #profileNav
-      // ---START OF NAV---
-      ul.w3-navbar.w3-black.nav
-        li.navLink
-          a(href='/listing')
-            img(src='images/logo.png', alt='logo')
-            | CAMPUSALE
-        li.dropdown(style='float:right')
-          a.dropbtn(href='#')
-            | Username
-            img#dropdown(src='images/drop_down.png', alt='v')
-          .dropdown-content
-            a(href='/profile') Profile
-            a(href='/sell') Sell
-            a(href='/settings') Settings
-            a(href='/logout') Logout
-    // ---END OF NAV---
-    .head-container.w3-display-middle
-      // ---START OF USER INFO---
-      .top-content
-        img(src='images/profile.png', alt='profilePic', width='200', height='200')
-        .user-details
-          .user-name
-            h2
-              | Marie H.
-              // <%=first name %> <% last name initial. %>
-            h5
-              | @mhilp001
-              // <%= username %>
-          p Personal Message box
-        div
-          img#rating(src='images/rating.png', alt='rating')
-    .body-content
-      // ---START OF LISTINGS---
-      .closet-tabs
-        li
-          a.active(href='profile/<%username%>')
-            span
-              u
-                // <%num active items%>
-                | Items for Sale
-        li
-          a.inactive(href='profile/<%username%>')
-            span
-              u
-                // <%num active items%>
-                | Items Sold
-      .closet-items
-        span
-          ul.rig.columns-4
-            li
-              img(src='images/img-1.jpg')
-              h3 Image Title
-              p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
-            li
-              img(src='images/img-2.jpg')
-              h3 Image Title
-              p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
-            li
-              img(src='images/img-3.jpg')
-              h3 Image Title
-              p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
-            li
-              img(src='images/img-4.jpg')
-              h3 Image Title
-              p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
-            li
-              img(src='images/img-5.jpg')
-              h3 Image Title
-              p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
-            li
-              img(src='images/img-6.jpg')
-              h3 Image Title
-              p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
-    // </div>
-    // </div>
+    .profile
+      // ---START OF PROFILE PAGE---
+      #profileNav
+        // ---START OF NAV---
+        ul.w3-navbar.w3-black.nav
+          li.navLink
+            a(href='/listing')
+              img(src='images/logo.png', alt='logo')
+              | CAMPUSALE
+          li.dropdown(style='float:right')
+            a.dropbtn(href='#')
+              | Username
+              img#dropdown(src='images/drop_down.png', alt='v')
+            .dropdown-content
+              a(href='/profile') Profile
+              a(href='/sell') Sell
+              a(href='/settings') Settings
+              a(href='/logout') Logout
+      // ---END OF NAV---
+      .head-container.w3-display-middle
+        // ---START OF USER INFO---
+        .top-content
+          img(src='images/profile.png', alt='profilePic', width='200', height='200')
+          .user-details
+            .user-name
+              h2
+                | Marie H.
+                // <%=first name %> <% last name initial. %>
+              h5
+                | @mhilp001
+                // <%= username %>
+            p Personal Message box
+          div
+            img#rating(src='images/rating.png', alt='rating')
+      .body-content
+        // ---START OF LISTINGS---
+        .closet-tabs
+          li
+            a.active(href='profile/<%username%>')
+              span
+                u
+                  // <%num active items%>
+                  | Items for Sale
+          li
+            a.inactive(href='profile/<%username%>')
+              span
+                u
+                  // <%num active items%>
+                  | Items Sold
+        .closet-items
+          span
+            ul.rig.columns-4
+              li
+                img(src='images/img-1.jpg')
+                h3 Image Title
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+              li
+                img(src='images/img-2.jpg')
+                h3 Image Title
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+              li
+                img(src='images/img-3.jpg')
+                h3 Image Title
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+              li
+                img(src='images/img-4.jpg')
+                h3 Image Title
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+              li
+                img(src='images/img-5.jpg')
+                h3 Image Title
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+              li
+                img(src='images/img-6.jpg')
+                h3 Image Title
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+      // </div>
     // Footer
     footer.footer.w3-center
       #copyright
@@ -103,4 +102,5 @@ html(lang='en')
       // ---END OF LISTINGS---
     // ---END OF USER INFO---
     // ---END OF PROFILE PAGE---
+
 
