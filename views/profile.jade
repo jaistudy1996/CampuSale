@@ -27,9 +27,9 @@ html(lang='en')
             a(href='/settings') Settings
             a(href='/logout') Logout
     // ---END OF NAV---
-    // <div class="head-container w3-display-middle">
-    // ---START OF USER INFO---
-    .top-content
+    .head-container.w3-display-middle
+      // ---START OF USER INFO---
+      .top-content
         img(src='images/profile.png', alt='profilePic', width='200', height='200')
         .user-details
           .user-name
@@ -42,48 +42,49 @@ html(lang='en')
           p Personal Message box
         div
           img#rating(src='images/rating.png', alt='rating')
-      .body-content
-        // ---START OF LISTINGS---
-        .closet-tabs
-          li
-            a.active(href='profile/<%username%>')
-              span
-                u
-                  // <%num active items%>
-                  | Items for Sale
-          li
-            a.inactive(href='profile/<%username%>')
-              span
-                u
-                  // <%num active items%>
-                  | Items Sold
-        .closet-items
-          span
-            ul.rig.columns-4
-              li
-                img(src='images/img-1.jpg')
-                h3 Image Title
-                p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
-              li
-                img(src='images/img-2.jpg')
-                h3 Image Title
-                p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
-              li
-                img(src='images/img-3.jpg')
-                h3 Image Title
-                p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
-              li
-                img(src='images/img-4.jpg')
-                h3 Image Title
-                p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
-              li
-                img(src='images/img-5.jpg')
-                h3 Image Title
-                p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
-              li
-                img(src='images/img-6.jpg')
-                h3 Image Title
-                p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+    .body-content
+      // ---START OF LISTINGS---
+      .closet-tabs
+        li
+          a.active(href='profile/<%username%>')
+            span
+              u
+                // <%num active items%>
+                | Items for Sale
+        li
+          a.inactive(href='profile/<%username%>')
+            span
+              u
+                // <%num active items%>
+                | Items Sold
+      .closet-items
+        span
+          ul.rig.columns-4
+            li
+              img(src='images/img-1.jpg')
+              h3 Image Title
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+            li
+              img(src='images/img-2.jpg')
+              h3 Image Title
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+            li
+              img(src='images/img-3.jpg')
+              h3 Image Title
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+            li
+              img(src='images/img-4.jpg')
+              h3 Image Title
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+            li
+              img(src='images/img-5.jpg')
+              h3 Image Title
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+            li
+              img(src='images/img-6.jpg')
+              h3 Image Title
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+    // </div>
     // </div>
     // Footer
     footer.footer.w3-center
