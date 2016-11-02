@@ -422,7 +422,7 @@ style.
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
-  margin-top: 35px;
+  margin-top: 40px;
   overflow: hidden;
   border: 2px solid black;
   }
@@ -466,7 +466,7 @@ style.
   display: inline-block;
   }
   .body-content{
-  padding: 30px;
+  padding: 30px 90px;
   }
   .closet-tabs{
   margin-left: 10px;
