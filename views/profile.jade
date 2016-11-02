@@ -3,7 +3,7 @@ html(lang='en')
   head
     meta(charset='UTF-8')
     link(rel='stylesheet', href='http://www.w3schools.com/lib/w3.css')
-    link(rel='stylesheet', type='text/css', href='stylesheets/profileStyle.css')
+    link(rel='stylesheet', type='text/css', href='stylesheets/style.css')
     script(type='text/javascript', src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js')
     script(type='text/javascript', src='javascripts/smoothscroll.js')
     title  Profile - CampuSale 
@@ -12,22 +12,22 @@ html(lang='en')
       // ---START OF PROFILE PAGE---
       #profileNav
         // ---START OF NAV---
-        ul.w3-navbar.w3-black
-          li
-            a(href='index.jade')
+        ul.w3-navbar.w3-black.nav
+          li.navLink
+            a(href='/listing')
               img(src='images/logo.png', alt='logo')
               | CAMPUSALE
           li.dropdown(style='float:right')
             a.dropbtn(href='#')
-              | Username
+              | Username 
               img#dropdown(src='images/drop_down.png', alt='v')
             .dropdown-content
-              a(href='#') Profile
-              a(href='#') Sell
-              a(href='#') Settings
-              a(href='#') Logout
+              a(href='/profile') Profile
+              a(href='/sell') Sell
+              a(href='/settings') Settings
+              a(href='/logout') Logout
       // ---END OF NAV---
-      .head-container.w3-display-middle
+      .head-container
         // ---START OF USER INFO---
         .top-content
           img(src='images/profile.png', alt='profilePic', width='200', height='200')
@@ -42,9 +42,10 @@ html(lang='en')
             p Personal Message box
           div
             img#rating(src='images/rating.png', alt='rating')
-        .body-content
-          // ---START OF LISTINGS---
-          .closet-tabs
+      .body-content
+        // ---START OF LISTINGS---
+        .closet-tabs
+          ul
             li
               a.active(href='profile/<%username%>')
                 span
@@ -57,8 +58,50 @@ html(lang='en')
                   u
                     // <%num active items%>
                     | Items Sold
-          .closet-items
-            // Add existing code from listings page here when it is completed.
-        // ---END OF LISTINGS---
-      // ---END OF USER INFO---
+        .closet-items
+          span
+            ul.rig.columns-4
+              li
+                img(src='images/img-1.jpg')
+                h3 Image Title
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+              li
+                img(src='images/img-2.jpg')
+                h3 Image Title
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+              li
+                img(src='images/img-3.jpg')
+                h3 Image Title
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+              li
+                img(src='images/img-4.jpg')
+                h3 Image Title
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+              li
+                img(src='images/img-5.jpg')
+                h3 Image Title
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+              li
+                img(src='images/img-6.jpg')
+                h3 Image Title
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+      // </div>
+    // Footer
+    footer.footer.w3-center
+      #copyright
+        p  © CampuSale Inc. 2016
+      .social_media
+        #facebook
+          img(src='images/facebook.png', alt='facebook')
+        #twitter
+          img(src='images/Twitter.png', alt='twitter')
+        #linkedin
+          img(src='images/linkedin.png', alt='linkedin')
+      #top
+        a.smoothScroll(href='#profileNav')
+          input(type='image', src='images/top-button.png', name='top')
+      // ---END OF LISTINGS---
+    // ---END OF USER INFO---
     // ---END OF PROFILE PAGE---
+
+

@@ -1,15 +1,28 @@
 style.
-  /*@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');*/
   body,h1,h2,h4,h5,h6 {font-family: 'Open Sans Condensed', sans-serif;}
-  /*h3 {font-family: 'Open Sans Condensed', sans-serif;}*/
-  p.cent{
-    text-align: center;
+  p {
+  font-family: 'Alegreya', serif;
+  }  
+  h3.header {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 48px;
+  text-align: center;
+  font-variant: small-caps;
+  padding-bottom: 25px;
+  }
+  li a {
+  font-family: 'Alegreya', serif;
+  font-size: 18px;
   }
   body, html {
-  position:relative;
+  position: relative;
   height: 100%;
   color: black;
   line-height: 0.8;
+  }
+  #text {
+  	font-size: 25px;
+	padding-top: 25px;
   }
   /* Create a Parallax Effect */
   .bgimg-1, .bgimg-2, .bgimg-3 {
@@ -45,12 +58,17 @@ style.
   .button {
   border: none;
   color: black;
-  padding: 15px 32px;
+  padding-top: 15px;
+  padding-top: 15px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+  font-size: 25px;
+  font-family: 'Alegreya', serif;
+  /*font-variant: small-caps;*/
+  /*margin: 4px 2px*/
+  margin: auto;
+  width: 30%;
   cursor: pointer;
   display: inline-block;
   vertical-align: middle;
@@ -66,10 +84,13 @@ style.
   transition-property: color;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  margin-top:70px;
-  background-color: white;
+  margin-top:50px;
+  /*margin-left: 10px;*/
+  background-color: grey;
   color: black;
   border: 2px solid #555555;
+  margin-left: 50px;
+  opacity: 0.5;
   }
   .button:before {
   content: "";
@@ -100,15 +121,31 @@ style.
   }
   #button2
   {
-  margin-left:100px;
+  margin: auto;
+  width: 30%;
+  margin-top:50px;
+  margin-left:50px;
+  font-size: 25px;
+  /*font-variant: small-caps;*/
+  }
+
+  /*Semi-Transparent buttons*/
+  .semi-transparent-button {
+	  background: #fff;
+	  background: rgba(128, 128, 128, 0.5);
+	  border-radius: 8px;
+	  color: #000000;
+	  transition: all 0.3s ease-out;
   }
   #myNavbar li
   {
   float:right;
   }
-  /*section{
-  width:960px;
-  }*/
+  /*Centering login sigup buttons*/
+  .main-nav {
+   margin: auto;
+   width: 100%;
+  }
   /*How it works background*/
   #howItWorks {
   height: 660px;
@@ -125,7 +162,7 @@ style.
   }
   /*Contact background*/
   #contactUs {
-  height: 660px;
+  height: 530px;
   background-color: #464646;
   padding-right: 0px;
   padding-left: 0px;
@@ -133,71 +170,95 @@ style.
   /*Logo text formating*/
   h1.title {
   text-align: center;
-  font-family: "Times New Roman", Georgia, Serif;
+  font-family: 'Alegreya', serif;
   font-weight: bold;
   font-variant: small-caps;
-  font-size: 500%;
+  font-size: 85px;
+  padding-bottom: 10px;
   }
   h4.message {
   padding-top: 15px;
   text-align: center;
   font-variant: small-caps;
+  font-size: 42px;
+  font-family: 'Open Sans Condensed', sans-serif;
   }
   h1.title #S {
-  color: red;
+  color: #e51837;
   }
   /*Postioning nav links*/
   li#campusaleLink {
   padding-left: 20px;
   }
-  li#learnMoreLink {
+  li#contactUsLink {
   padding-right: 20px;
   }
   /*Adjust content headers*/
   h3.contentHeader {
   padding-bottom: 40px;
   }
+  #content {
+	display: inline-block;
+  }
+  #more {
+	display: inline-block;
+	top: 85%;
+  }
+  #scrollText {
+	color: rgb(128,128,128);
+	padding-top: 80px;
+	padding-bottom: 7px;
+  }
+  #scroll {
+	width: 100%;
+	margin-left: 25px;
+  }
   /*Fix baxkground color of sections*/
-  div#Back1 {
+  #Back1 {
   background-color: #d7d7d7;
   }
-  div#Back2 {
+  #Back2 {
   background-color: #898989;
   }
-  div#Back3 {
+  #Back3 {
   background-color: #464646;
   }
-  div#banner {
+  #banner {
   }
   /*Social Media*/
-  div.center {
-  width: 100%;
+  .center {
   margin:auto;
+  width: 100%;
   }
-  div.social_media {
+  .social_media {
   display: inline-block;
+  margin: auto;
+  margin-right: 84px;
   }
-  div#facebook {
+  #facebook {
   display: inline-block;
+  padding: 0px 8px;
   }
-  div#twitter {
+  #twitter {
   display: inline-block;
+  padding: 0px 8px;
   }
-  div#linkedin {
-  display: inline-block;
+  #linkedin {
+  display: inline-block;  
+  padding: 0px 8px;
   }
   /*footer formating*/
   footer.footer {
   background-color: #000000;
-  padding: 25px;
+  padding: 20px;
   bottom: 0px;
   }
-  div#copyright {
+  #copyright {
   color: #898989;
   float: left;
   padding-left: 5px;
   }
-  div#top {
+  #top {
   display:inline-block;
   float: right;
   padding-right: 5px;
@@ -302,15 +363,141 @@ style.
   color:red;
   margin-bottom:15px;
   }
+
+  /*PROFILE PAGE*/
+  ul.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  max-height: 50px;
+  }
+  li.navLink {
+  float: left;
+  }
+  li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  padding-bottom: 25px !important;
+  }
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: white;
+  }
+  li.dropdown {
+  display: inline-block;
+  height: 47px;
+  }
+  .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 5px;
+  line-height: 1.2em;
+  }
+  .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  }
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  .dropdown:hover .dropdown-content {
+  display: block;
+  }
+  .profile {
+  display: block;
+  background-color: lightgrey;
+  }
+  #dropdown {
+  vertical-align: middle;
+  padding-left: 2px;
+  padding-bottom: 3px;
+  }
+  .head-container {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-top: 40px;
+  overflow: hidden;
+  border: 2px solid black;
+  }
+  .top-content{
+  position: relative;
+  background-color: white;
+  width: 100%;
+  height: 300px;
+  padding: 25px;
+  display:inline-block;
+  }
+  .user-details {
+  padding-left: 30px;
+  display: inline-block;
+  vertical-align: top;
+  max-width: 1000px;
+  margin-top: 10px;
+  }
+  .user-name {
+  letter-spacing: 0.8px;
+  padding-right: 190px;
+  margin-top: -5px;
+  margin-bottom: 12px;
+  display: inline-block;
+  }
+  .user-rating{
+  padding-left: 30px;
+  display: inline-block;
+  vertical-align: top;
+  max-width: 80px;
+  margin-top: 10px;
+  }
+  #rating {
+  margin-top: 10px;
+  padding-left: 50px;
+  }
+  .user-details p{
+  border: thin solid black;
+  max-width: 500px;
+  padding: 25px;
+  display: inline-block;
+  }
+  .body-content{
+  padding: 30px 90px;
+  }
+  .closet-tabs{
+  margin-left: 10px;
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  }
+  .closet-tabs li{
+  list-style: none;
+  display: inline;
+  }
+  .closet-tabs li a{
+  color: black;
+  }
+  .closet-items {
+  display: block;
+  vertical-align: top;
+  }
+
   /* LISTING PAGE */
   #listing_page{
   background-color:white;
   }
   /*Header*/
-  #logo{
+  /*#logo{
   float:left;
   height:50px;
-  }
+  }*/
 
   /*Header Search box */
 
@@ -518,4 +705,71 @@ body.mode-search .control .btn {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
   }
+
+
+/* Item Page */
+
+.container_item{
+	width:100%;
+	height:100%;
+	margin-top:0%;
+}
+
+.product_image{
+	border:0.1px solid lightgrey;
+	width:460px;
+	height:460px;
+	margin-left:7%;
+	margin-top:100px;
+	position:absolute;
+}
+
+.product_info{
+	border:0.1px solid lightgrey;
+	width:460px;
+	height:460px;
+	float:right;
+	margin-right:7%;
+	margin-top:100px;
+}
+
+hr{
+	margin-top:30%;
+}
+
+#seller_text{
+	margin-left:20%;
+	margin-top:25px;
+}
+#condition_text{
+	margin-top:25px;
+}
+#right{
+	width:40%;
+	height:50%;
+}
+#left{
+	width:60%;
+	height:50%;
+}
+#left_1{
+	float:left;
+	border:2px solid black;
+	margin-top:25px;
+	margin-left:5%;
+	width:60%;
+	height:20%;
+}
+#right_1{
+	float:right;
+	border:2px solid black;
+	margin-top:25px;
+	margin-right:5%;
+	width:20%;
+	height:20%;
+}
+
+
+
+
 

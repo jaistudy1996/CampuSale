@@ -1,0 +1,94 @@
+doctype html
+html
+  title CampuSale
+  meta(name='viewport', content='width=device-width, initial-scale=1')
+  link(rel='stylesheet', href='http://www.w3schools.com/lib/w3.css')
+  link(rel='stylesheet', type='text/css', href='stylesheets/style.css')
+  link(rel='stylesheet', href='http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css')
+  body
+    // For zoom in feature
+    script(src='javascripts/jquery-1.8.3.min.js')
+    script(src='javascripts/jquery.elevatezoom.js')
+    // Navbar (sit on top)
+    .w3-top
+      ul.w3-navbar.w3-black.nav
+          li.navLink
+            a(href='/listing')
+              img(src='images/logo.png', alt='logo')
+              | CAMPUSALE
+          li.dropdown(style='float:right')
+            a.dropbtn(href='#')
+              | Username
+              img#dropdown(src='images/drop_down.png', alt='v')
+            .dropdown-content
+              a(href='/profile') Profile
+              a(href='/sell') Sell
+              a(href='/settings') Settings
+              a(href='/logout') Logout
+        .control(tabindex='1')
+          .btn
+          i.icon-search.ion-search
+        i.icon-close.ion-ios-close-empty
+        .form
+          input.input-search(placeholder='Start Typing', type='text')
+    .container_item
+      .product_image
+        img#zoom_01(src='images/product.jpeg', data-zoom-image='images/product.jpg', style='width:450px; height:449px;')
+        script.
+          $('#zoom_01').elevateZoom({
+          zoomType: "inner",
+          cursor: "crosshair",
+          zoomWindowFadeIn: 500,
+          zoomWindowFadeOut: 750
+          });
+      .product_info
+        #left_1
+          h6 Name of the Product
+        #right_1
+          h6 Price
+        hr
+        #left(style='float:left;')
+          h6#seller_text Seller
+          img(src='/images/profile.png', style='width:100px;height:100px;margin-left:25px;margin-top:5px;')
+          #about_seller(style='float:right;margin-right:80px;')
+            h6 Name
+            h6(style='margin-top:25px;') Rating
+        #right(style='float:right;')
+          h6#condition_text Condition
+        hr
+    // Footer
+    footer.footer.w3-center
+      #copyright
+        p  © CampuSale Inc. 2016
+      .social_media 
+        #facebook
+          img(src='images/facebook.png', alt='facebook')
+        #twitter
+          img(src='images/Twitter.png', alt='twitter')
+        #linkedin
+          img(src='images/linkedin.png', alt='linkedin')
+      #top
+        a.smoothScroll(href='#home')
+          input(type='image', src='images/top-button.png', name='top')
+    script(src='http://code.jquery.com/jquery-1.11.2.min.js')
+    script.
+      // Change style of navbar on scroll
+      window.onscroll = function() {myFunction()};
+      function myFunction() {
+      var navbar = document.getElementById("myNavbar");
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " w3-red";
+      } else {
+      //navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-red", "");
+      navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " w3-black";
+      }
+      }
+      /*Search Function*/
+      $('.control').click(function () {
+      $('body').addClass('mode-search');
+      $('.input-search').focus();
+      });
+      $('.icon-close').click(function () {
+      $('body').removeClass('mode-search');
+      });
+      /*------------*/
