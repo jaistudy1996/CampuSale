@@ -463,7 +463,7 @@ style.
   }
   .body-conent{
   display: inline-block;
-  /*position:absolute;*/
+  position:absolute;
   }
   .closet-tabs{
   margin-left: 10px;
