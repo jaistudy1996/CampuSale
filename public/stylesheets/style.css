@@ -418,8 +418,9 @@ style.
   padding-bottom: 3px;
   }
   .head-container {
+  margin: auto;
   margin-bottom: 10px;
-  /*overflow: hidden;*/
+  overflow: hidden;
   }
   .top-content{
   position: relative;
