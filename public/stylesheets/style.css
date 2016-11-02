@@ -473,9 +473,11 @@ style.
   margin-left: 10px;
   display: inline-block;
   vertical-align: top;
+  width: 100%;
   }
   .closet-tabs li{
   list-style: none;
+  display: inline;
   }
   .closet-tabs li a{
   color: black;
