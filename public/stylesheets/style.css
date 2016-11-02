@@ -381,8 +381,8 @@ style.
   text-align: center;
   padding: 16px 16px;
   text-decoration: none;
-  padding-bottom: 25px;
-  margin-top: 10px;
+  padding-bottom: 25px !important;
+  margin-top: 20px;
   }
   li a:hover, .dropdown:hover .dropbtn {
     background-color: white;
