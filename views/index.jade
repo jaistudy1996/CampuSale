@@ -1,17 +1,17 @@
 doctype html
 html
-  #title
-  title CampSale
-  meta(name='viewport', content='width=device-width, initial-scale=1')
-  link(rel='stylesheet', href='http://www.w3schools.com/lib/w3.css')
-  script(type='text/javascript', src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js')
-  script(type='text/javascript', src='javascripts/smoothscroll.js')
-  script(type='text/javascript', src='javascripts/login.js')
-  script(type='text/javascript', src='javascripts/signup.js')
-  link(rel='stylesheet', type='text/css', href='stylesheets/style.css')
-  link(href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300', rel='stylesheet')
-  link(href='https://fonts.googleapis.com/css?family=Alegreya', rel='stylesheet')
-  // <script src="script.js"></script>
+  head
+    title CampSale
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='http://www.w3schools.com/lib/w3.css')
+    script(type='text/javascript', src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js')
+    script(type='text/javascript', src='javascripts/smoothscroll.js')
+    script(type='text/javascript', src='javascripts/login.js')
+    script(type='text/javascript', src='javascripts/signup.js')
+    link(rel='stylesheet', type='text/css', href='stylesheets/style.css')
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300', rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Alegreya', rel='stylesheet')
+    // <script src="script.js"></script>
   body
     // Login Overlay
     #id01.modal
@@ -59,7 +59,7 @@ html
           li#campusaleLink(style='float:left')
             a.w3-padding-large.smoothScroll(href='#home') CAMPUSALE
           li#contactUsLink(style='float:right')
-            a.w3-padding-large.smoothScroll(href='#contactUs') Contact us
+            a.w3-padding-large.smoothScroll(href='#contactUs') Contact Us
           li(style='float:right')
             a.w3-padding-large.smoothScroll(href='#OurTeam') About
           li(style='float:right')
@@ -104,7 +104,6 @@ html
     #Back3
       #contactUs.w3-content.w3-container.w3-padding-64
         h3.header contact
-        // <h2 class="w3-center"><em>We'd love your feedback!</em></h2>
         .w3-row.w3-padding-64
           .w3-col.m6.w3-margin-bottom
             img(src='images/bird.png', style='width:57%; margin-bottom: 45px; margin-left: 50px;')
@@ -116,13 +115,11 @@ html
                 input.w3-input.w3-border(type='text', placeholder='Email')
             input.w3-input.w3-border(type='text', placeholder='Comment')
             button.w3-btn.w3-section.w3-right(style='padding-top: 15px; padding-bottom: 15px') SEND
-          // <div id="baner"><img id="bannerImg"src="images/footer2.png" alt="feedback"></div>
-      // <div id="baner"><img id="bannerImg"src="images/test.png" alt="feedback"></div>
     // Footer
     footer.footer.w3-center
       #copyright
         p  © CampuSale Inc. 2016
-      .social_media 
+      .social_media
         #facebook
           img(src='images/facebook.png', alt='facebook')
         #twitter
