@@ -17,6 +17,7 @@ style.
   body, html {
   position: relative;
   height: 100%;
+  width: 100%;
   color: black;
   line-height: 0.8;
   }
