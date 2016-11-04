@@ -507,8 +507,9 @@ style.
   }*/
 
   /*Header Search box */
+/*search*/
 
-  html,
+html,
 .mode-search .form,
 .mode-search .icon-close {
   opacity: 1;
@@ -524,21 +525,16 @@ body.mode-search .control .btn {
 	transform: scale(70); 
 }
 
-
 .control {
   	position: absolute;
+	top:10%;
   	right: 50%;
   	cursor: pointer;
-	margin-top: 5px;
 }
 
 .control .icon-search,
 .control .icon-close { 
 	transition: 0.2s ease-in-out; 
-}
-
-.control:hover .btn { 
-	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); 
 }
 
 /* Button */
@@ -550,9 +546,6 @@ body.mode-search .control .btn {
   	box-sizing: border-box;
   	padding: 20px;
   	background: #e91e63;
-  	outline: 0;
-  	transform-origin: 50%;
-  	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   	transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -564,7 +557,6 @@ body.mode-search .control .btn {
 }
 
 .icon-close {
-	
   	position: fixed;
   	top: 30px;
   	right: 30px;
@@ -576,7 +568,6 @@ body.mode-search .control .btn {
 }
 
 .form {
-	
   	height: 80px;
 	margin-top:10%;
 	margin-left:10%;
@@ -584,11 +575,10 @@ body.mode-search .control .btn {
   	pointer-events: none;
   	opacity: 0;
   	transform: translate(40px, 0);
-  	transition: all 0.3s ease-in-out;
+  	transition: all 0.9s ease-in-out;
 }
 
 .form input {
-	
   	color: #fff;
   	font-size: 54px;
   	border: 0;
@@ -599,7 +589,6 @@ body.mode-search .control .btn {
   	font-weight: 200;
 }
 .form ::-webkit-input-placeholder {
-	
  	color: #EEE;
 }
 .form :-moz-placeholder {
@@ -613,6 +602,8 @@ body.mode-search .control .btn {
 .form :-ms-input-placeholder {
  	color: #EEE;
 }
+
+/* Search End */
 
   /* End */
   .menu {
