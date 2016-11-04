@@ -11,7 +11,13 @@ html
     script(src='javascripts/jquery.elevatezoom.js')
     // Navbar (sit on top)
     .w3-top
-      ul.w3-navbar.w3-black.nav
+      .control(tabindex='1')
+        .btn
+        i.icon-search.ion-search
+      i.icon-close.ion-ios-close-empty
+        .form
+          input.input-search(placeholder='Start Typing', type='text')
+      ul.w3-black.nav
           li.navLink
             a(href='/listing')
               img(src='images/logo.png', alt='logo')
@@ -25,12 +31,6 @@ html
               a(href='/sell') Sell
               a(href='/settings') Settings
               a(href='/logout') Logout
-        .control(tabindex='1')
-          .btn
-          i.icon-search.ion-search
-        i.icon-close.ion-ios-close-empty
-        .form
-          input.input-search(placeholder='Start Typing', type='text')
     .container_item
       .product_image
         img#zoom_01(src='images/product.jpeg', data-zoom-image='images/product.jpg', style='width:450px; height:449px;')
