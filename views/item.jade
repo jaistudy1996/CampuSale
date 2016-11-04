@@ -55,6 +55,13 @@ html
     .buy_button
       a#buy(href='', <h6='') Buy
 .other_products
+  #google_translate_element
+script(type='text/javascript').
+  function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'fr', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+  }
+script(type='text/javascript', src='//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit')
+
   | People also like
 // Footer
 footer.w3-center.w3-dark-grey.w3-padding.w3-hover-red(style='margin-top:30px')
