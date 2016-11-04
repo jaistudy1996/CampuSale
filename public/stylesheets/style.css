@@ -724,10 +724,10 @@ body.mode-search .control .btn {
 }
 
 .product_image{
-	border:0.1px solid lightgrey;
+	
 	width:460px;
 	height:460px;
-	margin-left:7%;
+	margin-left:18%;
 	margin-top:100px;
 	position:absolute;
 }
@@ -737,7 +737,7 @@ body.mode-search .control .btn {
 	width:460px;
 	height:460px;
 	float:right;
-	margin-right:7%;
+	margin-right:10%;
 	margin-top:100px;
 }
 
@@ -762,7 +762,6 @@ hr{
 }
 #left_1{
 	float:left;
-	border:2px solid black;
 	margin-top:25px;
 	margin-left:5%;
 	width:60%;
@@ -770,13 +769,92 @@ hr{
 }
 #right_1{
 	float:right;
-	border:2px solid black;
 	margin-top:25px;
 	margin-right:5%;
 	width:20%;
 	height:20%;
 }
 
+#buy{
+	text-decoration:none;
+	margin-left:50%;
+	margin-top:8px;
+	position:absolute;
+}
+
+
+
+/* Shutter Out Horizontal */
+.buy_button {
+  	display: inline-block;
+  	vertical-align: middle;
+  	-webkit-transform: perspective(1px) translateZ(0);
+ 	transform: perspective(1px) translateZ(0);
+  	box-shadow: 0 0 1px transparent;
+  	position: relative;
+  	background: #e1e1e1;
+  	-webkit-transition-property: color;
+  	transition-property: color;
+  	-webkit-transition-duration: 0.3s;
+  	transition-duration: 0.3s;
+	width:90%;
+	height:30px;
+	margin-left:25px;
+	
+}
+.buy_button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #2098D1;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.buy_button:hover, .buy_button:focus, .buy_button:active {
+  color: white;
+}
+.buy_button:hover:before, .buy_button:focus:before, .buy_button:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+/* End */
+
+#short_desc{
+	margin-top:35px;
+}
+
+.other_products{
+	margin: auto;
+	width: 80%;
+	border: 3px solid green;
+	padding: 10px;
+	height:200px;
+}
+
+.other_images{
+	float:left;
+	width:90px;
+	height:300px;
+	
+	margin-top:170px;
+	margin-left:130px;
+}
+
+.othr_images hr{
+	padding:15px;
+}
 
 
 
