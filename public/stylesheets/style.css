@@ -392,6 +392,9 @@ style.
   display: inline-block;
   height: 47px;
   }
+  span #name {
+	  text-align: center;
+  }
   .dropdown-content {
   display: none;
   position: absolute;
