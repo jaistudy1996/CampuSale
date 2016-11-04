@@ -5,20 +5,19 @@ html
   link(rel='stylesheet', href='http://www.w3schools.com/lib/w3.css')
   link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Lato')
   link(rel='stylesheet', href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css')
-  // script(type='text/javascript', <script='', src='javascripts/smoothscroll.js')
+  //script(type='text/javascript', <script='', src='javascripts/smoothscroll.js')
   link(rel='stylesheet', type='text/css', href='stylesheets/style.css')
   link(rel='stylesheet', href='http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css')
   body#listing_page
     // Navbar (sit on top)
-    header
+    .w3-top
       .control(tabindex='1')
         .btn
         i.icon-search.ion-search
       i.icon-close.ion-ios-close-empty
-        .form
-          input.input-search(placeholder='Start Typing', type='text')
-      nav.nav
-        ul#nav
+       .form
+         input.input-search(placeholder='Start Typing', type='text')
+      ul.w3-navbar.w3-black.nav
           li.navLink
             a(href='/listing')
               img(src='images/logo.png', alt='logo')
@@ -75,7 +74,7 @@ html
     footer.footer.w3-center
       #copyright
         p  © CampuSale Inc. 2016
-      .social_media
+      .social_media 
         #facebook
           img(src='images/facebook.png', alt='facebook')
         #twitter
