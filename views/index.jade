@@ -24,15 +24,16 @@ html
           input#uname(type='text', placeholder='uname@plattsburgh.edu', name='uname', required='')
           label
             b Mot de passe
-          input#psw(type='password', placeholder='Enter Password', name='psw', required='')
-          button#loginButton(type='button', onclick='login()') Login
+          input#psw(type='password', placeholder='Entrer le mot de passe', name='psw', required='')
+          button#loginButton(type='button', onclick='login()') S'identifier
           input(type='checkbox', checked='checked')
           |  Souviens-toi de moi
         .container(style='background-color:#f1f1f1')
-          button.cancelbtn(type='button', onclick="document.getElementById('id01').style.display='none'") Cancel
+          button.cancelbtn(type='button', onclick="document.getElementById('id01').style.display='none'") Annuler
+
           span.psw
             | Oublié 
-            a(href='#') password?
+            a(href='#') mot de passe?
     // Login Overlay Ending
     // Signup Overlay
     #id02.modal
