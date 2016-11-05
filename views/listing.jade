@@ -5,8 +5,8 @@ html
   link(rel='stylesheet', href='http://www.w3schools.com/lib/w3.css')
   link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Lato')
   link(rel='stylesheet', href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css')
-  //script(type='text/javascript', <script='', src='javascripts/smoothscroll.js')
-  link(rel='stylesheet', type='text/css', href='stylesheets/style.css')
+  // script(type='text/javascript', <script='', src='javascripts/smoothscroll.js')
+  link(rel='stylesheet', type='text/css', href='stylesheets/new_style.css')
   link(rel='stylesheet', href='http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css')
   body#listing_page
     // Navbar (sit on top)
@@ -15,22 +15,22 @@ html
         .btn
         i.icon-search.ion-search
       i.icon-close.ion-ios-close-empty
-       .form
-         input.input-search(placeholder='Start Typing', type='text')
+      .form
+        input.input-search(placeholder='Start Typing', type='text')
       ul.w3-black.nav
-          li.navLink
-            a(href='/listing')
-              img(src='images/logo.png', alt='logo')
-              span#name CAMPUSALE
-          li.dropdown(style='float:right')
-            a.dropbtn(href='#')
-              | Username
-              img#dropdown(src='images/drop_down.png', alt='v')
-            .dropdown-content
-              a(href='/profile') Profile
-              a(href='/sell') Sell
-              a(href='/settings') Settings
-              a(href='/logout') Logout
+        li.navLink
+          a(href='/listing')
+            img(src='images/logo.png', alt='logo')
+            span#name CAMPUSALE
+        li.dropdown(style='float:right')
+          a.dropbtn(href='#')
+            | Username
+            img#dropdown(src='images/drop_down.png', alt='v')
+          .dropdown-content
+            a(href='/profile') Profile
+            a(href='/sell') Sell
+            a(href='/settings') Settings
+            a(href='/logout') Logout
     .menu
       #mySidenav.sidenav
         a.closebtn(href='javascript:void(0)', onclick='closeNav()') ×
@@ -74,7 +74,7 @@ html
     footer.footer.w3-center
       #copyright
         p  © CampuSale Inc. 2016
-      .social_media 
+      .social_media
         #facebook
           img(src='images/facebook.png', alt='facebook')
         #twitter
@@ -113,4 +113,3 @@ html
       document.getElementById("mySidenav").style.width = "0";
       document.getElementById("main").style.marginLeft= "0";
       }
-
