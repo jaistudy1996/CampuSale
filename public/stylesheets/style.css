@@ -791,7 +791,7 @@ hr{
 	width:90%;
 	height:30px;
 	margin-left:25px;
-	
+	border: 2px solid white;
 }
 .buy_button:before {
   content: "";
@@ -862,6 +862,6 @@ hr{
 	width:90%;
 	height:30px;
 	margin-left:25px;
-	border: 6px solid white;
+	border: 2px solid white;
 	
 }
