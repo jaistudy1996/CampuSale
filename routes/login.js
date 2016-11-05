@@ -26,9 +26,14 @@ router.post('/', function(req, res, next) {
 			res.send(err);
 		}
 		console.log(result);
-	
+		if(result.length == 0){
+			res.status(404).send("Username/Password is incorrect");
+		}
+		if(result.length == 1){
+			res.render("listing");
+		}	
 	});
-	res.send("Response from server");
+	//res.send("Response from server");
 });
 
 module.exports = router;
