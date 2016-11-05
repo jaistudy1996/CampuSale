@@ -854,7 +854,7 @@ hr{
  	transform: perspective(1px) translateZ(0);
   	box-shadow: 0 0 1px transparent;
   	position: relative;
-  	background: lightyellow;
+  	background: yellow;
   	-webkit-transition-property: color;
   	transition-property: color;
   	-webkit-transition-duration: 0.3s;
