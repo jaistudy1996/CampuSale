@@ -59,6 +59,7 @@ html
           .form-group
              label(for='category') Category: 
              select#catagory(name='Select a category')
+                option(value='select') Select a category
                 option(value='men') Men
                 option(value='women') Women
                 option(value='appliances') Appliances
@@ -73,12 +74,21 @@ html
              input(name='price')
           .form-group
              label(for='payment') Payment Option: 
-             select#catagory(name='Select payment type')
+             select#payment(name='Select payment type')
+                option(value='payment') Select a payment type
                 option(value='cash') Cash
                 option(value='women') Cardinal Cash
                 option(value='check') Check
                 option(value='paypal') Paypal
                 option(value='mo') Money Order
+          .form-group
+             label(for='Condition') Item Condition: 
+             select#condition(name='condition')
+                option(value='condition') Choose item condition
+                option(value='new') New
+                option(value='likenew') Like New
+                option(value='used') used
+                option(value='poor') Poor
           .form-group
              label(for='location') Pickup Location:
              input(name='location')
