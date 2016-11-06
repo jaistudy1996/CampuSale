@@ -53,7 +53,25 @@ html
   // Details
   .details
     h4.header PRODUCT DETAILS
-    
+    #form
+      form.register(action='', method='post', name='registration')
+        fieldset
+          .form-group
+             label(for='Student') Name:
+             input(name='Student')
+          .form-group
+             label(for='Matric_no') Matric number:
+             input(name='Matric_no')
+          .form-group
+             label(for='Email') Email:
+             input(name='Email')
+          .form-group
+             label(for='Username') Username:
+             input(name='Username')
+          .form-group
+             label(for='Password') Password:
+             input(name='Password', type='password')
+          input.button(name='regbutton', type='button', value='Register')
     
     
     .title
