@@ -22,7 +22,7 @@ html
     font-family:arial;
     }
   // Navbar (sit on top)
-  .w3-top#sellingNav
+  #sellingNav.w3-top
     .control(tabindex='1')
       .btn
       i.icon-search.ion-search
@@ -87,20 +87,20 @@ html
       input#price(type='text', name='$')
       br
     .title
-      // Footer
-    footer.footer.w3-center
-      #copyright
-        p  © CampuSale Inc. 2016
-      .social_media
-        #facebook
-          img(src='images/facebook.png', alt='facebook')
-        #twitter
-          img(src='images/Twitter.png', alt='twitter')
-        #linkedin
-          img(src='images/linkedin.png', alt='linkedin')
-      #top
-        a.smoothScroll(href='#sellingNav')
-          input(type='image', src='images/top-button.png', name='top')
+  // Footer
+  footer.footer.w3-center
+    #copyright
+      p  © CampuSale Inc. 2016
+    .social_media
+      #facebook
+        img(src='images/facebook.png', alt='facebook')
+      #twitter
+        img(src='images/Twitter.png', alt='twitter')
+      #linkedin
+        img(src='images/linkedin.png', alt='linkedin')
+    #top
+      a.smoothScroll(href='#sellingNav')
+        input(type='image', src='images/top-button.png', name='top')
   script(src='http://code.jquery.com/jquery-1.11.2.min.js')
   script.
     // Change style of navbar on scroll
@@ -122,4 +122,4 @@ html
     $('.icon-close').click(function () {
     $('body').removeClass('mode-search');
     });
-    /*------------*/
+
