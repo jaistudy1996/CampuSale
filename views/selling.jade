@@ -57,19 +57,6 @@ html
       form.register(action='', method='post', name='registration')
         fieldset
           .form-group
-             label(for='title') Title:
-             input(name='title')
-          .form-group
-             label(for='price') Price:
-             input(name='price')
-          .form-group
-             label(for='location') Pickup Location:
-             input(name='location')
-          .form-group
-             label(for='Description') Description:
-             input(name='Description', type='Description')
-             
-          .form-group
              label(for='category') Category: 
              select#catagory(name='Select a category')
                 option(value='men') Men
@@ -78,6 +65,28 @@ html
                 option(value='electronics') Electronics
                 option(value='games') Video Games
                 option(value='movies') Movies and Music
+          .form-group
+             label(for='title') Title:
+             input(name='title')
+          .form-group
+             label(for='price') Price:
+             input(name='price')
+          .form-group
+             label(for='payment') Payment Option: 
+             select#catagory(name='Select payment type')
+                option(value='cash') Cash
+                option(value='women') Cardinal Cash
+                option(value='check') Check
+                option(value='paypal') Paypal
+                option(value='mo') Money Order
+          .form-group
+             label(for='location') Pickup Location:
+             input(name='location')
+          .form-group
+             label(for='Description') Description:
+             input(name='Description', type='Description')
+             
+
           input.button(name='regbutton', type='button', value='Add')
     
     
