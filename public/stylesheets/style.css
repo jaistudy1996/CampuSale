@@ -141,6 +141,9 @@ style.
   {
   float:right;
   }
+  .red {
+	  background-color: #e51837;
+  }
   /*Centering login sigup buttons*/
   .main-nav {
    margin: auto;
