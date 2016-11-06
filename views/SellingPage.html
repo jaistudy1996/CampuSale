@@ -483,25 +483,21 @@ ul.rig.columns-4 li {
 <div class="details">
   <p>DETAILS</p>
   <form action="action_page.php">
-    Title:<br>
-    <input id="title" type="text" name="ex. Tennis Shoes">
-    <br>
-	Catagory:<br>
-	<select id="catagory" name="Select a category">
-		<option value="men">Men</option>
-		<option value="women">Women</option>
-	    <option value="appliances">Appliances</option>
-	    <option value="electronics">Electronics</option>
-	    <option value="games">Video Games</option>
-	    <option value="movies">Movies and Music</option>
-	  </select>
-	  <br><br>
+  <div id="title">
+      <label>
+          Title:<br />
+          <input id="title" type="text" />
+	      Description:<br/>
+	      <input id="description" type="text" name="Describe your item here"/>
+       </label>
+
+
+  </div>
+
     Pickup Location:<br>
     <input id="location" type="text" name="ex. ACC main loby">
     <br>
-    Description:<br>
-    <input id="description" type="text" name="Describe your item here">
-    <br>
+	  
 	Payment:<br>
 	<select id="payment" name="Select payment method">
 
