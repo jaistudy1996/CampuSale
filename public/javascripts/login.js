@@ -13,11 +13,7 @@ function login(){
 	http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 	http.onreadystatechange = function() {
 		if(this.readyState == 4 && this.status == 200){
-			if(typeof http.resonseText == 'object'){
-				if(http.responseText.error == 1){
-					document.getElementById("index").innerHTML = http.responseText;
-				}
-			}
+			window.open(http.response, "_self");
 			console.log(typeof http.responseText);
 			console.log(http.responseText);
 		}
