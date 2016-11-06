@@ -97,8 +97,9 @@ html
              input(name='Description', type='Description')
              
 
-          .add_button
-          a#add(href='', <h6='') Add Item
+           form(action='/users/image', method='POST')
+             input(type='file', name='file' value="")
+             input(type='submit', name='Upload' value="Upload")
     
     
     .title
