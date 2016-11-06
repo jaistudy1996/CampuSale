@@ -60,6 +60,15 @@ html
              label(for='title') Title:
              input(name='title')
           .form-group
+             label(for='category') Category: 
+             select#catagory(name='Select a category')
+                option(value='men') Men
+                option(value='women') Women
+                option(value='appliances') Appliances
+                option(value='electronics') Electronics
+                option(value='games') Video Games
+                option(value='movies') Movies and Music
+          .form-group
              label(for='price') Price:
              input(name='price')
           .form-group
