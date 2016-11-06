@@ -1077,6 +1077,15 @@ hr{
 }
 /* End */
 
+/*listing page SELL Form */
+
+.sell_container {
+  	padding: 16px;
+	height:450px;
+}
+.details{
+	margin-top:5%;
+}
 #short_desc{
 	margin-top:35px;
 }
@@ -1102,7 +1111,7 @@ hr{
 	padding:15px;
 }
 
-#form {
+#sell_form {
     background-color: light grey;
     height: 600px;
     width: 600px;
@@ -1194,3 +1203,4 @@ select {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
+/*END*/
