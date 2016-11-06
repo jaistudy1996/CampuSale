@@ -10,6 +10,15 @@ style.
   font-variant: small-caps;
   padding-bottom: 25px;
   }
+
+  h4.header {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  font-variant: small-caps;
+  padding-bottom: 25px;
+  }
+
   li a {
   font-family: 'Alegreya', serif;
   font-size: 18px;
