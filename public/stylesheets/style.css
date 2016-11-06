@@ -1103,12 +1103,13 @@ hr{
 }
 
 #form {
-    background-color: #FFF;
+    background-color: light grey;
     height: 600px;
     width: 600px;
-/*    margin-right: auto;
+    margin-right: auto;
     margin-left: auto;
-    margin-top: 0px; */
+    margin-top: 0px;
+    margin-bottom:0px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     padding: 0px;
