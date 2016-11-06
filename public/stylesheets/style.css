@@ -1103,7 +1103,7 @@ hr{
 }
 
 #form {
-    background-color: #FFF;
+    background-color: lightgrey;
     height: 600px;
     width: 600px;
     margin-right: auto;
@@ -1118,7 +1118,7 @@ label {
     font-family: Georgia, "Times New Roman", Times, serif;
     font-size: 18px;
     color: #333;
-    height: 20px;
+    height: 25px;
     width: 200px;
     margin-top: 10px;
     margin-left: 10px;
@@ -1127,14 +1127,14 @@ label {
     float:left;
 }
 input {
-    height: 20px;
+    height: 25px;
     width: 300px;
     border: 1px solid #000;
     margin-top: 10px;
 }
 
 select {
-    height: 20px;
+    height: 25px;
     width: 300px;
     border: 1px solid #000;
     margin-top: 10px;
