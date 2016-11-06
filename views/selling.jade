@@ -43,49 +43,22 @@ html
           a(href='/sell') Sell
           a(href='/settings') Settings
           a(href='/logout') Logout
-  body
-  // Listing Details
-  .listing
-    p Listing Details
-  // Photos
-  .photos
-    p PHOTOS
-  // Details
-  .details
-    p DETAILS
-    form(action='action_page.php')
-      | Title:
-      br
-      input#title(type='text', name='ex. Tennis Shoes')
-      br
-      | 	Catagory:
-      br
-      select#catagory(name='Select a category')
-        option(value='men') Men
-        option(value='women') Women
-        option(value='appliances') Appliances
-        option(value='electronics') Electronics
-        option(value='games') Video Games
-        option(value='movies') Movies and Music
-      br
-      br
-      |     Pickup Location:
-      br
-      input#location(type='text', name='ex. ACC main loby')
-      br
-      |     Description:
-      br
-      input#description(type='text', name='Describe your item here')
-      br
-      | 	Payment:
-      br
-      select#payment(name='Select payment method')
-      br
-      br
-      |     Price:
-      br
-      input#price(type='text', name='$')
-      br
+ 
+       form.modal-content.animate(action='#')
+        .imgcontainer
+          span.close(onclick="document.getElementById('id02').style.display='none'", title='Close Modal') ×
+        .container
+          h1.w3-center  Welcome Cardinals!
+          input#signup1(type='text', placeholder='First name', name='fname', style='width:49%;', required='')
+          input#signup2(type='text', placeholder='Last name', name='lname', style='width:49%;', required='')
+          input#signup3(type='text', placeholder='Phone Number', name='phone', style='width:49%;', required='')
+          input#signup4(type='text', placeholder='Zip Code', name='zip', style='width:49%;', required='')
+          input#signup5(type='text', placeholder='uname@plattsburgh.edu', name='email', style='width:99%;', required='')
+          input#signup6(type='password', placeholder='Password', name='pass', style='width:99%;', required='')
+          input#signup7(type='password', placeholder='Confirm password', name='confirm_pass', style='width:99%;', required='')
+          button#signupButton(type='button', onclick='signup()') Signup
+        .container(style='background-color:#f1f1f1')
+          button.cancelbtn(type='button', onclick="document.getElementById('id02').style.display='none'") Cancel
     .title
       // Footer
   footer.w3-center.w3-dark-grey.w3-padding.w3-hover-red(style='margin-top:30px')
