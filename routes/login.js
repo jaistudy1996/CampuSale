@@ -30,7 +30,8 @@ router.post('/', function(req, res, next) {
 			res.status(404).send("Username/Password is incorrect");
 		}
 		if(result.length == 1){
-			res.render("listing");
+			console.log("length == 1");
+			res.send("/listing");
 		}	
 	});
 	//res.send("Response from server");
