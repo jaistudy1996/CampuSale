@@ -98,7 +98,7 @@ style.
   background-color: grey;
   color: black;
   border: 2px solid #555555;
-  margin-left: 60px;
+  margin-left: 50px;
   
   }
   .button:before {
@@ -1091,10 +1091,10 @@ hr{
 }
 
 .other_products{
-	margin: auto;
+	margin-top:350px;
 	width: 80%;
 	border: 3px solid green;
-	padding: 5px;
+	padding: 10px;
 	height:200px;
 }
 
