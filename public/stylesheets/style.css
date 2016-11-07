@@ -141,7 +141,7 @@ style.
   /*Semi-Transparent buttons*/
   .semi-transparent-button {
 	  background: #fff;
-	  background: rgba(128, 128, 128, 0.3);
+	  background: rgb(128, 128, 128);
 	  border-radius: 8px;
 	  color: #000000;
 	  transition: all 0.3s ease-out;
