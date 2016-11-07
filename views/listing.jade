@@ -2,6 +2,7 @@ doctype html
 html
   title CampuSale
   meta(name='viewport', content='width=device-width, initial-scale=1')
+  script(type="text/javascript", src="javascripts/listing.js")
   link(rel='stylesheet', href='http://www.w3schools.com/lib/w3.css')
   link(rel='stylesheet', type='text/css', href='stylesheets/style.css')
   link(rel='stylesheet', href='http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css')
@@ -40,10 +41,9 @@ html
               a(href='#') Price: High to Low
           .category_dropdown
             button.category_dropbtn Category
-            .category_dropdown-content
-              a(href='#') 1
-              a(href='#') 2
-              a(href='#') 3
+            #Category.category_dropdown-content
+              script.
+               category()
           .price_dropdown
             button.price_dropbtn Price
             .price_dropdown-content
