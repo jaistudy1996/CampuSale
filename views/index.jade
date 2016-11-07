@@ -84,7 +84,7 @@ html#index
       #howItWorks.w3-content.w3-container.w3-padding-64
         h3.header how it works
         p.w3-center
-          embed(src='videos/new_video.mp4', autostart='true', loop='true', height='338', width='600')
+          embed(id='video' src='videos/new_video.mp4', autostart='true', loop='true', height='338', width='600')
         p#text.w3-center Watch this video for more information. It's easy, fast, and fun!
     // Container (Our Team Section)
     #Back2
@@ -149,3 +149,24 @@ html#index
       modal.style.display = "none";
       }
       }
+        var videos = document.getElementsByTagName("video"),
+  fraction = 0.8;
+  function checkScroll() {
+  for(var i = 0; i < videos.length; i++) {
+  var video = videos[i];
+  var x = video.offsetLeft, y = video.offsetTop, w = video.offsetWidth, h = video.offsetHeight, r = x + w, //right
+  b = y + h, //bottom
+  visibleX, visibleY, visible;
+  visibleX = Math.max(0, Math.min(w, window.pageXOffset + window.innerWidth - x, r - window.pageXOffset));
+  visibleY = Math.max(0, Math.min(h, window.pageYOffset + window.innerHeight - y, b - window.pageYOffset));
+  visible = visibleX * visibleY / (w * h);
+  if (visible > fraction) {
+  video.play();
+  } else {
+  video.pause();
+  }
+  }
+  }
+  window.addEventListener('scroll', checkScroll, false);
+  window.addEventListener('resize', checkScroll, false);
+
