@@ -99,7 +99,7 @@ style.
   color: black;
   border: 2px solid #555555;
   margin-left: 50px;
-  opacity: 0.5;
+  
   }
   .button:before {
   content: "";
