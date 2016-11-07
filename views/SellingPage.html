@@ -451,6 +451,30 @@ ul.rig.columns-4 li {
 	margin-left:3%;
 	width:50%;
 }
+
+.texts{
+    display: -webkit-flex;
+    display: flex;
+}
+.item{
+	margin-left:3%;
+	
+}
+#title
+{	
+	float: left;
+	margin-left:3%;
+	margin-top:5%;
+	width:25%;
+	height:3%;
+}
+#description
+{
+	margin-left:3%;
+	margin-top:5%;
+	width:25%;
+	height:40%;
+}
 </style>
 
 
@@ -482,44 +506,56 @@ ul.rig.columns-4 li {
 <!-- Details -->
 <div class="details">
   <p>DETAILS</p>
-  <form action="action_page.php">
-  <div id="title">
-      <label>
-          Title:<br />
+    <div class="texts">
+  		<div class="item">Title</div>
           <input id="title" type="text" />
-	      Description:<br/>
-	      <input id="description" type="text" name="Describe your item here"/>
-       </label>
+  		<div class="item">Description</div>
+          <input id="description" type="text" name="Describe your item here"/>
+</div>
+	    <div id= "category">
+  	  <label>
+  		  Category:<br />
+  		  <select id="category" name="Select a category">
+  			  <option value="men">Men</option>
+  			  <option value="women">Women</option>
+  		      <option value="appliances">Appliances</option>
+  		      <option value="electronics">Electronics</option>
+  		      <option value="games">Video Games</option>
+  		      <option value="movies">Movies and Music</option>
+  		  </select>
+	 
+  	  </label>
+    </div>
+    <div id= "category">
+  	  <label>
+      Pickup Location:<br/>
+      <input id="location" type="text" name="ex. ACC main loby">
+      <br>
 
+  	Payment:<br>
+  	<select id="payment" name="Select payment method">
 
-  </div>
-
-    Pickup Location:<br>
-    <input id="location" type="text" name="ex. ACC main loby">
-    <br>
+  	  </select>
+  	  <br><br>
+      Price:<br>
+      <input id="price" type="text" name="$">
+      <br>
+      <div class="condition">
+   		<div class="item">Condition</div>
+	</br>
+	 	  <form>
+	 		<div calss="condition">
+	 	    <input type="radio" name="condition" value="new" checked> New
+	 	    <input type="radio" name="condition" value="likenew"> Like New
+	 	    <input type="radio" name="condition" value="used"> Used
+	 		<input type="radio" name="condition" value="used"> Poor
+	 	  </form>
+     </div>
 	  
-	Payment:<br>
-	<select id="payment" name="Select payment method">
-
-	  </select>
-	  <br><br>
-    Price:<br>
-    <input id="price" type="text" name="$">
-    <br>
-
-   
-  </form>
-  
-  
-  <div class="title">
-  </div>
- 
 </div>
 
 <!-- Footer -->
-<footer class="w3-center w3-dark-grey w3-padding-48 w3-hover-red">
-  <p>footer</p>
-</footer>
+
  
 <script>
 // Change style of navbar on scroll
