@@ -2,19 +2,71 @@ doctype html
 html
   title CampuSale
   meta(name='viewport', content='width=device-width, initial-scale=1')
-  link(rel='stylesheet', href='http://www.w3schools.com/lib/w3.css')
-  link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Lato')
-  link(rel='stylesheet', href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css')
-  //script(type='text/javascript', <script='', src='javascripts/smoothscroll.js')
+  script(type="text/javascript", src="javascripts/listing.js")
+  link(rel='stylesheet', href='stylesheets/w3.css')
   link(rel='stylesheet', type='text/css', href='stylesheets/style.css')
   link(rel='stylesheet', href='http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css')
-  body#listing_page
+  body#listin_page
     // Navbar (sit on top)
-    .w3-top
+    #id03.modal
+      form.modal-content.animate(action='#')
+        .imgcontainer
+          span.close(onclick="document.getElementById('id03').style.display='none'", title='Close Modal') ×
+        .sell_container
+          .details
+            #sell_form
+              form.register(action='', method='post', name='registration')
+                fieldset
+                  .form-group
+                    label(for='category') Category: 
+                    select#catagory(name='Select a category')
+                      option(value='select') Select a category
+                      option(value='men') Men
+                      option(value='women') Women
+                      option(value='appliances') Appliances
+                      option(value='electronics') Electronics
+                      option(value='games') Video Games
+                      option(value='movies') Movies and Music
+                  .form-group
+                    label(for='title') Title:
+                    input.sellInput(name='title')
+                  .form-group
+                    label(for='price') Price:
+                    input.sellInput(name='price')
+                  .form-group
+                    label(for='payment') Payment Option: 
+                    select#payment(name='Select payment type')
+                      option(value='payment') Select a payment type
+                      option(value='cash') Cash
+                      option(value='women') Cardinal Cash
+                      option(value='check') Check
+                      option(value='paypal') Paypal
+                      option(value='mo') Money Order
+                  .form-group
+                    label(for='Condition') Item Condition: 
+                    select#condition(name='condition')
+                      option(value='condition') Choose item condition
+                      option(value='new') New
+                      option(value='likenew') Like New
+                      option(value='used') used
+                      option(value='poor') Poor
+                  .form-group
+                    label(for='location') Pickup Location:
+                    input.sellInput(name='location')
+                  .form-group
+                    label(for='Description') Description:
+                    input.sellInput(name='Description', type='Description')
+                  form(action='/users/image', method='POST')
+                    input.sellInput(type='file', name='file', value='')
+                  form
+                    input.sellInput(type='submit', name='Upload', value='Add')
+    // Navbar (sit on top)
+    .w3-top#listingNav
       .control(tabindex='1')
         .btn
         i.icon-search.ion-search
       i.icon-close.ion-ios-close-empty
+<<<<<<< HEAD
        .form
          input.input-search(placeholder='Commencer à écrire', type='text')
       ul.w3-black.nav
@@ -70,11 +122,78 @@ html
             img(src='images/img-6.jpg')
             h3 Titre de l'image
             p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+=======
+      .form
+        input.input-search(placeholder='Start Typing', type='text')
+      ul.w3-black.nav
+        li.navLink
+          a(href='/listing')
+            img(src='images/logo.png', alt='logo')
+            span#name CAMPUSALE
+        span(style='float:right; cursor:pointer; margin-top:20px;', onclick="document.getElementById('id03').style.display='block'") Sell
+        li.dropdown(style='float:right')
+          a.dropbtn(href='#')
+            | Username
+            img#dropdown(src='images/drop_down.png', alt='v')
+          .dropdown-content
+            a(href='/profile') Profile
+            a(href='/selling') Sell
+            a(href='/settings') Settings
+            a(href='/logout') Logout
+          
+    .menu
+      #main
+        .filter(style='background-color:lightgrey;')
+          .sort_dropdown
+            button.sort_dropbtn Sort
+            .sort_dropdown-content
+              a(href='#') Newest
+              a(href='#') Price: Low to High
+              a(href='#') Price: High to Low
+          .category_dropdown
+            button.category_dropbtn Category
+            #Category.category_dropdown-content
+              script.
+               category()
+          .price_dropdown
+            button.price_dropbtn Price
+            .price_dropdown-content
+              a(href='#')
+                #price_range
+                  input#min(name='minprice', value='$0')
+                  e(style='margin-left:15px') to
+                  input#max(name='maxprice', value='$100')
+      ul.rig.columns-4
+        li
+          img(src='images/img-1.jpg')
+          h3 Image Title
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+        li
+          img(src='images/img-2.jpg')
+          h3 Image Title
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+        li
+          img(src='images/img-3.jpg')
+          h3 Image Title
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+        li
+          img(src='images/img-4.jpg')
+          h3 Image Title
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+        li
+          img(src='images/img-5.jpg')
+          h3 Image Title
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+        li
+          img(src='images/img-6.jpg')
+          h3 Image Title
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+>>>>>>> test2
     // Footer
     footer.footer.w3-center
       #copyright
         p  © CampuSale Inc. 2016
-      .social_media 
+      .social_media
         #facebook
           img(src='images/facebook.png', alt='facebook')
         #twitter
@@ -82,17 +201,14 @@ html
         #linkedin
           img(src='images/linkedin.png', alt='linkedin')
       #top
+<<<<<<< HEAD
         a.smoothScroll(href='#home')
           input(type='image', src='images/top-buttonFrench.png', name='top')
+=======
+        a.smoothScroll(href='#listingNav')
+          input(type='image', src='images/top-button.png', name='top')
+>>>>>>> test2
     script(src='http://code.jquery.com/jquery-1.11.2.min.js')
-    script.
-      $('.control').click(function () {
-      $('body').addClass('mode-search');
-      $('.input-search').focus();
-      });
-      $('.icon-close').click(function () {
-      $('body').removeClass('mode-search');
-      });
     script.
       // Change style of navbar on scroll
       window.onscroll = function() {myFunction()};
@@ -105,12 +221,18 @@ html
       navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " w3-black";
       }
       }
+      /*Search Function*/
+      $('.control').click(function () {
+      $('body').addClass('mode-search');
+      $('.input-search').focus();
+      });
+      $('.icon-close').click(function () {
+      $('body').removeClass('mode-search');
+      });
+      /*------------*/
       function openNav() {
       document.getElementById("mySidenav").style.width = "250px";
-      document.getElementById("main").style.marginLeft = "250px";
       }
       function closeNav() {
       document.getElementById("mySidenav").style.width = "0";
-      document.getElementById("main").style.marginLeft= "0";
       }
-

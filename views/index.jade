@@ -1,9 +1,9 @@
 doctype html
-html
+html#index
   head
     title CampSale
     meta(name='viewport', content='width=device-width, initial-scale=1')
-    link(rel='stylesheet', href='http://www.w3schools.com/lib/w3.css')
+    link(rel='stylesheet', href='stylesheets/w3.css')
     script(type='text/javascript', src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js')
     script(type='text/javascript', src='javascripts/smoothscroll.js')
     script(type='text/javascript', src='javascripts/login.js')
@@ -136,7 +136,7 @@ html
       function myFunction() {
       var navbar = document.getElementById("myNavbar");
       if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-      navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " w3-red";
+      navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " red";
       } else {
       //navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-red", "");
       navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " w3-black";

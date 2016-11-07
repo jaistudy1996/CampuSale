@@ -13,8 +13,12 @@ function login(){
 	http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 	http.onreadystatechange = function() {
 		if(this.readyState == 4 && this.status == 200){
-			document.getElementById("loginButton").innerHTML = "Login Success";
+			window.open(http.response, "_self");
+			console.log(typeof http.responseText);
 			console.log(http.responseText);
+		}
+		if(this.readyState == 4 && this.status == 404){
+			document.getElementById("loginButton").innerHTML = http.responseText;
 		}
 	}
 	http.send(params);
