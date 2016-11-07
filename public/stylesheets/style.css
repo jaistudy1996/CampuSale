@@ -1125,7 +1125,7 @@ hr{
     text-align:center;
 }
 label {
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Alegreya', serif;
     font-size: 18px;
     color: #333;
     height: 25px;
@@ -1135,12 +1135,6 @@ label {
     text-align: right;
     margin-right:15px;
     float:left;
-}
-input {
-    height: 25px;
-    width: 300px;
-    border: 1px solid #000;
-    margin-top: 10px;
 }
 
 select {
