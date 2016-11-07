@@ -29,10 +29,10 @@ html
                       option(value='movies') Movies and Music
                   .form-group
                     label(for='title') Title:
-                    input(name='title')
+                    input.sellInput(name='title')
                   .form-group
                     label(for='price') Price:
-                    input(name='price')
+                    input.sellInput(name='price')
                   .form-group
                     label(for='payment') Payment Option: 
                     select#payment(name='Select payment type')
@@ -52,14 +52,14 @@ html
                       option(value='poor') Poor
                   .form-group
                     label(for='location') Pickup Location:
-                    input(name='location')
+                    input.sellInput(name='location')
                   .form-group
                     label(for='Description') Description:
-                    input(name='Description', type='Description')
+                    input.sellInput(name='Description', type='Description')
                   form(action='/users/image', method='POST')
-                    input(type='file', name='file', value='')
+                    input.sellInput(type='file', name='file', value='')
                   form
-                    input(type='submit', name='Upload', value='Add')
+                    input.sellInput(type='submit', name='Upload', value='Add')
     // Navbar (sit on top)
     .w3-top#listingNav
       .control(tabindex='1')
