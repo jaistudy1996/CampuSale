@@ -451,6 +451,30 @@ ul.rig.columns-4 li {
 	margin-left:3%;
 	width:50%;
 }
+
+.texts{
+    display: -webkit-flex;
+    display: flex;
+}
+.item{
+	margin-left:3%;
+	
+}
+#title
+{	
+	float: left;
+	margin-left:3%;
+	margin-top:5%;
+	width:25%;
+	height:3%;
+}
+#description
+{
+	margin-left:3%;
+	margin-top:5%;
+	width:25%;
+	height:40%;
+}
 </style>
 
 
@@ -482,7 +506,12 @@ ul.rig.columns-4 li {
 <!-- Details -->
 <div class="details">
   <p>DETAILS</p>
-  <form action="action_page.php">
+    <div class="texts">
+  		<div class="item">Title</div>
+          <input id="title" type="text" />
+  		<div class="item">Description</div>
+          <input id="description" type="text" name="Describe your item here"/>
+</div>
 
 	  
 	  
