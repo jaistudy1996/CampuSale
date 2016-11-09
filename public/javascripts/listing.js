@@ -20,7 +20,6 @@ function category(){
 
 function addLinks(object){
 	for(var i = 0; i < object.length; i++){
-		console.log(object[i]);
 		document.getElementById("Category").innerHTML += object[i].tagName.link(object[i].tagID);
 	}
 }
