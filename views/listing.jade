@@ -66,24 +66,23 @@ html
         .btn
         i.icon-search.ion-search
       i.icon-close.ion-ios-close-empty
-      .form
-        input.input-search(placeholder='Start Typing', type='text')
+
+       .form
+         input.input-search(placeholder='Commencer à écrire', type='text')
       ul.w3-black.nav
-        li.navLink
-          a(href='/listing')
-            img(src='images/logo.png', alt='logo')
-            span#name CAMPUSALE
-        span(style='float:right; cursor:pointer; margin-top:20px;', onclick="document.getElementById('id03').style.display='block'") Sell
-        li.dropdown(style='float:right')
-          a.dropbtn(href='#')
-            | Username
-            img#dropdown(src='images/drop_down.png', alt='v')
-          .dropdown-content
-            a(href='/profile') Profile
-            a(href='/selling') Sell
-            a(href='/settings') Settings
-            a(href='/logout') Logout
-          
+          li.navLink
+            a(href='/listing')
+              img(src='images/logo.png', alt='logo')
+              span#name CAMPUSALE
+          li.dropdown(style='float:right')
+            a.dropbtn(href='#')
+              | Nom d'utilisateur
+              img#dropdown(src='images/drop_down.png', alt='v')
+            .dropdown-content
+              a(href='/profile') Profil
+              a(href='/sell') Vendre
+              a(href='/settings') Paramètres
+              a(href='/logout') Se déconnecter
     .menu
       #main
         .filter(style='background-color:lightgrey;')
