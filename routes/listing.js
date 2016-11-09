@@ -19,4 +19,16 @@ router.get('/', function(req, res, next){
 	res.render("listing", {});
 });
 
+router.post("/tags", function(req, res, next){
+	db.query("SELECT * FROM tags", function(err, result){
+		if(err){
+			console.log(err);
+		}
+		else{
+			console.log(typeof result);
+			res.send(result);
+		}
+	});
+});
+
 module.exports = router;
