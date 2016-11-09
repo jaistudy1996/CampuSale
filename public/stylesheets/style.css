@@ -98,7 +98,7 @@ style.
   background-color: grey;
   color: black;
   border: 2px solid #555555;
-  margin-left: 80px;
+  margin-left: 90px;
   
   }
   .button:before {
@@ -223,7 +223,7 @@ style.
   }
   #scroll {
 	width: 100%;
-	margin-left: 25px;
+	margin-left: 45px;
   }
   /*Fix baxkground color of sections*/
   #Back1 {
