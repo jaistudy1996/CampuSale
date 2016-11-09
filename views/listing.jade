@@ -6,7 +6,7 @@ html
   link(rel='stylesheet', href='stylesheets/w3.css')
   link(rel='stylesheet', type='text/css', href='stylesheets/style.css')
   link(rel='stylesheet', href='http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css')
-  body#listin_page
+   body#listin_page
     // Navbar (sit on top)
     #id03.modal
       form.modal-content.animate(action='#')
@@ -66,63 +66,6 @@ html
         .btn
         i.icon-search.ion-search
       i.icon-close.ion-ios-close-empty
-<<<<<<< HEAD
-       .form
-         input.input-search(placeholder='Commencer à écrire', type='text')
-      ul.w3-black.nav
-          li.navLink
-            a(href='/listing')
-              img(src='images/logo.png', alt='logo')
-              span#name CAMPUSALE
-          li.dropdown(style='float:right')
-            a.dropbtn(href='#')
-              | Nom d'utilisateur
-              img#dropdown(src='images/drop_down.png', alt='v')
-            .dropdown-content
-              a(href='/profile') Profil
-              a(href='/sell') Vendre
-              a(href='/settings') Paramètres
-              a(href='/logout') Se déconnecter
-    .menu
-      #mySidenav.sidenav
-        a.closebtn(href='javascript:void(0)', onclick='closeNav()') ×
-        form#radio(action='')
-          input(type='radio', name='gender', value='male')
-          |  Mâle
-          br
-          input(type='radio', name='gender', value='female')
-          |  Femelle
-          br
-          input(type='radio', name='gender', value='other')
-          |  Autre
-      #main
-        span(style='font-size:30px;cursor:pointer', onclick='openNav()') ☰ filtres
-        ul.rig.columns-4
-          li
-            img(src='images/img-1.jpg')
-            h3 Titre de l'image
-            p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
-          li
-            img(src='images/img-2.jpg')
-            h3 Titre de l'image
-            p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
-          li
-            img(src='images/img-3.jpg')
-            h3 Titre de l'image
-            p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
-          li
-            img(src='images/img-4.jpg')
-            h3 Titre de l'image
-            p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
-          li
-            img(src='images/img-5.jpg')
-            h3 Image Title
-            p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
-          li
-            img(src='images/img-6.jpg')
-            h3 Titre de l'image
-            p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
-=======
       .form
         input.input-search(placeholder='Start Typing', type='text')
       ul.w3-black.nav
@@ -188,7 +131,6 @@ html
           img(src='images/img-6.jpg')
           h3 Image Title
           p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
->>>>>>> test2
     // Footer
     footer.footer.w3-center
       #copyright
@@ -201,13 +143,8 @@ html
         #linkedin
           img(src='images/linkedin.png', alt='linkedin')
       #top
-<<<<<<< HEAD
-        a.smoothScroll(href='#home')
-          input(type='image', src='images/top-buttonFrench.png', name='top')
-=======
         a.smoothScroll(href='#listingNav')
           input(type='image', src='images/top-button.png', name='top')
->>>>>>> test2
     script(src='http://code.jquery.com/jquery-1.11.2.min.js')
     script.
       // Change style of navbar on scroll
@@ -235,4 +172,4 @@ html
       }
       function closeNav() {
       document.getElementById("mySidenav").style.width = "0";
-      }
+}
