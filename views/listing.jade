@@ -76,30 +76,30 @@ html
         span(style='float:right; cursor:pointer; margin-top:20px;', onclick="document.getElementById('id03').style.display='block'") Sell
         li.dropdown(style='float:right')
           a.dropbtn(href='#')
-            | Username
+            | Nom d'utilisateur
             img#dropdown(src='images/drop_down.png', alt='v')
           .dropdown-content
-            a(href='/profile') Profile
-            a(href='/selling') Sell
-            a(href='/settings') Settings
-            a(href='/logout') Logout
+            a(href='/profile') Profil
+            a(href='/selling') Vendre
+            a(href='/settings') Paramètres
+            a(href='/logout') Se déconnecter
           
     .menu
       #main
         .filter(style='background-color:lightgrey;')
           .sort_dropdown
-            button.sort_dropbtn Sort
+            button.sort_dropbtn Trier
             .sort_dropdown-content
-              a(href='#') Newest
-              a(href='#') Price: Low to High
-              a(href='#') Price: High to Low
+              a(href='#') Date
+              a(href='#') Prix: bas au plus élevé
+              a(href='#') Prix: par ordre décroissant
           .category_dropdown
-            button.category_dropbtn Category
+            button.category_dropbtn Catégorie
             #Category.category_dropdown-content
               script.
                category()
           .price_dropdown
-            button.price_dropbtn Price
+            button.price_dropbtn Prix
             .price_dropdown-content
               a(href='#')
                 #price_range
@@ -109,27 +109,27 @@ html
       ul.rig.columns-4
         li
           img(src='images/img-1.jpg')
-          h3 Image Title
+          h3 Titre de l'image
           p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
         li
           img(src='images/img-2.jpg')
-          h3 Image Title
+          h3 Titre de l'image
           p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
         li
           img(src='images/img-3.jpg')
-          h3 Image Title
+          h3 Titre de l'image
           p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
         li
           img(src='images/img-4.jpg')
-          h3 Image Title
+          h3 Titre de l'image
           p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
         li
           img(src='images/img-5.jpg')
-          h3 Image Title
+          h3 Titre de l'image
           p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
         li
           img(src='images/img-6.jpg')
-          h3 Image Title
+          h3 Titre de l'image
           p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
     // Footer
     footer.footer.w3-center

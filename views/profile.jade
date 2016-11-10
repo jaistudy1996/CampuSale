@@ -6,7 +6,7 @@ html(lang='en')
     link(rel='stylesheet', type='text/css', href='stylesheets/style.css')
     script(type='text/javascript', src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js')
     script(type='text/javascript', src='javascripts/smoothscroll.js')
-    title  Profile - CampuSale 
+    title  Profil - CampuSale 
   body
     .profile
       // ---START OF PROFILE PAGE---
@@ -19,13 +19,13 @@ html(lang='en')
               |  CAMPUSALE
           li.dropdown(style='float:right')
             a.dropbtn(href='#')
-              | Username 
+              | Nom d'utilisateur
               img#dropdown(src='images/drop_down.png', alt='v')
             .dropdown-content
-              a(href='/profile') Profile
-              a(href='/selling') Sell
-              a(href='/settings') Settings
-              a(href='/logout') Logout
+              a(href='/profile') Profil
+              a(href='/selling') Vendre
+              a(href='/settings') Paramètres
+              a(href='/logout') Se déconnecter
       // ---END OF NAV---
       .head-container
         // ---START OF USER INFO---
@@ -39,7 +39,7 @@ html(lang='en')
               h5
                 | @mhilp001
                 // <%= username %>
-            p Personal Message box
+            p Message personnel Box
           div
             img#rating(src='images/rating.png', alt='rating')
       .body-content
@@ -51,39 +51,39 @@ html(lang='en')
                 span
                   u
                     // <%num active items%>
-                    | Items for Sale
+                    | Articles à vendre
             li
               a.inactive(href='profile/<%username%>')
                 span
                   u
                     // <%num active items%>
-                    | Items Sold
+                    | Objets vendus
         .closet-items
           span
             ul.rig.columns-4
               li
                 img(src='images/img-1.jpg')
-                h3 Image Title
+                h3 Titre de l'image
                 p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
               li
                 img(src='images/img-2.jpg')
-                h3 Image Title
+                h3 Titre de l'image
                 p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
               li
                 img(src='images/img-3.jpg')
-                h3 Image Title
+                h3 Titre de l'image
                 p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
               li
                 img(src='images/img-4.jpg')
-                h3 Image Title
+                h3 Titre de l'image
                 p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
               li
                 img(src='images/img-5.jpg')
-                h3 Image Title
+                h3 Titre de l'image
                 p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
               li
                 img(src='images/img-6.jpg')
-                h3 Image Title
+                h3 Titre de l'image
                 p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
       // </div>
     // Footer
@@ -99,7 +99,7 @@ html(lang='en')
           img(src='images/linkedin.png', alt='linkedin')
       #top
         a.smoothScroll(href='#profileNav')
-          input(type='image', src='images/top-button.png', name='top')
+          input(type='image', src='images/top-buttonFrench.png', name='top')
       // ---END OF LISTINGS---
     // ---END OF USER INFO---
     // ---END OF PROFILE PAGE---

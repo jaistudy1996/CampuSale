@@ -20,19 +20,20 @@ html#index
           span.close(onclick="document.getElementById('id01').style.display='none'", title='Close Modal') ×
         .container
           label
-            b Username
+            b Nom d'utilisateur
           input#uname(type='text', placeholder='uname@plattsburgh.edu', name='uname', required='')
           label
-            b Password
-          input#psw(type='password', placeholder='Enter Password', name='psw', required='')
-          button#loginButton(type='button', onclick='login()') Login
+            b Mot de passe
+          input#psw(type='password', placeholder='Entrer le mot de passe', name='psw', required='')
+          button#loginButton(type='button', onclick='login()') S'identifier
           input(type='checkbox', checked='checked')
-          |  Remember me
+          |  Souviens-toi de moi
         .container(style='background-color:#f1f1f1')
-          button.cancelbtn(type='button', onclick="document.getElementById('id01').style.display='none'") Cancel
+          button.cancelbtn(type='button', onclick="document.getElementById('id01').style.display='none'") Annuler
+
           span.psw
-            | Forgot 
-            a(href='#') password?
+            | Oublié 
+            a(href='#') mot de passe?
     // Login Overlay Ending
     // Signup Overlay
     #id02.modal
@@ -40,17 +41,17 @@ html#index
         .imgcontainer
           span.close(onclick="document.getElementById('id02').style.display='none'", title='Close Modal') ×
         .container
-          h1.w3-center  Welcome Cardinals!
-          input#signup1(type='text', placeholder='First name', name='fname', style='width:49%;', required='')
-          input#signup2(type='text', placeholder='Last name', name='lname', style='width:49%;', required='')
-          input#signup3(type='text', placeholder='Phone Number', name='phone', style='width:49%;', required='')
-          input#signup4(type='text', placeholder='Zip Code', name='zip', style='width:49%;', required='')
+          h1.w3-center  Bienvenue Cardinals!
+          input#signup1(type='text', placeholder='Prénom', name='fname', style='width:49%;', required='')
+          input#signup2(type='text', placeholder='Nom de famille', name='lname', style='width:49%;', required='')
+          input#signup3(type='text', placeholder='Numéro de téléphone', name='phone', style='width:49%;', required='')
+          input#signup4(type='text', placeholder='Code postal', name='zip', style='width:49%;', required='')
           input#signup5(type='text', placeholder='uname@plattsburgh.edu', name='email', style='width:99%;', required='')
-          input#signup6(type='password', placeholder='Password', name='pass', style='width:99%;', required='')
-          input#signup7(type='password', placeholder='Confirm password', name='confirm_pass', style='width:99%;', required='')
-          button#signupButton(type='button', onclick='signup()') Signup
+          input#signup6(type='password', placeholder='Mot de passe', name='pass', style='width:99%;', required='')
+          input#signup7(type='password', placeholder='Confirmez le mot de passe', name='confirm_pass', style='width:99%;', required='')
+          button#signupButton(type='button', onclick='signup()') S'inscrire
         .container(style='background-color:#f1f1f1')
-          button.cancelbtn(type='button', onclick="document.getElementById('id02').style.display='none'") Cancel
+          button.cancelbtn(type='button', onclick="document.getElementById('id02').style.display='none'") Annuler
     // Signup Overlay Ending
     // Navbar (sit on top)
     .w3-top
@@ -59,11 +60,11 @@ html#index
           li#campusaleLink(style='float:left')
             a.w3-padding-large.smoothScroll(href='#home') CAMPUSALE
           li#contactUsLink(style='float:right')
-            a.w3-padding-large.smoothScroll(href='#contactUs') Contact Us
+            a.w3-padding-large.smoothScroll(href='#contactUs') Contactez nous
           li(style='float:right')
-            a.w3-padding-large.smoothScroll(href='#OurTeam') About
+            a.w3-padding-large.smoothScroll(href='#OurTeam') Sur
           li(style='float:right')
-            a.w3-padding-large.smoothScroll(href='#howItWorks') Learn More
+            a.w3-padding-large.smoothScroll(href='#howItWorks') Apprendre encore plus
     // First Parallax Image
     #home.bgimg-1.w3-opacity.w3-display-container
       #content.w3-display-middle(style='white-space:nowrap;')
@@ -71,25 +72,25 @@ html#index
           | campu
           span#S s
           | ale
-        h4.message  a sales platform for your college 
+        h4.message  une plate-forme de vente pour votre collège 
         nav.main-nav
-          button.button.button1.semi-transparent-button(type='button', onclick="document.getElementById('id01').style.display='block'") Login
-          button#button2.button.button2.semi-transparent-button(type='button', onclick="document.getElementById('id02').style.display='block'") Signup
+          button.button.button1.semi-transparent-button(type='button', onclick="document.getElementById('id01').style.display='block'") S'identifier
+          button#button2.button.button2.semi-transparent-button(type='button', onclick="document.getElementById('id02').style.display='block'") S'inscrire
       #more.w3-display-middle
-        p#scrollText.w3-center  Scroll for More 
+        p#scrollText.w3-center  Faites défiler pour Plus
         a#scroll.smoothScroll(href='#howItWorks')
           img(src='images/downarrow.png', alt='V', width='40', height='20')
     // Container (How it works! Section)
     #Back1
       #howItWorks.w3-content.w3-container.w3-padding-64
-        h3.header how it works
+        h3.header Comment cela fonctionne
         p.w3-center
           embed(src='videos/new_video.mp4', autostart='true', loop='true', height='338', width='600')
-        p#text.w3-center Watch this video for more information. It's easy, fast, and fun!
+        p#text.w3-center Regardez cette vidéo pour plus d'informations. Il est facile, rapide et amusant!
     // Container (Our Team Section)
     #Back2
       #OurTeam.w3-content.w3-container.w3-padding-64
-        h3.header our team
+        h3.header Notre équipe
         #teamPhoto.w3-center
           img(src='images/teamPhoto.jpg', alt='team photo')
         // Hide this text on small devices
@@ -106,15 +107,15 @@ html#index
         h3.header contact
         .w3-row.w3-padding-64
           .w3-col.m6.w3-margin-bottom
-            img(src='images/bird.png', style='width:57%; margin-bottom: 45px; margin-left: 50px;')
+            img(src='images/birdFrench.png', style='width:57%; margin-bottom: 45px; margin-left: 50px;')
           .w3-col.m6(style='float:right')
             .w3-row-padding(style='margin:0 -16px 8px -16px')
               .w3-half
-                input.w3-input.w3-border(type='text', placeholder='Name')
+                input.w3-input.w3-border(type='text', placeholder='Prénom')
               .w3-half
                 input.w3-input.w3-border(type='text', placeholder='Email')
-            input.w3-input.w3-border(type='text', placeholder='Comment')
-            button.w3-btn.w3-section.w3-right(style='padding-top: 15px; padding-bottom: 15px') SEND
+            input.w3-input.w3-border(type='text', placeholder='Commentaire')
+            button.w3-btn.w3-section.w3-right(style='padding-top: 15px; padding-bottom: 15px') ENVOYER
     // Footer
     footer.footer.w3-center
       #copyright
@@ -128,7 +129,7 @@ html#index
           img(src='images/linkedin.png', alt='linkedin')
       #top
         a.smoothScroll(href='#home')
-          input(type='image', src='images/top-button.png', name='top')
+          input(type='image', src='images/top-buttonFrench.png', name='top')
     script.
       // Change style of navbar on scroll
       window.onscroll = function() {myFunction()};

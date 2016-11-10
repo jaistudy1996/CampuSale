@@ -25,13 +25,13 @@ html
             span#name CAMPUSALE
         li.dropdown(style='float:right')
           a.dropbtn(href='#')
-            | Username
+            | Nom d'utilisateur
             img#dropdown(src='images/drop_down.png', alt='v')
           .dropdown-content
-            a(href='/profile') Profile
-            a(href='/selling') Sell
-            a(href='/settings') Settings
-            a(href='/logout') Logout
+            a(href='/profile') Profil
+            a(href='/selling') Vendre
+            a(href='/settings') Paramètres
+            a(href='/logout') Se déconnecter
     .container_item
       .other_images
         | image1
@@ -50,24 +50,25 @@ html
           });
       .product_info
         #left_1
-          h6 Name of the Product
-          h6#short_desc  Short Description 
+          h6 Nom du Produit
+          h6#short_desc  brève description
         #right_1
-          h6 Price
+          h6 Prix
         hr
         #left(style='float:left;')
-          h6#seller_text Seller
+          h6#seller_text Vendeur
           img(src='images/profile.png', style='width:100px;height:100px;margin-left:25px;margin-top:5px;')
           #about_seller(style='float:right;margin-right:80px;')
-            h6 Name
-            h6(style='margin-top:25px;') Rating
+            h6 Prénom
+            h6(style='margin-top:25px;') Évaluation
         #right(style='float:right;')
           h6#condition_text Condition
-          h6#pickup_text(style='margin-top:58px;') Pickup Location
+          h6#pickup_text(style='margin-top:58px;') Lieu de ramassage
+
         .buy_button
-          a#buy(href='', <h6='') Buy
+          a#buy(href='', <h6='') Acheter
     .other_products
-      | People also like
+      | Les gens aiment aussi
     // Footer
     footer.footer.w3-center(style='margin-top:30px')
       #copyright
