@@ -161,7 +161,7 @@ style.
   /*How it works background*/
   #howItWorks {
   height: 660px;
-  background-color: #7D1935;
+  background-color: lightgrey;
   padding-right: 0px;
   padding-left: 0px;
   }
@@ -227,7 +227,7 @@ style.
   }
   /*Fix baxkground color of sections*/
   #Back1 {
-  	  background-color: #7D1935;
+  	  background-color: lightgrey;
 	  
   }
   #Back2 {
