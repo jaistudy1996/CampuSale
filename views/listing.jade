@@ -73,8 +73,6 @@ html
           a(href='/listing')
             img(src='images/logo.png', alt='logo')
             span#name CAMPUSALE
-        span(style='float:right; cursor:pointer; margin-top:20px;', onclick="document.getElementById('id03').style.display='block'")
-          img(src='images/sell.png' alt='sell')
         li.dropdown(style='float:right')
           a.dropbtn(href='#')
             | Username
@@ -84,6 +82,8 @@ html
             a(href='/selling') Sell
             a(href='/settings') Settings
             a(href='/logout') Logout
+        span(style='float:right; cursor:pointer;', onclick="document.getElementById('id03').style.display='block'")
+          img(src='images/sell.png' alt='sell')
           
     .menu
       #main
