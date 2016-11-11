@@ -82,7 +82,9 @@ html
             a(href='/selling') Sell
             a(href='/settings') Settings
             a(href='/logout') Logout
-        span(style='float:right; cursor:pointer;', onclick="document.getElementById('id03').style.display='block'")
+        button#sell_span
+          span(onclick="document.getElementById('id03').style.display='block'", style='width:auto;') Sell
+          
           img(src='images/sell.png' alt='sell')
           
     .menu
