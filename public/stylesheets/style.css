@@ -227,7 +227,9 @@ style.
   }
   /*Fix baxkground color of sections*/
   #Back1 {
-  background-color: #d7d7d7;
+	  opacity: 0.5;
+  	  background-color: #d7d7d7;
+	  
   }
   #Back2 {
   background-color: #898989;
