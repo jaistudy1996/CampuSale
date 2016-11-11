@@ -12,7 +12,7 @@ CREATE TABLE items (
   PRIMARY KEY (itemID),
   FOREIGN KEY(sellerID) REFERENCES seller(sellerID),
   FOREIGN KEY(paymentType) REFERENCES payment(paymentID),
-  FORRIGN KEY(categoryID) REFERENCES category(categoryID)
+  FOREIGN KEY(categoryID) REFERENCES category(categoryID)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 DROP TABLE IF EXISTS cart;
@@ -20,7 +20,7 @@ CREATE TABLE cart (
   cartID int(11) NOT NULL,
   total decimal(6,2) DEFAULT NULL,
   itemIDs int(11) DEFAULT NULL,
-  PRIMARY KEY (cartID)
+  PRIMARY KEY (cartID),
   FOREIGN KEY(itemIDs) REFERENCES items(itemID)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -29,7 +29,7 @@ CREATE TABLE images (
   imageID int(11) NOT NULL,
   itemID int(11) DEFAULT NULL,
   image binary(1) DEFAULT NULL,
-  PRIMARY KEY (imageID)
+  PRIMARY KEY (imageID),
   FOREIGN KEY(itemID) REFERENCES items(itemID)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -45,7 +45,7 @@ CREATE TABLE ratings (
   buyerId int(11) NOT NULL,
   sellerId int(11) NOT NULL,
   comment text,
-  rating varchar(5) NOT NULL
+  rating varchar(5) NOT NULL,
   FOREIGN KEY(buyerID) REFERENCES students(id),
   FOREIGN KEY(sellerID) REFERENCES students(id)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -58,6 +58,7 @@ CREATE TABLE students (
   lastName char(20) DEFAULT NULL,
   phone int(10) DEFAULT NULL,
   zip char(5) DEFAULT NULL,
+  password char(100) NOT NULL,
   PRIMARY KEY (id)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
