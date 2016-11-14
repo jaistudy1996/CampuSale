@@ -73,6 +73,7 @@ html
           a(href='/listing')
             img(src='images/logo.png', alt='logo')
             span#name CAMPUSALE
+        button#sell_span(onclick="document.getElementById('id03').style.display='block'")
         li.dropdown(style='float:right')
           a.dropbtn(href='#')
             | Username
@@ -80,11 +81,7 @@ html
           .dropdown-content
             a(href='/profile') Profile
             a(href='/settings') Settings
-            a(href='/logout') Logout
-        button#sell_span(onclick="document.getElementById('id03').style.display='block'") Sell
-
-          //img(src='images/sell.png' alt='sell')
-          
+            a(href='/logout') Logout        
     .menu
       #main
         .filter(style='background-color:lightgrey;')
