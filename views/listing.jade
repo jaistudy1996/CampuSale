@@ -18,7 +18,7 @@ html
               form.register(action='', method='post', name='registration')
                 fieldset
                   .form-group
-                    label(for='category') Catégorie: 
+                    label.sellLabel(for='category') Catégorie: 
                     select#catagory(name='Select a category')
                       option(value='select') Choisir une catégorie
                       option(value='men') Hommes
@@ -28,13 +28,13 @@ html
                       option(value='games') Jeux vidéo
                       option(value='movies') Films et Musique
                   .form-group
-                    label(for='title') Titre:
+                    label.sellLabel(for='title') Titre:
                     input.sellInput(name='title')
                   .form-group
-                    label(for='price') Prix:
+                    label.sellLabel(for='price') Prix:
                     input.sellInput(name='price')
                   .form-group
-                    label(for='payment') Modalité de paiement: 
+                    label.sellLabel(for='payment') Modalité de paiement: 
                     select#payment(name='Select payment type')
                       option(value='payment') Sélectionnez un type de paiement
                       option(value='cash') Argent liquide
@@ -43,7 +43,7 @@ html
                       option(value='paypal') Paypal
                       option(value='mo') Mandat postal
                   .form-group
-                    label(for='Condition') Etat de l'objet: 
+                    label.sellLabel(for='Condition') Etat de l'objet: 
                     select#condition(name='condition')
                       option(value='condition') Choisissez un objet état
                       option(value='new') Nouveau
@@ -51,10 +51,10 @@ html
                       option(value='used') Utilisé
                       option(value='poor') Pauvre
                   .form-group
-                    label(for='location') Lieu de ramassage:
+                    label.sellLabel(for='location') Lieu de ramassage:
                     input.sellInput(name='location')
                   .form-group
-                    label(for='Description') La description:
+                    label.sellLabel(for='Description') La description:
                     input.sellInput(name='Description', type='Description')
                   form(action='/users/image', method='POST')
                     input.sellInput(type='file', name='file', value='')
