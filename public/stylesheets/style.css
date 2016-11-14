@@ -868,6 +868,8 @@ body.mode-search .control .btn {
 	margin:5px auto;
   	display: inline-block;
   	vertical-align: middle;
+	background-image: url("images/sell.png");
+	background-repeat: no-repeat;
 }
 #sell_span:hover{
 	background-color:lightgrey;
