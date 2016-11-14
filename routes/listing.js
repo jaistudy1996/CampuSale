@@ -12,7 +12,7 @@ var db = dbconn.createConnection({
 router.get('/', function(req, res, next){
 	db.query("SELECT * FROM tags", function(err, result){
 		if(err){
-			res.send(err);
+			console.log(err);
 		}
 		console.log(result);
 	});
