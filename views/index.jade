@@ -85,17 +85,14 @@ html#index
       #howItWorks.w3-content.w3-container.w3-padding-64
         h3.header Comment cela fonctionne
         p.w3-center
-<<<<<<< HEAD
           embed(src='videos/new_video.mp4', autostart='true', loop='true', height='338', width='600')
         p#text.w3-center Regardez cette vidéo pour plus d'informations. Il est facile, rapide et amusant!
-=======
           video#video2(preload='auto', loop='loop',  height='338', width='600')
             source(src='videos/new_video.mp4', type='video/mp4')
-            | >
+            |
             |   bgvideo
 
         p#text.w3-center Watch this video for more information. It's easy, fast, and fun!
->>>>>>> development
     // Container (Our Team Section)
     #Back2
       #OurTeam.w3-content.w3-container.w3-padding-64
@@ -138,18 +135,14 @@ html#index
           img(src='images/linkedin.png', alt='linkedin')
       #top
         a.smoothScroll(href='#home')
-<<<<<<< HEAD
           input(type='image', src='images/top-buttonFrench.png', name='top')
-=======
           input(type='image', src='images/top-button.png', name='top')
-          
->>>>>>> development
     script.
       // Change style of navbar on scroll
       window.onscroll = function() {myFunction()};
       function myFunction() {
       var navbar = document.getElementById("myNavbar");
-      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      if (document.body.scrollTop 100 || document.documentElement.scrollTop  100) {
       navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " red";
       } else {
       //navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-red", "");
