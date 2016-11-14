@@ -3,7 +3,7 @@
 
 function category(){
 	var sendObj = [];
-	var url = "/listing/tags";
+	var url = "/listing/category";
 	var xhr = new XMLHttpRequest();
 	xhr.responseType = 'json';
 	xhr.open("POST", url, true);
@@ -26,7 +26,6 @@ function addLinks(object){
 		var func = "addCat(" + object[i].categoryID + ")";
 		document.getElementById("Category").innerHTML += "<a href='#' onclick=" + func + ">" + object[i].categoryName + "</a>";
 	}
-	viewItems();
 }
 
 function addCat(catID){
@@ -35,13 +34,14 @@ function addCat(catID){
 	}
 	else{
 		categories.push(catID);
+		viewItems();
 	}
 	console.log(categories);
 }
 
 function viewItems(){
 	var xhr = new XMLHttpRequest();
-	var url = "/listing/items/"+tags;
+	var url = "/listing/items/:categoryID";
 	xhr.responseType = "json";
 	xhr.open("POST", url, true);
 	xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
