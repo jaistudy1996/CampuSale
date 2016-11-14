@@ -24,7 +24,7 @@ html#index
           input#uname(type='text', placeholder='uname@plattsburgh.edu', name='uname', required='')
           label
             b Password
-          input#psw(type='password', placeholder='Enter Password', name='psw', required='')
+          input#psw(type='password', placeholder='Enter Password', name='psw', onkeypress="changeLoginText()", required='')
           button#loginButton(type='button', onclick='login()') Login
           input(type='checkbox', checked='checked')
           |  Remember me
