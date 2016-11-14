@@ -395,7 +395,7 @@ style.
   text-align: center;
   padding: 16px 16px;
   text-decoration: none;
-  padding-bottom: 25px !important;
+  /*padding-bottom: 25px !important;*/
   padding-top: 20px;
   }
   li a {
@@ -430,8 +430,9 @@ style.
   text-decoration: none;
   display: block;
   text-align: left;
+  padding-bottom: 20px;
   }
-  .dropdown-content a:hover {background-color: #f1f1f1}
+  .dropdown-content a:hover {background-color: lightgrey}
   .dropdown:hover .dropdown-content {
   display: block;
   }
