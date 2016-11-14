@@ -10,16 +10,16 @@ var db = dbconn.createConnection({
 	}); 
 
 router.get('/', function(req, res, next){
-	db.query("SELECT * FROM category", function(err, result){
-		if(err){
-			console.log(err);
-		}
+	//db.query("SELECT * FROM category", function(err, result){
+	//	if(err){
+	//		console.log(err);
+	//	}
 		//console.log(result);
-	});
+	//});
 	res.render("listing", {});
 });
 
-router.post("/tags", function(req, res, next){
+router.post("/category", function(req, res, next){
 	db.query("SELECT * FROM category", function(err, result){
 		if(err){
 			console.log(err);
@@ -31,9 +31,10 @@ router.post("/tags", function(req, res, next){
 	});
 });
 
-router.post("/items/:tagID", function(req, res, next){
-	console.log(json.parse(req.params.tagID));
-	res.send(req.params);
+router.post('/items/:categoryID', function(req, res, next){
+	console.log(json.parse(req.params.categoryID));
+	//res.send(req.params);
+	console.log(req.params);
 });
 
 module.exports = router;
