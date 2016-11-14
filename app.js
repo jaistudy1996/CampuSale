@@ -14,6 +14,7 @@ var login = require('./routes/login');
 var signup = require('./routes/signup');
 var listing = require('./routes/listing');
 var item = require('./routes/item');
+var selling = require('./routes/selling');
 
 var app = express();
 
@@ -56,6 +57,7 @@ app.use('/login', login);
 app.use('/signup', signup);
 app.use('/listing', listing);
 app.use('/item', item);
+app.use('/selling', selling);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
