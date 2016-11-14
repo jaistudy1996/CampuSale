@@ -1124,7 +1124,7 @@ hr{
     padding: 0px;
     text-align:center;
 }
-label {
+.sellLabel {
     font-family: 'Alegreya', serif;
     font-size: 18px;
     color: #333;
