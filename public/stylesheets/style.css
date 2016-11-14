@@ -872,7 +872,7 @@ body.mode-search .control .btn {
 	background-repeat: no-repeat;
 }
 #sell_span:hover{
-	background-image: url(/'images/sellHover.png');
+	background-image: url('/images/sellHover.png');
 }
 
 /* Sell button effect end */
