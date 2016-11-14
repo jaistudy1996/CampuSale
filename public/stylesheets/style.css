@@ -642,8 +642,7 @@ body.mode-search .control .btn {
 .sort_dropdown {
     position: relative;
     display: inline-block;
-	float:right;
-	margin-right:30%;
+    margin-left:30%;
 }
 
 .sort_dropdown-content {
@@ -731,8 +730,8 @@ body.mode-search .control .btn {
 .category_dropdown {
     position: relative;
     display: inline-block;
-	float:right;
-	margin-right:150px;
+    margin-right: 10.5%;
+    margin-left: 10.5%;
 }
 
 .category_dropdown-content {
@@ -822,8 +821,8 @@ body.mode-search .control .btn {
 .price_dropdown {
     position: relative;
     display: inline-block;
-	float:right;
-	margin-right:150px;
+    float:right;
+    margin-right:30%;
 }
 
 .price_dropdown-content {
