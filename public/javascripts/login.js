@@ -24,3 +24,6 @@ function login(){
 	http.send(params);
 }
 
+function changeLoginText(){
+	document.getElementById("loginButton").innerHTML = "Login";
+}
