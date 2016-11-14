@@ -1,4 +1,93 @@
 doctype html
+<<<<<<< HEAD
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    link(rel='stylesheet', href='http://www.w3schools.com/lib/w3.css')
+    link(rel='stylesheet', type='text/css', href='stylesheets/style.css')
+    script(type='text/javascript', src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js')
+    script(type='text/javascript', src='javascripts/smoothscroll.js')
+    title  Profil - CampuSale 
+  body
+    .profile
+      // ---START OF PROFILE PAGE---
+      #profileNav
+        // ---START OF NAV---
+        ul.w3-black.nav
+          li.navLink
+            a(href='/listing')
+              img(src='images/logo.png', alt='logo')
+              |  CAMPUSALE
+          li.dropdown(style='float:right')
+            a.dropbtn(href='#')
+              | Nom d'utilisateur
+              img#dropdown(src='images/drop_down.png', alt='v')
+            .dropdown-content
+              a(href='/profile') Profil
+              a(href='/sell') Vendre
+              a(href='/settings') Paramètres
+              a(href='/logout') Se déconnecter
+      // ---END OF NAV---
+      .head-container
+        // ---START OF USER INFO---
+        .top-content
+          img(src='images/profile.png', alt='profilePic', width='200', height='200')
+          .user-details
+            .user-name
+              h2
+                | Marie H.
+                // <%=first name %> <% last name initial. %>
+              h5
+                | @mhilp001
+                // <%= username %>
+            p Message personnel Box
+          div
+            img#rating(src='images/rating.png', alt='rating')
+      .body-content
+        // ---START OF LISTINGS---
+        .closet-tabs
+          ul
+            li
+              a.active(href='profile/<%username%>')
+                span
+                  u
+                    // <%num active items%>
+                    | Articles à vendre
+            li
+              a.inactive(href='profile/<%username%>')
+                span
+                  u
+                    // <%num active items%>
+                    | Objets vendus
+        .closet-items
+          span
+            ul.rig.columns-4
+              li
+                img(src='images/img-1.jpg')
+                h3 Titre de l'image
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+              li
+                img(src='images/img-2.jpg')
+                h3 Titre de l'image
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+              li
+                img(src='images/img-3.jpg')
+                h3 Titre de l'image
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+              li
+                img(src='images/img-4.jpg')
+                h3 Titre de l'image
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+              li
+                img(src='images/img-5.jpg')
+                h3 Titre de l'image
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+              li
+                img(src='images/img-6.jpg')
+                h3 Titre de l'image
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+      // </div>
+=======
 html
   title CampuSale
   meta(name='viewport', content='width=device-width, initial-scale=1')
@@ -116,6 +205,7 @@ html
             img(src='images/img-6.jpg')
             h3 Image Title
             p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+>>>>>>> development
     // Footer
     footer.footer.w3-center
       #copyright
@@ -129,4 +219,13 @@ html
           img(src='images/linkedin.png', alt='linkedin')
       #top
         a.smoothScroll(href='#profileNav')
+<<<<<<< HEAD
+          input(type='image', src='images/top-buttonFrench.png', name='top')
+      // ---END OF LISTINGS---
+    // ---END OF USER INFO---
+    // ---END OF PROFILE PAGE---
+
+
+=======
           input(type='image', src='images/top-button.png', name='top')
+>>>>>>> development
