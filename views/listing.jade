@@ -2,7 +2,7 @@ doctype html
 html
   title CampuSale
   meta(name='viewport', content='width=device-width, initial-scale=1')
-  script(type="text/javascript", src="javascripts/listing.js")
+  script(type='text/javascript', src='javascripts/listing.js')
   link(rel='stylesheet', href='stylesheets/w3.css')
   link(rel='stylesheet', type='text/css', href='stylesheets/style.css')
   link(rel='stylesheet', href='http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css')
@@ -61,7 +61,7 @@ html
                   form
                     input.sellInput(type='submit', name='Upload', value='Add')
     // Navbar (sit on top)
-    .w3-top#listingNav
+    #listingNav.w3-top
       .control(tabindex='1')
         .btn
         i.icon-search.ion-search
@@ -80,7 +80,7 @@ html
             img#dropdown(src='images/drop_down.png', alt='v')
           .dropdown-content
             a(href='/profile') Profile
-            a(href='/changePassword') Change Password
+            a(onclick="document.getElementById('id03').style.display='block'", href='#') Change Password
             a(href='/logout') Logout        
     .menu
       #main
@@ -95,7 +95,7 @@ html
             button.category_dropbtn Category
             #Category.category_dropdown-content
               script.
-               category()
+                category()
           .price_dropdown
             button.price_dropbtn Price
             .price_dropdown-content
@@ -104,7 +104,7 @@ html
                   input#min(name='minprice', value='$0')
                   e(style='margin-left:15px') to
                   input#max(name='maxprice', value='$100')
-      ul.rig.columns-4#id-items
+      ul#id-items.rig.columns-4
         li
           img(src='images/img-1.jpg')
           h3 Image Title
