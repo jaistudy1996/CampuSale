@@ -60,6 +60,7 @@ html
                     input.sellInput(type='file', name='file', value='')
                   form
                     input.sellInput(type='submit', name='Upload', value='Add')
+    // Change Password Overlay
     #id04.modal
       form.modal-content.animate(action='#')
         .imgcontainer
@@ -104,8 +105,8 @@ html
             img#dropdown(src='images/drop_down.png', alt='v')
           .dropdown-content
             a(href='/profile') Profile
-            a(onclick="document.getElementById('id03').style.display='block'", href='#') Change Password
-            a(href='/logout') Logout        
+            a(onclick="document.getElementById('id04').style.display='block'", href='#') Change Password
+            a(href='/logout') Logout
     .menu
       #main
         .filter(style='background-color:lightgrey;')
