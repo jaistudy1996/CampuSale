@@ -3,3 +3,19 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+
+  script(type='text/javascript', src='javascripts/usersTest.js')
+  body
+    form(action='/users', method='post', id='form')
+      | First name:
+      input(type='text', id='fname' name='fname')
+      br
+      | Last name:
+      input(type='password', id='lname' name='lname')
+      br
+      input(type='button', value='Submit' onclick="loginform()")
+
+
+    form(action='/users/image', method='POST')
+      input(type='file', name='file' value="")
+      input(type='submit', name='Upload' value="Upload")

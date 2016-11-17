@@ -1,58 +1,228 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8" />
-	<link rel='stylesheet' href='http://www.w3schools.com/lib/w3.css'/>
-	<link rel='stylesheet' type='text/css' href='style.css'/>
-	
-	<title> Profile - CampuSales </title>
-</head>
+<html>
+<title>CampuSale</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="stylesheets/w3.css">
+<link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+<link rel='stylesheet' href='http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+
+
 
 <body>
 	
-	<ul class="w3-navbar w3-black">
-		<li><a href="index.jade"><img src="images/logo.png" alt="logo">CAMPUSALES</a></li>
-		<li class="dropdown" style="float:right">
-			<a href="#" class="dropbtn">Username</a>
-			<div class="dropdown-content">
-				<a href="#">Profile</a>
-				<a href="#">Settings</a>
-				<a href="#">Logout</a>
-			</div>
-		</li>
-	</ul>
-	<div class="profile">
-	<div class="head-container w3-display-middle">
-		<div class="content">
-			<img src="images/profile.png" alt="profilePic" width="200" height="200"/>
+<!-- Navbar (sit on top) -->
+<div id="id03" class="modal">
+  <form class="modal-content animate" action="#">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+	<div class="sell_container">
+    	<div class="details">
+		    <div id="sell_form">
+		      <form action="" method="post" name="registration" class="register">
+		        <fieldset>
+		          <div class="form-group">
+		            <label for="category">Category: </label>
+		            <select id="catagory" name="Select a category">
+		              <option value="select">Select a category</option>
+		              <option value="men">Men</option>
+		              <option value="women">Women</option>
+		              <option value="appliances">Appliances</option>
+		              <option value="electronics">Electronics</option>
+		              <option value="games">Video Games</option>
+		              <option value="movies">Movies and Music</option>
+		            </select>
+		          </div>
+		          <div class="form-group">
+		            <label for="title">Title:</label>
+		            <input name="title">
+		          </div>
+		          <div class="form-group">
+		            <label for="price">Price:</label>
+		            <input name="price">
+		          </div>
+		          <div class="form-group">
+		            <label for="payment">Payment Option: </label>
+		            <select id="payment" name="Select payment type">
+		              <option value="payment">Select a payment type</option>
+		              <option value="cash">Cash</option>
+		              <option value="women">Cardinal Cash</option>
+		              <option value="check">Check</option>
+		              <option value="paypal">Paypal</option>
+		              <option value="mo">Money Order</option>
+		            </select>
+		          </div>
+		          <div class="form-group">
+		            <label for="Condition">Item Condition: </label>
+		            <select id="condition" name="condition">
+		              <option value="condition">Choose item condition</option>
+		              <option value="new">New</option>
+		              <option value="likenew">Like New</option>
+		              <option value="used">used</option>
+		              <option value="poor">Poor</option>
+		            </select>
+		          </div>
+		          <div class="form-group">
+		            <label for="location">Pickup Location:</label>
+		            <input name="location">
+		          </div>
+		          <div class="form-group">
+		            <label for="Description">Description:</label>
+		            <input name="Description" type="Description">
+		          </div>
+		          <form action="/users/image" method="POST">
+		            <input type="file" name="file" value="">
+		          </form>
+		          <form>
+		            <input type="submit" name="Upload" value="Add">
+		          </form>
+		        </fieldset>
+		      </form>
+		    </div>
+		  </div>
+  	</div>
+  </form>
+</div>
+
+<!-- Navbar (sit on top)-->
+<div class="w3-top">
+  	<div class='control' tabindex='1'>
+	    <div class='btn'></div>
+	    <i class='icon-search ion-search'></i> 
+	</div>
+	<i class='icon-close ion-ios-close-empty'></i>
+	<div class='form'>
+	  <input class='input-search' placeholder='Start Typing' type='text'>
+	</div>
+	
+  </ul>
+  <ul class="w3-black nav">
+    <li class="navLink"><a href="/listing"><img src="images/logo.png" alt="logo"><span id="name">CAMPUSALE</span></a></li>
+    <li style="float:right" class="dropdown"><a href="#" class="dropbtn">Username<img id="dropdown" src="images/drop_down.png" alt="v"></a>
+      <div class="dropdown-content"><a href="/profile">Profile</a><a href="/sell">Sell</a><a href="/settings">Settings</a><a href="/logout">Logout</a></div>
+    </li>
+    <button id="sell_span" onclick="document.getElementById('id03').style.display='block'">Sell</button>
+  </ul>
+</div>
+
+
+
+
+	<div class="w3-display-container" style="margin-top:55px;">
+		<img src="images/cover.jpg" alt="cover" style="width:100%;height:200px;position: relative;top: 0;left: 0;">
+		<img src="images/profile.png" class="w3-circle" alt="profile" style="width:15%;position: absolute;top:150px;left: 80px;">
+	</div>
+	 
+	<div class="w3-container" style="background-color:#f6f6f6;">
+		
+		<div class="w3-container"style="float:left;margin-top:155px;margin-left:70px;width:190px;height:300px;">
 			
-			<div class="user-details">
-				<div class="user-name">
-					<h2>Marie H.<!--<%=first name %> <% last name initial. %>--></h2>
-					<h5>@mhilp001<!--<%= username %>--></h5>
-				</div>
-				<div class="user-message">
-					<p>Personal Message box</p>
-				</div>
+			<img src="images/rating.png" alt="rating" style="margin-left:20px;">
+			<br>
+			<br>
+			<p> Name </p>
+			<p> Username </p>
+			<p style="border:1px solid black;height:100px;width:200px;margin-top:50px;text-align:center;"> Personal Message </p>
+		</div>
+		
+	  	<div class="w3-container" style="background-color:white;height:85%;width:82%;margin-left:320px;margin-top:8px;padding:0px;">
+		
+			<div class="w3-container"style="background-color:#f6f6f6;height:80px;">
+				<a class="w3-btn" href="#" style="margin-top:35px;">Items for Sale</a>
+				<a class="w3-btn" href="#" style="margin-top:35px;">Items Sold</a>
 			</div>
-			<div class "user-rating">
-				<img src="images/rating.png" alt="rating"/>
-			</div>	
+			<ul class="rig columns-4" style="margin-right:50px;">
+				<li>
+					<img src="images/img-1.jpg" />
+					<h3>Image Title</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+				</li>
+				<li>
+					<img src="images/img-2.jpg" />
+					<h3>Image Title</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+				</li>
+				<li>
+					<img src="images/img-3.jpg" />
+					<h3>Image Title</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+				</li>
+				<li>
+					<img src="images/img-4.jpg" />
+					<h3>Image Title</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+				</li>
+				<li>
+					<img src="images/img-5.jpg" />
+					<h3>Image Title</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+				</li>
+				<li>
+					<img src="images/img-6.jpg" />
+					<h3>Image Title</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+				</li>
+			</ul>
 		</div>
 	</div>
 	
-	<div class="body-content">
-		<div class="closet-tabs">
-			<li><a class="active" href="profile/<%username%>"><span><u><%num active items%>Items for Sale</u></span></a></li>
-			<li><a class="inactive" href="profile/<%username%>"><span><u><%num active items%>Items Sold</u></span></a></li>
 
-		</div>
-	</div>
+
+
+<!-- Footer -->
+<footer class="footer w3-center">
+      <div id="copyright">
+        <p> © CampuSale Inc. 2016</p>
+      </div>
+      <div class="social_media">
+        <div id="facebook"><img src="images/facebook.png" alt="facebook"></div>
+        <div id="twitter"><img src="images/Twitter.png" alt="twitter"></div>
+        <div id="linkedin"><img src="images/linkedin.png" alt="linkedin"></div>
+      </div>
+      <div id="top"><a href="#profileNav" class="smoothScroll">
+          <input type="image" src="images/top-button.png" name="top"></a></div>
+
+
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script> 
+
+
+
+<script>
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " w3-red";
+    } else {
+        //navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-red", "");
+		navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " w3-black";
+    }
 	
-	</div>
+}
+/*Search Function*/
+$('.control').click(function () {
+    $('body').addClass('mode-search');
+    $('.input-search').focus();
 	
+});
+$('.icon-close').click(function () {
+    $('body').removeClass('mode-search');
+});
+/*------------*/
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
 	
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+	
+}
+
+
+</script>
+
 </body>
-
 </html>
-	

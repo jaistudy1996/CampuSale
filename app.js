@@ -4,11 +4,40 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var db = require('mysql');
+
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
+var profile = require('./routes/profile');
+var login = require('./routes/login');
+var signup = require('./routes/signup');
+var listing = require('./routes/listing');
+var item = require('./routes/item');
+var selling = require('./routes/selling');
+var changePassword = require('./routes/changePassword');
 
 var app = express();
+
+// Database
+var dbpool = db.createConnection({
+	//connectionLimit: 10,
+	host: '137.142.1.54',
+	user: 'amos',
+	password: 'olasoji',
+	database: 'campuSale'
+});
+
+dbpool.connect();
+
+dbpool.query('select * from items limit 10', function(err, rows, fields) {
+	if(err){
+		throw err;
+	}
+	console.log("Lines are: ", rows);
+});
+
+dbpool.end();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -24,6 +53,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/users', users);
+app.use('/profile', profile);
+app.use('/login', login);
+app.use('/signup', signup);
+app.use('/listing', listing);
+app.use('/item', item);
+app.use('/selling', selling);
+app.use('/changePassword', changePassword);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
