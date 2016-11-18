@@ -59,6 +59,31 @@ html
                     input.sellInput(type='file', name='file', value='')
                   form
                     input.sellInput(type='submit', name='Upload', value='Add')
+    // Change Password Overlay
+    #id04.modal
+      form.modal-content.animate(action='#')
+        .imgcontainer
+          span.close(onclick="document.getElementById('id04').style.display='none'", title='Close Modal') ×
+        .passw_container
+          .detail
+            #passw_form
+              form.register(action='', method='post', name='registration')
+                fieldset
+                  .password_container
+                    h4.header Change Password
+                    #form
+                      form.register(action='', method='post', name='registration')
+                        fieldset
+                          .form-group
+                            label.passwLabel(for='old') Old Password:
+                            input.passwInput(name='old', required='')
+                          .form-group
+                            label.passwLabel(for='new') New Password:
+                            input.passwInput(name='new', required='')
+                          .form-group
+                            label.passwLabel(for='confirm') Confirm Password:
+                            input.passwInput(name='confirm', required='')
+                          input.passwInput(type='submit', name='Upload', value='Change Password')                
     // Navbar (sit on top)
     .w3-top
       ul.w3-black.nav
@@ -73,7 +98,7 @@ html
             img#dropdown(src='images/drop_down.png', alt='v')
           .dropdown-content
             a(href='/profile') Profile
-            a(href='/changePassword') Change Password
+            a(onclick="document.getElementById('id04').style.display='block'", href='#') Change Password
             a(href='/logout') Logout
         //button#sell_span(onclick="document.getElementById('id03').style.display='block'")
     .w3-display-container(style='margin-top:55px;')
