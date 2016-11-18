@@ -67,15 +67,15 @@ html
                       form.register(action='', method='post', name='registration')
                         fieldset
                           .form-group
-                            label(for='old') Old Password:
-                            input(name='old', required='')
+                            label.passwlabel(for='old') Old Password:
+                            input.passwinput(name='old', required='')
                           .form-group
-                            label(for='new') New Password:
-                            input(name='new', required='')
+                            label.passwlabel(for='new') New Password:
+                            input.passwinput(name='new', required='')
                           .form-group
-                            label(for='confirm') Confirm Password:
-                            input(name='confirm', required='')
-                          input(type='submit', name='Upload', value='Change Password')
+                            label.passwlabel(for='confirm') Confirm Password:
+                            input.passwinput(name='confirm', required='')
+                          inputpasswinput(type='submit', name='Upload', value='Change Password')
     // Navbar (sit on top)
     #listingNav.w3-top
       .control(tabindex='1')
