@@ -1193,3 +1193,56 @@ select {
   transform: scaleX(1);
 }
 /*END*/
+
+
+.passw_container {
+  	padding: 16px;
+	height:450px;
+}
+.details{
+	margin-top:5%;
+}
+#short_desc{
+	margin-top:35px;
+}
+
+
+#passw_form {
+    background-color: light grey;
+    height: 600px;
+    width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0px;
+    margin-bottom:0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 0px;
+    text-align:center;
+}
+.passwLabel {
+    font-family: 'Alegreya', serif;
+    font-size: 18px;
+    color: #333;
+    height: 25px;
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: right;
+    margin-right:15px;
+    float:left;
+}
+
+.passwInput {
+    height: 25px;
+    width: 300px;
+    border: 1px solid #000;
+    margin-top: 10px;
+}
+
+#changee{
+	text-decoration:none;
+	margin-left:50%;
+	margin-top:8px;
+	position:absolute;
+}
