@@ -947,6 +947,11 @@ body.mode-search .control .btn {
   }
   /* Grid END */
   /*Filter Nav */
+
+.itemLink {
+	color: black;
+}
+
 .itemLink:hover {
 	color: lightgrey;
 }
