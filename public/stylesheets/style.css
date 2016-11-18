@@ -210,7 +210,7 @@ style.
   }
   .height100per {
 	  height: 100%;
-	  padding-top: 16px;
+	  padding-top: 16px!important;
   }
   /*Adjust content headers*/
   h3.contentHeader {
