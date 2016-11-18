@@ -205,6 +205,12 @@ style.
   li#contactUsLink {
   padding-right: 20px;
   }
+  .height55px {
+	  height: 55px;
+  }
+  .height100per {
+	  height: 100%;
+  }
   /*Adjust content headers*/
   h3.contentHeader {
   padding-bottom: 40px;
