@@ -437,7 +437,7 @@ style.
   text-decoration: none;
   display: block;
   text-align: left;
-  padding-bottom: 20px;
+  /*padding-bottom: 20px;*/
   }
   .dropdown-content a:hover {background-color: lightgrey}
   .dropdown:hover .dropdown-content {
