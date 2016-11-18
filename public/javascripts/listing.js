@@ -1,7 +1,10 @@
 // Author: Jayant Arora
-// Description: Function for listing page.
+// Description: Functions for listing page.
 
 function category(){
+	// This funcion requests the server to get categories from the
+	// server. This funciton does not display them on the webpage. 
+	// see addLinks for that
 	var sendObj = [];
 	var url = "/listing/category";
 	var xhr = new XMLHttpRequest();
@@ -21,6 +24,9 @@ function category(){
 categories = [];
 
 function addLinks(object){
+	// this funciton adds the category links to the category dropdown menu.
+	// When a category is clicked it adds the particular category to the categories array
+	// by calling addCat function.
 	for(var i = 0; i < object.length; i++){
 		//categories.push(object[i].categoryID);
 		var func = "addCat(" + object[i].categoryID + ")";
