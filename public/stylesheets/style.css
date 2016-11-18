@@ -1202,6 +1202,7 @@ select {
 .passw_container {
   	padding: 16px;
 	height:450px;
+	margin-top:15px;
 }
 .details{
 	margin-top:5%;
