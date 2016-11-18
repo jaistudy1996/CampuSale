@@ -1,0 +1,6 @@
+Researched how to encrypt password using the password function.
+Researched how to implement SSL layer in nodejs.
+Helped a team member with HTML/CSS difficulty
+Researched how to encrypt password within the browser and then send the encrypted password to the server and verify it with the
+encrypted password in the database.
+Researched about triggers.
