@@ -947,7 +947,10 @@ body.mode-search .control .btn {
   }
   /* Grid END */
   /*Filter Nav */
-  
+.itemLink:hover {
+	text-decoration: underline;
+}
+	  
 /* Item Page */
 
 /*ITEM Page*/
