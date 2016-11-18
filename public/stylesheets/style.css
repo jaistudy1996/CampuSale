@@ -161,7 +161,7 @@ style.
   /*How it works background*/
   #howItWorks {
   height: 660px;
-  background-color: lightgrey;
+  background-color: #EE6051;
   padding-right: 0px;
   padding-left: 0px;
   }
@@ -175,7 +175,7 @@ style.
   /*Contact background*/
   #contactUs {
   height: 530px;
-  background-color: #EE6051;
+  background-color: lightgrey;
   padding-right: 0px;
   padding-left: 0px;
   }
@@ -234,7 +234,7 @@ style.
   }
   /*Fix baxkground color of sections*/
   #Back1 {
-  	  background-color: lightgrey;
+  	  background-color: #EE6051;
 	  
   }
   #Back2 {
