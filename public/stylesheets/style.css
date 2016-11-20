@@ -1036,7 +1036,7 @@ hr{
  	transform: perspective(1px) translateZ(0);
   	box-shadow: 0 0 1px transparent;
   	position: relative;
-  	background: lightblue;
+  	background: #e91e63;
   	-webkit-transition-property: color;
   	transition-property: color;
   	-webkit-transition-duration: 0.3s;
@@ -1067,12 +1067,11 @@ hr{
 }
 .buy_button:hover, .buy_button:focus, .buy_button:active {
   color: white;
-  background-color: #e91e63;
 }
 .buy_button:hover:before, .buy_button:focus:before, .buy_button:active:before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
-  background-color: #e91e63;
+  
 }
 /* End */
 
