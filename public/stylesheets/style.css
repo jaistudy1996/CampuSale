@@ -1067,6 +1067,7 @@ hr{
 }
 .buy_button:hover, .buy_button:focus, .buy_button:active {
   color: white;
+  background-color: #e91e63;
 }
 .buy_button:hover:before, .buy_button:focus:before, .buy_button:active:before {
   -webkit-transform: scaleX(1);
