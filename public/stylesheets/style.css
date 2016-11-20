@@ -1036,7 +1036,7 @@ hr{
  	transform: perspective(1px) translateZ(0);
   	box-shadow: 0 0 1px transparent;
   	position: relative;
-  	background: #e91e63;;
+  	background: lightgrey;
   	-webkit-transition-property: color;
   	transition-property: color;
   	-webkit-transition-duration: 0.3s;
@@ -1053,7 +1053,7 @@ hr{
   bottom: 0;
   left: 0;
   right: 0;
-  background: lightgrey;
+  background: #e91e63;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 50%;
