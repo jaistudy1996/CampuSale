@@ -1072,6 +1072,7 @@ hr{
 .buy_button:hover:before, .buy_button:focus:before, .buy_button:active:before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
+  background-color: #e91e63;
 }
 /* End */
 
