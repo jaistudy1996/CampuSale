@@ -9,13 +9,13 @@ html
   body#listin_page
     // Navbar (sit on top)
     #id03.modal
-      form.modal-content.animate(action='#')
+      form.modal-content.animate(action='/item/upload' method="POST")
         .imgcontainer
           span.close(onclick="document.getElementById('id03').style.display='none'", title='Close Modal') ×
         .sell_container
           .details
             #sell_form
-              form.register(action='', method='post', name='registration')
+              form.register(action="#")
                 fieldset
                   .form-group
                     label.sellLabel(for='category') Category: 
@@ -47,10 +47,10 @@ html
                   .form-group
                     label.sellLabel(for='Description') Description:
                     input.sellInput(name='Description', type='Description')
-                  form(action='/users/image', method='POST')
-                    input.sellInput(type='file', name='file', value='')
-                  form
-                    input.sellInput(type='submit', name='Upload', value='Add')
+                  //form(action='/users/image', method='POST')
+                  input.sellInput(type='file', name='file', value='')
+                  //form
+                  input.sellInput(type='submit', name='Upload', value='Add')
     // Change Password Overlay
     #id04.modal
       form.modal-content.animate(action='#')
