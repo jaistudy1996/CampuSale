@@ -77,6 +77,10 @@ html#index
           button.button.button1.semi-transparent-button(type='button', onclick="document.getElementById('id01').style.display='block'") Login
           button#button2.button.button2.semi-transparent-button(type='button', onclick="document.getElementById('id02').style.display='block'") Signup
           button#goto.button.button1.semi-transparent-button(display='none', type='button', onclick= "document.getElementById('id03').style.display='block'") Veiw Listings
+          script(type='text/javascript').
+           document.getElementById('ido3').onclick = function () {
+           location.href = '/listing';
+           };
 
        #more.w3-display-middle
         p#scrollText.w3-center  Scroll for More 
@@ -180,10 +184,5 @@ html#index
       window.addEventListener('scroll', checkScroll, false);
       window.addEventListener('resize', checkScroll, false);
                 
-          <script type="text/javascript">
-            document.getElementById('ido3').onclick = function () {
-              location.href = '/listing';
-             };
-            </script>
         
 
