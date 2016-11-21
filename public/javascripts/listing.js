@@ -59,15 +59,20 @@ function getItems(){
 			response = xhr.response
 			for(var i=0; i < response.length; i++){
 				allItems.push(response[i]);
-				document.getElementById("items-list").innerHTML += "<li><img src='images/img-1.jpg'/><a href="+"/listing/items/"+
-				response[i].itemID+" class='itemLink'>"+"<h3>"+response[i].title+"</h3></a><p>"+response[0].description+"</p></li>";
 			}
+			viewItems(allItems);
 		}
 	}
 	xhr.send(null);
 	//var items = document.getElementById("id-items").innerHTML;
 }
 
+function viewItems(items){
+	for(var i = 0; i < items.length; i++){
+		document.getElementById("items-list").innerHTML += "<li><img src='images/img-1.jpg'/><a href="+"/listing/items/"+
+		items[i].itemID+" class='itemLink'>"+"<h3>"+items[i].title+"</h3></a><p>"+items[0].description+"</p></li>";
+	}
+}
 
 function sortItems(value){
 	// If value is 1 :- Sort lowest to highest
