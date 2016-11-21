@@ -62,9 +62,24 @@ function viewItems(){
 				document.getElementById("items-list").innerHTML += "<li><img src='images/img-1.jpg'/><a href="+"/listing/items/"+
 				response[i].itemID+" class='itemLink'>"+"<h3>"+response[i].title+"</h3></a><p>"+response[0].description+"</p></li>";
 			}
+			allItems.sort(function(a, b){return b.price - a.price});
 			console.log(allItems);
 		}
 	}
 	xhr.send(null);
 	//var items = document.getElementById("id-items").innerHTML;
+}
+
+
+function sortItems(value){
+	// If value is 1 :- Sort lowest to highest
+	if(value == 1){
+		allItems.sort(function(a, b){return a.price - b.price});
+		console.log(allItems);
+	}
+	// If value is 0 :- sort highest to lowest.
+	if(value == 0){
+		allItems.sort(function(a, b){return b.price - a.price});
+		console.log(allItems);
+	}
 }
