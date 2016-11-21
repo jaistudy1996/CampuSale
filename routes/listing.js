@@ -40,10 +40,12 @@ router.post("/items", function(req, res, next){
 	});
 });
 
-router.post('/items/:categoryID', function(req, res, next){
-	console.log(json.parse(req.params.categoryID));
+router.get("/items/:categoryID", function(req, res, next){
+	res.redirect("/listing");
+	//res.redirect("/listing");
+	//console.log(json.parse(req.params.categoryID));
 	//res.send(req.params);
-	console.log(req.params);
+	//console.log(req.params);
 });
 
 module.exports = router;
