@@ -135,7 +135,8 @@ style.
   margin-top:50px;
   margin-left:50px;
   font-size: 25px;
-  display: none;
+  /*Chagne this to 'inline-block' to display button, and 'none' to hide button*/
+  display: inline-block;
   }
 
   /*Semi-Transparent buttons*/
@@ -148,10 +149,15 @@ style.
   }
 
   #loginButton {
-	  display: none;
+	  /*Chagne this to 'inline-block' to display button, and 'none' to hide button*/
+	  display: inline-block;
   }
   #goto {
-	  display: block;
+	  /*Chagne this to 'block' to display button, and 'none' to hide button*/
+	  display: none;
+	  margin: auto;
+	  margin-top: 100px;
+	  width: auto;
   }
   #myNavbar li
   {
