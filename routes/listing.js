@@ -41,7 +41,7 @@ router.post("/items", function(req, res, next){
 });
 
 router.get("/items/:categoryID", function(req, res, next){
-	res.redirect("/listing");
+	res.redirect("/item");
 	//res.redirect("/listing");
 	//console.log(json.parse(req.params.categoryID));
 	//res.send(req.params);
