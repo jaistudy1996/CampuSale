@@ -9,7 +9,7 @@ html
   body#listin_page
     // Navbar (sit on top)
     #id03.modal
-      form.modal-content.animate(action='/item/upload' method="POST")
+      form.modal-content.animate(action='/item/upload' method="POST" enctype="multipart/form-data")
         .imgcontainer
           span.close(onclick="document.getElementById('id03').style.display='none'", title='Close Modal') ×
         .sell_container
