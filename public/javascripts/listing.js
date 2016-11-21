@@ -54,8 +54,9 @@ function viewItems(){
 	xhr.onreadystatechange = function(){
 		if(this.readyState == 4 && this.status == 200){
 			console.log("REspose:", xhr.response);
+			document.getElementById("items-list").innerHTML += "<li><img src='images/img-1.jpg'/></li>";
 		}
 	}
 	xhr.send(null);
-	var items = document.getElementById("id-items").innerHTML;
+	//var items = document.getElementById("id-items").innerHTML;
 }
