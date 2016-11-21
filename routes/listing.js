@@ -31,6 +31,15 @@ router.post("/category", function(req, res, next){
 	});
 });
 
+router.post("/items", function(req, res, next){
+	db.query("SELECT * FROMitems", function(err, result){
+		if(err){
+			console.log(err)
+		}
+		res.send(result)
+	});
+});
+
 router.post('/items/:categoryID', function(req, res, next){
 	console.log(json.parse(req.params.categoryID));
 	//res.send(req.params);

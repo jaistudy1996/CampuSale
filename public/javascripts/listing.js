@@ -36,7 +36,6 @@ function addLinks(object){
 
 function addCat(catID){
 	if(categories.indexOf(catID) != -1){
-	
 	}
 	else{
 		categories.push(catID);
@@ -46,8 +45,10 @@ function addCat(catID){
 }
 
 function viewItems(){
+	// Show all items that are in the database 
+	// TO-DO: Make page numbers to show all the items. 
 	var xhr = new XMLHttpRequest();
-	var url = "/listing/items/:categoryID";
+	var url = "/listing/items";
 	xhr.responseType = "json";
 	xhr.open("POST", url, true);
 	xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
