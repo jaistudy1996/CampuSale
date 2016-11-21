@@ -4,3 +4,5 @@ Helped a team member with HTML/CSS difficulty
 Researched how to encrypt password within the browser and then send the encrypted password to the server and verify it with the
 encrypted password in the database.
 Researched about triggers.
+
+More data was needed in the database. Added 30 data rows to every table in the database. This allows us to run different tests to pull out data to display for testing purposes.
