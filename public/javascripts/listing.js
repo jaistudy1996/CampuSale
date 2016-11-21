@@ -39,7 +39,6 @@ function addCat(catID){
 	}
 	else{
 		categories.push(catID);
-		viewItems();
 	}
 	console.log(categories);
 }
@@ -59,5 +58,4 @@ function viewItems(){
 	}
 	xhr.send(null);
 	var items = document.getElementById("id-items").innerHTML;
-	
 }
