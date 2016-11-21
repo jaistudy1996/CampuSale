@@ -105,8 +105,8 @@ html
             button.sort_dropbtn Sort
             .sort_dropdown-content
               a(href='#') Newest
-              a(href='#') Price: Low to High
-              a(href='#') Price: High to Low
+              a(href='#' onclick="sortItems(1)") Price: Low to High
+              a(href='#' onclick="sortItems(0)") Price: High to Low
           .category_dropdown
             button.category_dropbtn Category
             #Category.category_dropdown-content
