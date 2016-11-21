@@ -16,7 +16,7 @@ router.post("/upload", function(req, res, next){
 	var file;
 	file = req.files.file;
 	console.log(file);
-	file.mv("public/images/testUpload.jpg", function(err){
+	file.mv("ImagesUsers/testUpload.jpg", function(err){
 		if(err){
 			console.log("NOT UPLOADED");
 			console.log(err);
