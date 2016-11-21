@@ -43,6 +43,8 @@ function addCat(catID){
 	console.log(categories);
 }
 
+allItems = [];
+
 function viewItems(){
 	// Show all items that are in the database 
 	// TO-DO: Make page numbers to show all the items. 
@@ -56,9 +58,11 @@ function viewItems(){
 			console.log("REspose:", xhr.response);
 			response = xhr.response
 			for(var i=0; i < response.length; i++){
+				allItems.push(response[i]);
 				document.getElementById("items-list").innerHTML += "<li><img src='images/img-1.jpg'/><a href="+"/listing/items/"+
 				response[i].itemID+" class='itemLink'>"+"<h3>"+response[i].title+"</h3></a><p>"+response[0].description+"</p></li>";
 			}
+			console.log(allItems);
 		}
 	}
 	xhr.send(null);
