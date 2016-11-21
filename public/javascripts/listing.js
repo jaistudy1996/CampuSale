@@ -73,7 +73,7 @@ function viewItems(items){
 	document.getElementById("items-list").innerHTML = "";
 	for(var i = 0; i < items.length; i++){
 		document.getElementById("items-list").innerHTML += "<li><img src='images/img-1.jpg'/><a href="+"/listing/items/"+
-		items[i].itemID+" class='itemLink'>"+"<h3>"+items[i].title+"</h3></a><p>"+items[0].description+"</p></li>";
+		items[i].itemID+" class='itemLink'>"+"<h3>"+items[i].title+"</h3></a><p>"+items[i].description+"</p></li>";
 	}
 }
 
