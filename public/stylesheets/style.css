@@ -128,14 +128,14 @@ style.
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
   }
-  #button2
+  #signupButton
   {
   margin: auto;
   width: 30%;
   margin-top:50px;
   margin-left:50px;
   font-size: 25px;
-  /*font-variant: small-caps;*/
+  display: none;
   }
 
   /*Semi-Transparent buttons*/
@@ -147,8 +147,11 @@ style.
 	  transition: all 0.3s ease-out;
   }
 
-  #goto {
+  #loginButton {
 	  display: none;
+  }
+  #goto {
+	  display: block;
   }
   #myNavbar li
   {
