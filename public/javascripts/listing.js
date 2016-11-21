@@ -54,7 +54,11 @@ function viewItems(){
 	xhr.onreadystatechange = function(){
 		if(this.readyState == 4 && this.status == 200){
 			console.log("REspose:", xhr.response);
-			document.getElementById("items-list").innerHTML += "<li><img src='images/img-1.jpg'/></li>";
+			response = xhr.response
+			for(var i=0; i < response.length; i++){
+				document.getElementById("items-list").innerHTML += "<li><img src='images/img-1.jpg'/><a href="+"/listing/items/"+
+				response[i].itemID+" class='itemLink'>"+"<h3>"+response[i].title+"</h3></a><p>"+response[0].description+"</p></li>";
+			}
 		}
 	}
 	xhr.send(null);
