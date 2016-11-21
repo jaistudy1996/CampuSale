@@ -68,6 +68,9 @@ function getItems(){
 }
 
 function viewItems(items){
+	// Setting inital items list to NONE. If this is not set to none, it will result in a 
+	// long list of items which will be sorted after the first one is listed. 
+	document.getElementById("items-list").innerHTML = "";
 	for(var i = 0; i < items.length; i++){
 		document.getElementById("items-list").innerHTML += "<li><img src='images/img-1.jpg'/><a href="+"/listing/items/"+
 		items[i].itemID+" class='itemLink'>"+"<h3>"+items[i].title+"</h3></a><p>"+items[0].description+"</p></li>";
@@ -78,11 +81,11 @@ function sortItems(value){
 	// If value is 1 :- Sort lowest to highest
 	if(value == 1){
 		allItems.sort(function(a, b){return a.price - b.price});
-		console.log(allItems);
+		viewItems(allItems);
 	}
 	// If value is 0 :- sort highest to lowest.
 	if(value == 0){
 		allItems.sort(function(a, b){return b.price - a.price});
-		console.log(allItems);
+		viewItems(allItems);
 	}
 }
