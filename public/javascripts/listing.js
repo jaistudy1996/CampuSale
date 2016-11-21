@@ -45,7 +45,7 @@ function addCat(catID){
 
 allItems = [];
 
-function viewItems(){
+function getItems(){
 	// Show all items that are in the database 
 	// TO-DO: Make page numbers to show all the items. 
 	var xhr = new XMLHttpRequest();
@@ -62,8 +62,6 @@ function viewItems(){
 				document.getElementById("items-list").innerHTML += "<li><img src='images/img-1.jpg'/><a href="+"/listing/items/"+
 				response[i].itemID+" class='itemLink'>"+"<h3>"+response[i].title+"</h3></a><p>"+response[0].description+"</p></li>";
 			}
-			allItems.sort(function(a, b){return b.price - a.price});
-			console.log(allItems);
 		}
 	}
 	xhr.send(null);
