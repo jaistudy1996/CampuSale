@@ -1,0 +1,93 @@
+doctype html
+html
+  title CampuSale
+  meta(name='viewport', content='width=device-width, initial-scale=1')
+  link(rel='stylesheet', href='http://www.w3schools.com/lib/w3.css')
+  link(rel='stylesheet', type='text/css', href='stylesheets/style.css')
+  link(rel='stylesheet', href='http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css')
+  style.
+    .details{
+    width: 92%;
+    height:85%;
+    /*padding: 20%;*/
+    border: 2px solid black;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom:8%;
+    }
+    .details p{
+    margin-left:3%;
+    margin-top:3%;
+    font-family:arial;
+    }
+  // Navbar (sit on top)
+  .w3-top
+    .control(tabindex='1')
+      .btn
+      i.icon-search.ion-search
+    i.icon-close.ion-ios-close-empty
+    .form
+      input.input-search(placeholder='Start Typing', type='text')
+    ul.w3-black.nav
+      li.navLink
+        a(href='/listing')
+          img(src='images/logo.png', alt='logo')
+          span#name CAMPUSALE
+      li.dropdown(style='float:right')
+        a.dropbtn(href='#')
+          | Username
+          img#dropdown(src='images/drop_down.png', alt='v')
+        .dropdown-content
+          a(href='/profile') Profile
+          a(href='/sell') Sell
+          a(href='/settings') Settings
+          a(href='/logout') Logout
+  body#sellingPage
+  // Listing Details
+  .listing
+    p Listing Details
+  // Photos
+  .photos
+    p PHOTOS
+  // Details
+  .details
+    h3.header You have successfully logged out, login to continue
+
+    .title
+  // Footer
+  footer.footer.w3-center
+    #copyright
+      p  © CampuSale Inc. 2016
+    .social_media
+      #facebook
+        img(src='images/facebook.png', alt='facebook')
+      #twitter
+        img(src='images/Twitter.png', alt='twitter')
+      #linkedin
+        img(src='images/linkedin.png', alt='linkedin')
+    #top
+      a.smoothScroll(href='#sellingPage')
+        input(type='image', src='images/top-button.png', name='top')
+  script(src='http://code.jquery.com/jquery-1.11.2.min.js')
+  script.
+    // Change style of navbar on scroll
+    window.onscroll = function() {myFunction()};
+    function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " w3-red";
+    } else {
+    //navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-red", "");
+    navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " w3-black";
+    }
+    }
+    /*Search Function*/
+    $('.control').click(function () {
+    $('body').addClass('mode-search');
+    $('.input-search').focus();
+    });
+    $('.icon-close').click(function () {
+    $('body').removeClass('mode-search');
+    });
+
