@@ -32,7 +32,7 @@ router.post("/category", function(req, res, next){
 });
 
 router.post("/items", function(req, res, next){
-	db.query("SELECT * FROMitems", function(err, result){
+	db.query("SELECT * FROM items", function(err, result){
 		if(err){
 			console.log(err)
 		}
