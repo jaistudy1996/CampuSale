@@ -16,8 +16,8 @@ router.get('/', function(req, res, next){
 	//	}
 		//console.log(result);
 	//});
-	console.log(req.cookies);
-	console.log(req.signedCookies);
+	user = req.signedCookies.loginName;
+	console.log(user);
 	res.render("listing", {});
 });
 
