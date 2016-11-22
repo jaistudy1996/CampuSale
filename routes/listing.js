@@ -16,6 +16,8 @@ router.get('/', function(req, res, next){
 	//	}
 		//console.log(result);
 	//});
+	console.log(req.cookies);
+	console.log(req.signedCookies);
 	res.render("listing", {});
 });
 
