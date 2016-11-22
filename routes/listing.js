@@ -18,7 +18,7 @@ router.get('/', function(req, res, next){
 	//});
 	user = req.signedCookies.loginName;
 	console.log(user);
-	res.render("listing", {});
+	res.render("listing", {Username: user});
 });
 
 router.post("/category", function(req, res, next){
