@@ -33,6 +33,7 @@ router.post('/', function(req, res, next) {
 			console.log("length == 1");
 			res.cookie('login', true, {expires: new Date(Date.now() + 600000), signed: true});
 			res.cookie('loginName', result[0].firstName, {signed: true});
+			res.cookie('cart', {items: []});
 			res.send("/listing");
 		}	
 	});
