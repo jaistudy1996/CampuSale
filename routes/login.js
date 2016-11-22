@@ -31,12 +31,12 @@ router.post('/', function(req, res, next) {
 		}
 		if(result.length == 1){
 			console.log("length == 1");
-			date = new Date(Date.now());
-			res.cookie('login', true, {expires: date + 3600000, signed: true});
-			res.cookie('loginName', result[0].firstName, {expires: date + 3600000, signed: true});
+			// 3600000
+			res.cookie('login', true, {expires: new Date(Date.now() + 30000), signed: true});
+			res.cookie('loginName', result[0].firstName, {expires: new Date(Date.now() + 30000), signed: true});
 			res.cookie('cart', {items: []});
 			res.send("/listing");
-		}	
+		}
 	});
 	//res.send("Response from server");
 });
