@@ -32,7 +32,7 @@ router.post('/', function(req, res, next) {
 		if(result.length == 1){
 			console.log("length == 1");
 			// 3600000  -- Change to 1 hr when testing is complete
-			res.cookie('login', true, {expires: new Date(Date.now() + 30000), signed: true});
+			// res.cookie('login', true, {expires: new Date(Date.now() + 30000), signed: true});
 			res.cookie('loginName', result[0].firstName, {expires: new Date(Date.now() + 30000), signed: true});
 			res.cookie('cart', {items: []});
 			res.send("/listing");
