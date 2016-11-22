@@ -10,15 +10,13 @@ var db = dbconn.createConnection({
 	}); 
 
 router.get('/', function(req, res, next){
-	//db.query("SELECT * FROM category", function(err, result){
-	//	if(err){
-	//		console.log(err);
-	//	}
-		//console.log(result);
-	//});
 	user = req.signedCookies.loginName;
-	console.log(user);
-	res.render("listing", {Username: user});
+	if(user){
+		res.render("listing", {Username: user});
+	}
+	else{
+		res.redirect("/");
+	}
 });
 
 router.post("/category", function(req, res, next){
