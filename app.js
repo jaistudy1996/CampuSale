@@ -50,7 +50,7 @@ app.set('view engine', 'jade');
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(cookieParser("JAYANT"));
+app.use(cookieParser("h17d7@6e7"));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(fileUpload());
 
