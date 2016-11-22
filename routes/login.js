@@ -31,6 +31,7 @@ router.post('/', function(req, res, next) {
 		}
 		if(result.length == 1){
 			console.log("length == 1");
+			res.cookie('login', true, {expires: new Date(Date.now() + 600000), signed: true});
 			res.send("/listing");
 		}	
 	});
