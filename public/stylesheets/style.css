@@ -1270,3 +1270,20 @@ select {
 	margin-top:8px;
 	position:absolute;
 }
+
+/*Logout Page*/
+.details{
+    width: 92%;
+    height:68%;
+    text-align: center;
+    margin: 5%
+}
+.details p{
+    margin-left:3%;
+    margin-top:3%;
+    font-family:arial;
+}
+#logoutMessage {
+    font-size: 36px;
+    padding-top: 150px;
+}
