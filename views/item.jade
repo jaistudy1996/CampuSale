@@ -88,7 +88,7 @@ html
                           input.passwInput(type='submit', name='Upload', value='Change Password')
     // Navbar (sit on top)
     // Navbar (sit on top)
-    .w3-top#itemNav
+    #itemNav.w3-top
       .control(tabindex='1')
         .btn
         i.icon-search.ion-search
@@ -110,7 +110,7 @@ html
             a(href='/listing') Browse
             a(onclick="document.getElementById('id04').style.display='block'", href='#') Change Password
             a(href='/logout') Logout
-    .container_item#return
+    #return.container_item
       .other_images
         | image1
         hr(style='margin-top:50%')
@@ -131,7 +131,7 @@ html
           h6 Name of the Product
           h6#short_desc  Short Description 
         #right_1
-          h6 Price
+          #price(style='width:50%;height:25%;margin-top:10px;') $
         hr
         #left(style='float:left;')
           h6#seller_text Seller
@@ -141,11 +141,12 @@ html
             h6(style='margin-top:25px;') Rating
         #right(style='float:right;')
           h6#condition_text Condition
-          h6#pickup_text(style='margin-top:58px;') Pickup Location
+          #condition(style='border:0.5px solid black;height:30px;width:75%;')
+          h6#pickup_text(style='margin-top:18px;') Pickup Location
+          #pickup(style='border:0.5px solid black;height:30px;width:75%;')
         .buy_button
           a#buy(href='', <h6='') Buy
-    .other_products
-      | People also like
+    .other_products People also like
     // Footer
     footer.footer.w3-center(style='margin-top:30px')
       #copyright
