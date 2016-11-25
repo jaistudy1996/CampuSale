@@ -34,7 +34,7 @@ style.
 	padding-top: 25px;
   }
   /* Create a Parallax Effect */
-  .bgimg-1, .bgimg-2, .bgimg-3 {
+  .bgimg-1 {
   opacity: 1;
   background-attachment: fixed;
   background-position: center;
