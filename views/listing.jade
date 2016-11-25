@@ -9,48 +9,56 @@ html
   body#listin_page
     // Navbar (sit on top)
     #id03.modal
-      form.modal-content.animate(action='/item/upload' method="POST" enctype="multipart/form-data")
+      form.modal-content.animate(action='#', style='background-color:white;')
         .imgcontainer
           span.close(onclick="document.getElementById('id03').style.display='none'", title='Close Modal') ×
         .sell_container
           .details
             #sell_form
-              form.register(action="#")
-                fieldset
-                  .form-group
-                    label.sellLabel(for='category') Category: 
-                    select#catagory(name='Select a category')
-                      option(value='select') Select a category
-                      option(value='men') Men
-                      option(value='women') Women
-                      option(value='appliances') Appliances
-                      option(value='electronics') Electronics
-                      option(value='games') Video Games
-                      option(value='movies') Movies and Music
-                  .form-group
-                    label.sellLabel(for='title') Title:
-                    input.sellInput(name='title')
-                  .form-group
-                    label.sellLabel(for='price') Price:
-                    input.sellInput(name='price')
-                  .form-group
-                    label.sellLabel(for='Condition') Item Condition: 
-                    select#condition(name='condition')
-                      option(value='condition') Choose item condition
-                      option(value='new') New
-                      option(value='likenew') Like New
-                      option(value='used') Used
-                      option(value='poor') Poor
-                  .form-group
-                    label.sellLabel(for='location') Pickup Location:
-                    input.sellInput(name='location')
-                  .form-group
-                    label.sellLabel(for='Description') Description:
-                    input.sellInput(name='Description', type='Description')
-                  //form(action='/users/image', method='POST')
+              form.register(action='', method='post', name='registration')
+                .form-group
+                  label.sellLabel(for='category') Category:
+                  select#catagory(name='Select a category')
+                    option(value='select') Select a category
+                    option(value='men') Men
+                    option(value='women') Women
+                    option(value='appliances') Appliances
+                    option(value='electronics') Electronics
+                    option(value='games') Video Games
+                    option(value='movies') Movies and Music
+                .form-group
+                  label.sellLabel(for='title') Title:
+                  input.sellInput(name='title')
+                .form-group
+                  label.sellLabel(for='price') Price:
+                  input.sellInput(name='price')
+                .form-group
+                  label.sellLabel(for='payment') Payment Option: 
+                  select#payment(name='Select payment type')
+                    option(value='payment') Select a payment type
+                    option(value='cash') Cash
+                    option(value='women') Cardinal Cash
+                    option(value='check') Check
+                    option(value='paypal') Paypal
+                    option(value='mo') Money Order
+                .form-group
+                  label.sellLabel(for='Condition') Item Condition: 
+                  select#condition(name='condition')
+                    option(value='condition') Choose item condition
+                    option(value='new') New
+                    option(value='likenew') Like New
+                    option(value='used') Used
+                    option(value='poor') Poor
+                .form-group
+                  label.sellLabel(for='location') Pickup Location:
+                  input.sellInput(name='location')
+                .form-group
+                  label.sellLabel(for='Description') Description:
+                  input.sellInput(name='Description', type='Description')
+                form(action='/users/image', method='POST')
                   input.sellInput(type='file', name='file', value='')
-                  //form
-                  input.sellInput(type='submit', name='Upload', value='Add')
+                form
+                  button#add-button(type='submit', style='background-color:grey;width:50%;height:40px;') Add
     // Change Password Overlay
     #id04.modal
       form.modal-content.animate(action='#')
@@ -92,7 +100,6 @@ html
         button#sell_span(onclick="document.getElementById('id03').style.display='block'")
         li.dropdown(style='float:right')
           a.dropbtn(href='#')
-            | #{Username}
             img#dropdown(src='images/drop_down.png', alt='v')
           .dropdown-content
             a(href='/profile') Profile
@@ -105,8 +112,8 @@ html
             button.sort_dropbtn Sort
             .sort_dropdown-content
               a(href='#') Newest
-              a(href='#' onclick="sortItems(1)") Price: Low to High
-              a(href='#' onclick="sortItems(0)") Price: High to Low
+              a(href='#', onclick='sortItems(1)') Price: Low to High
+              a(href='#', onclick='sortItems(0)') Price: High to Low
           .category_dropdown
             button.category_dropbtn Category
             #Category.category_dropdown-content
