@@ -33,8 +33,7 @@ html
             option(value='used') Used
             option(value='poor') Poor
           input#description(type='text', placeholder='Item Description', name='description', style='width:99%;', required='')
-          .addd_button
-            a#addd(href='', <h6='') Add
+          button#addButton(type='button', onclick='add()') Add
     // Change Password Overlay
     #id04.modal
       form.modal-content.animate(action='#')
