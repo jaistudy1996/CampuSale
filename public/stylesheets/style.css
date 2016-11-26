@@ -28,6 +28,8 @@ style.
   height: 100%;
   color: black;
   line-height: 0.8;
+  }
+  #index_page{
   opacity: 1;
   background-attachment: fixed;
   background-position: center;
@@ -35,7 +37,7 @@ style.
   background-size: cover;
   background-image: url('../images/img1.jpg');
   min-height: 100%;
-  }
+}
   #text {
   	font-size: 25px;
 	padding-top: 25px;
