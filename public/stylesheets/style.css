@@ -1171,7 +1171,7 @@ hr{
 }
 
 select {
-background-image:url(../images/arrow.png);
+background-image:url('/images/sell.png');
 background-repeat:no-repeat;
 background-position:300px;
 width:353px;
