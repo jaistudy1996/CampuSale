@@ -1180,15 +1180,15 @@ margin-top:8px;
 font-family:'Open Sans Condensed', sans-serif;
 line-height:1;
 border-radius:5px;
-background-color:lightblue;
-color:white;
+background-color:lightgrey;
+color:black;
 font-size:20px;
 -webkit-appearance:none;
 box-shadow:inset 0 0 10px 0 rgba(0,0,0,0.6);
 outline:none
 }
 select:hover {
-color:#00ff7f
+color:red;
 }
 
 #add{
