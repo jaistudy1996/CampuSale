@@ -9,56 +9,32 @@ html
   body#listin_page
     // Navbar (sit on top)
     #id03.modal
-      form.modal-content.animate(action='#', style='background-color:white;')
+      form.modal-content.animate(action='#')
         .imgcontainer
           span.close(onclick="document.getElementById('id03').style.display='none'", title='Close Modal') ×
-        .sell_container
-          .details
-            #sell_form
-              form.register(action='', method='post', name='registration')
-                .form-group
-                  label.sellLabel(for='category') Category:
-                  select#catagory(name='Select a category')
-                    option(value='select') Select a category
-                    option(value='men') Men
-                    option(value='women') Women
-                    option(value='appliances') Appliances
-                    option(value='electronics') Electronics
-                    option(value='games') Video Games
-                    option(value='movies') Movies and Music
-                .form-group
-                  label.sellLabel(for='title') Title:
-                  input.sellInput(name='title')
-                .form-group
-                  label.sellLabel(for='price') Price:
-                  input.sellInput(name='price')
-                .form-group
-                  label.sellLabel(for='payment') Payment Option: 
-                  select#payment(name='Select payment type')
-                    option(value='payment') Select a payment type
-                    option(value='cash') Cash
-                    option(value='women') Cardinal Cash
-                    option(value='check') Check
-                    option(value='paypal') Paypal
-                    option(value='mo') Money Order
-                .form-group
-                  label.sellLabel(for='Condition') Item Condition: 
-                  select#condition(name='condition')
-                    option(value='condition') Choose item condition
-                    option(value='new') New
-                    option(value='likenew') Like New
-                    option(value='used') Used
-                    option(value='poor') Poor
-                .form-group
-                  label.sellLabel(for='location') Pickup Location:
-                  input.sellInput(name='location')
-                .form-group
-                  label.sellLabel(for='Description') Description:
-                  input.sellInput(name='Description', type='Description')
-                form(action='/users/image', method='POST')
-                  input.sellInput(type='file', name='file', value='')
-                form
-                  button#add-button(type='submit', style='background-color:grey;width:50%;height:40px;') Add
+        .container
+          h1.w3-center  Add an Item
+          input#title(type='text', placeholder='Title', name='title', style='width:50%;', required='')
+          input#price(type='text', placeholder='Price', name='price', style='width:49%;', required='')
+          input#location(type='text', placeholder='Pick up location', name='location', style='width:99%;', required='')
+          select#category(type='select', placeholder='Select a category', name='category', style='width:50%;', required='')
+            option(value='category') Select a category
+            option(value='men') Men
+            option(value='women') Women
+            option(value='appliances') Appliances
+            option(value='electronics') Electronics
+            option(value='games') Video Games
+            option(value='movies') Movies and Music
+          select#condition(type='select', placeholder='Choose Item Condition', name='condition', style='width:49%;', required='')
+            option(value='condition') Choose Item Condition
+            option(value='new') New
+            option(value='likenew') Like New
+            option(value='used') Used
+            option(value='poor') Poor
+          input#description(type='text', placeholder='Item Description', name='description', style='width:99%;', required='')
+          button#addButton(type='button', onclick='add()') Add
+      form
+        button#add-button(type='submit', style='background-color:grey;width:50%;height:40px;') Add
     // Change Password Overlay
     #id04.modal
       form.modal-content.animate(action='#')
