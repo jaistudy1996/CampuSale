@@ -15,8 +15,8 @@ html
           h1.w3-center  Add an Item
           input#title(type='text', placeholder='Title', name='title', style='width:49%;', required='')
           input#price(type='text', placeholder='Price', name='price', style='width:49%;', required='')
-          input#signup3(type='text', placeholder='Pick up location', name='location', style='width:99%;', required='')
-          select#signup4(type='select', placeholder='Select a category', name='category', style='width:49%;', required='')
+          input#location(type='text', placeholder='Pick up location', name='location', style='width:99%;', required='')
+          select#category(type='select', placeholder='Select a category', name='category', style='width:49%;', required='')
             option(value='category') Select a category
             option(value='men') Men
             option(value='women') Women
@@ -24,14 +24,14 @@ html
             option(value='electronics') Electronics
             option(value='games') Video Games
             option(value='movies') Movies and Music
-          select#signup5(type='select', placeholder='Choose Item Condition', name='condition', style='width:49%;', required='')
+          select#condition(type='select', placeholder='Choose Item Condition', name='condition', style='width:49%;', required='')
             option(value='condition') Choose Item Condition
             option(value='new') New
             option(value='likenew') Like New
             option(value='used') Used
             option(value='poor') Poor
-          input#signup6(type='text', placeholder='Item Description', name='description', style='width:99%;', required='')
-          button#signupButton(type='button', onclick='signup()') Add
+          input#description(type='text', placeholder='Item Description', name='description', style='width:99%;', required='')
+          button#add(type='button', onclick='add()') Add
         .container(style='background-color:#f1f1f1')
           button.cancelbtn(type='button', onclick="document.getElementById('id02').style.display='block'") Cancel
     // Change Password Overlay
