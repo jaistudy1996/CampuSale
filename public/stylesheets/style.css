@@ -183,6 +183,7 @@ style.
   background-color: #898989;
   padding-right: 0px;
   padding-left: 0px;
+  background:transparent;
   }
   /*Contact background*/
   #contactUs {
@@ -190,6 +191,7 @@ style.
   /*background-color: lightgrey;*/
   padding-right: 0px;
   padding-left: 0px;
+  background:transparent;
   }
   /*Logo text formating*/
   h1.title {
@@ -251,9 +253,11 @@ style.
   }
   #Back2 {
   background-color: #898989;
+  background:transparent;
   }
   #Back3 {
   background-color: #464646;
+  background:transparent;
   }
   #banner {
   }
