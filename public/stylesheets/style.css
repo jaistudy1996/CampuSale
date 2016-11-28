@@ -186,7 +186,7 @@ style.
   background-color: lightgrey;
   padding-right: 0px;
   padding-left: 0px;
-  opacity: 0.95;
+  background: rgba(54, 25, 25, .5);
 	  
   }
   /*Our Team background*/
@@ -261,7 +261,7 @@ style.
   /*Fix baxkground color of sections*/
   #Back1 {
   	  background-color: lightgrey;
-	  opacity: 0.95;
+	  background: rgba(54, 25, 25, .5);
   }
   #Back2 {
   background-color: #898989;
