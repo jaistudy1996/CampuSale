@@ -260,6 +260,11 @@ style.
   display: inline-block;  
   padding: 0px 8px;
   }
+
+  /*Video border*/
+  #video2 {
+	  border: solid;
+  }
   /*footer formating*/
   footer.footer {
   background-color: #000000;
