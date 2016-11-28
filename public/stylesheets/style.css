@@ -191,7 +191,6 @@ style.
   /*Our Team background*/
   #OurTeam {
   height: 660px;
-  background-color: #898989;
   padding-right: 0px;
   padding-left: 0px;
   
@@ -199,7 +198,6 @@ style.
   /*Contact background*/
   #contactUs {
   height: 530px;
-  /*background-color: lightgrey;*/
   padding-right: 0px;
   padding-left: 0px;
   
@@ -262,11 +260,9 @@ style.
 	  background: rgba(211,211,211, .9);
   }
   #Back2 {
-  background-color: #898989;
   background: rgba(211,211,211, .9);
   }
   #Back3 {
-  background-color: #464646;
   background: rgba(211,211,211, .9);
   }
   #banner {
