@@ -186,7 +186,7 @@ style.
   background-color: lightgrey;
   padding-right: 0px;
   padding-left: 0px;
-  opacity: 0.9;
+  opacity: 0.95;
 	  
   }
   /*Our Team background*/
@@ -195,7 +195,7 @@ style.
   background-color: #898989;
   padding-right: 0px;
   padding-left: 0px;
-  opacity: 0.9;
+  opacity: 0.95;
   }
   /*Contact background*/
   #contactUs {
@@ -203,7 +203,7 @@ style.
   /*background-color: lightgrey;*/
   padding-right: 0px;
   padding-left: 0px;
-  opacity: 0.9;
+  opacity: 0.95;
   }
   /*Logo text formating*/
   h1.title {
@@ -261,15 +261,15 @@ style.
   /*Fix baxkground color of sections*/
   #Back1 {
   	  background-color: lightgrey;
-	  opacity: 0.9;
+	  opacity: 0.95;
   }
   #Back2 {
   background-color: #898989;
-  opacity: 0.9;
+  opacity: 0.95;
   }
   #Back3 {
   background-color: #464646;
-  opacity: 0.9;
+  opacity: 0.95;
   }
   #banner {
   }
