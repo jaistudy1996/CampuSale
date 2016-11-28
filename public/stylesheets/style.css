@@ -195,7 +195,7 @@ style.
   background-color: #898989;
   padding-right: 0px;
   padding-left: 0px;
-  background:transparent;
+  opacity: 0.9;
   }
   /*Contact background*/
   #contactUs {
@@ -265,7 +265,7 @@ style.
   }
   #Back2 {
   background-color: #898989;
-  background:transparent;
+  opacity: 0.9;
   }
   #Back3 {
   background-color: #464646;
