@@ -203,7 +203,7 @@ style.
   /*background-color: lightgrey;*/
   padding-right: 0px;
   padding-left: 0px;
-  background:transparent;
+  opacity: 0.9;
   }
   /*Logo text formating*/
   h1.title {
@@ -269,7 +269,7 @@ style.
   }
   #Back3 {
   background-color: #464646;
-  background:transparent;
+  opacity: 0.9;
   }
   #banner {
   }
