@@ -267,6 +267,10 @@ style.
   }
   #banner {
   }
+  /*Video border*/
+  #video2 {
+	  border: solid;
+  }
   /*Social Media*/
   .center {
   margin:auto;
