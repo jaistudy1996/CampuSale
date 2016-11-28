@@ -185,7 +185,7 @@ style.
   height: 660px;
   padding-right: 0px;
   padding-left: 0px;
-  background: rgba(211,211,211,.9);
+ 
 	  
   }
   /*Our Team background*/
@@ -259,7 +259,7 @@ style.
   }
   /*Fix baxkground color of sections*/
   #Back1 {
-	  
+	  background: rgba(211,211,211, .9);
   }
   #Back2 {
   background-color: #898989;
