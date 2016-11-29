@@ -1117,7 +1117,7 @@ hr{
 .other_products{
 	margin:auto;
 	width: 80%;
-	border: 3px solid #e91e63;
+	border: 0.1px solid black;
 	padding: 10px;
 	height:200px;
 }
