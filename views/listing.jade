@@ -35,29 +35,28 @@ html
           button#addButton(type='button', onclick='add()') Add
     // Change Password Overlay
     #id04.modal
-      form.modal-content.animate(action='#')
+      form.modal-content.animate(action='#', style='background-color:rgba(0,102,204,0.7);')
         .imgcontainer
           span.close(onclick="document.getElementById('id04').style.display='none'", title='Close Modal') ×
-        .passw_container
+        .passw_container(style='height:270px;')
           .detail
             #passw_form
               form.register(action='', method='post', name='registration')
-                fieldset
-                  .password_container
-                    h4.header Change Password
-                    #form
-                      form.register(action='', method='post', name='registration')
-                        fieldset
-                          .form-group
-                            label.passwLabel(for='old') Old Password:
-                            input.passwInput(name='old', required='')
-                          .form-group
-                            label.passwLabel(for='new') New Password:
-                            input.passwInput(name='new', required='')
-                          .form-group
-                            label.passwLabel(for='confirm') Confirm Password:
-                            input.passwInput(name='confirm', required='')
-                          input.passwInput(type='submit', name='Upload', value='Change Password')
+                .password_container
+                  h4.header(style='color:white;') Change Password
+                  #form
+                    form.register(action='', method='post', name='registration')
+                      fieldset
+                        .form-group
+                          label.passwLabel(for='old', style='color:white;') Old Password:
+                          input.passwInput(name='old', required='')
+                        .form-group
+                          label.passwLabel(for='new', style='color:white;') New Password:
+                          input.passwInput(name='new', required='')
+                        .form-group
+                          label.passwLabel(for='confirm', style='color:white;') Confirm Password:
+                          input.passwInput(name='confirm', required='')
+                        input.passwInput(type='submit', name='Upload', value='Change Password')
     // Navbar (sit on top)
     #listingNav.w3-top
       .control(tabindex='1')
