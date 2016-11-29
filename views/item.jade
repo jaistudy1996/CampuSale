@@ -119,40 +119,46 @@ html
           #pickup(style='border:0.5px solid black;height:30px;width:75%;')
         .buy_button
           a#buy(href='', <h6='') Buy
-    .other_products People also like
-    // Footer
-    footer.footer.w3-center(style='margin-top:30px')
-      #copyright
-        p  © CampuSale Inc. 2016
-      .social_media
-        #facebook
-          img(src='images/facebook.png', alt='facebook')
-        #twitter
-          img(src='images/Twitter.png', alt='twitter')
-        #linkedin
-          img(src='images/linkedin.png', alt='linkedin')
-      #top
-        a.smoothScroll(href='#return')
-          input(type='image', src='images/top-button.png', name='top')
-    script(src='http://code.jquery.com/jquery-1.11.2.min.js')
-    script.
-      // Change style of navbar on scroll
-      window.onscroll = function() {myFunction()};
-      function myFunction() {
-      var navbar = document.getElementById("myNavbar");
-      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-      navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " w3-red";
-      } else {
-      //navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-red", "");
-      navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " w3-black";
-      }
-      }
-      /*Search Function*/
-      $('.control').click(function () {
-      $('body').addClass('mode-search');
-      $('.input-search').focus();
-      });
-      $('.icon-close').click(function () {
-      $('body').removeClass('mode-search');
-      });
-      /*------------*/
+    h6(style='margin-left:130px;')
+      | People also like
+      h6
+        .other_products(style='background-color:rgba(192,192,192,0.5);')
+          img(src='images/img-1.jpg', style='width:200px; height:180px;')
+          img(src='images/img-2.jpg', style='width:200px; height:180px;')
+          img(src='images/img-3.jpg', style='width:200px; height:180px;')
+          img(src='images/img-4.jpg', style='width:200px; height:180px;')
+        // Footer
+        footer.footer.w3-center(style='margin-top:30px')
+          #copyright
+            p  © CampuSale Inc. 2016
+          .social_media
+            #facebook
+              img(src='images/facebook.png', alt='facebook')
+            #twitter
+              img(src='images/Twitter.png', alt='twitter')
+            #linkedin
+              img(src='images/linkedin.png', alt='linkedin')
+          #top
+            a.smoothScroll(href='#return')
+              input(type='image', src='images/top-button.png', name='top')
+        script(src='http://code.jquery.com/jquery-1.11.2.min.js')
+        script.
+          // Change style of navbar on scroll
+          window.onscroll = function() {myFunction()};
+          function myFunction() {
+          var navbar = document.getElementById("myNavbar");
+          if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+          navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " w3-red";
+          } else {
+          //navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-red", "");
+          navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " w3-black";
+          }
+          }
+          /*Search Function*/
+          $('.control').click(function () {
+          $('body').addClass('mode-search');
+          $('.input-search').focus();
+          });
+          $('.icon-close').click(function () {
+          $('body').removeClass('mode-search');
+          });
