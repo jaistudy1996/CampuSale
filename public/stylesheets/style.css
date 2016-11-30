@@ -1258,13 +1258,12 @@ color:red;
 	margin-top:35px;
 }
 
-.form_group {
+.form-group {
 	padding: 10px 0px;
 }
 
 #passw_form {
     background-color: light grey;
-    height: 600px;
     width: 600px;
     margin-right: auto;
     margin-left: auto;
