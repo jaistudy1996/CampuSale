@@ -1248,7 +1248,7 @@ color:red;
 
 .passw_container {
   	padding: 16px;
-	height:450px;
+	height:270px;
 	margin-top:45px;
 }
 .details{
@@ -1275,7 +1275,6 @@ color:red;
 .passwLabel {
     font-family: 'Alegreya', serif;
     font-size: 18px;
-    color: #333;
     height: 25px;
     width: 200px;
     margin-top: 10px;
