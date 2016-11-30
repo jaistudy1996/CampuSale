@@ -1291,7 +1291,14 @@ color:red;
     height: 25px;
     width: 300px;
     border: 1px solid #000;
-    margin-top: 20px;
+ 
+}
+
+#changePass {
+	width: auto;
+	height: auto;
+	margin: 20px;
+	padding: 10px;
 }
 
 #changee{
