@@ -1258,6 +1258,9 @@ color:red;
 	margin-top:35px;
 }
 
+.form_group {
+	padding: 10px 0px;
+}
 
 #passw_form {
     background-color: light grey;
@@ -1288,7 +1291,7 @@ color:red;
     height: 25px;
     width: 300px;
     border: 1px solid #000;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 #changee{
