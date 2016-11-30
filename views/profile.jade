@@ -71,7 +71,7 @@ html
           .dropdown-content
             a(href='/listing') Browse Items
             a(onclick="document.getElementById('id04').style.display='block'", href='#') Change Password
-            a(href='/logout') Logout
+            a(onclick="logout_function()") Logout
         //button#sell_span(onclick="document.getElementById('id03').style.display='block'")
     .w3-display-container#cover(style='margin-top:55px;')
       img(src='images/cover.jpg', alt='cover', style='width:100%;height:200px;position: relative;top: 0;left: 0;')
@@ -133,3 +133,11 @@ html
       #top
         a.smoothScroll(href='#cover')
           input(type='image', src='images/top-button.png', name='top')
+          
+      script.
+      function logout_function() {
+      alert("You have successfully logged out, click OK to continue");
+      var timer = setTimeout(function logout_function() {
+      window.location='/#'
+      }, 100);
+      }
