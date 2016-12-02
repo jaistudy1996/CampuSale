@@ -667,7 +667,7 @@ body.mode-search .control .btn {
 .sort_dropbtn {
     background-color: lightgrey;
     color: black;
-    padding: 13px;
+    padding: 13%;
     font-size: 1.4em;
     border: none;
     cursor: pointer;
@@ -756,7 +756,7 @@ body.mode-search .control .btn {
 .category_dropbtn {
     background-color: lightgrey;
     color: black;
-    padding: 13px;
+    padding: 13%;
     font-size: 1.4em;
     border: none;
     cursor: pointer;
@@ -849,7 +849,7 @@ body.mode-search .control .btn {
 .price_dropbtn {
     background-color: lightgrey;
     color: black;
-    padding: 13px;
+    padding: 13%;
     font-size: 1.4em;
     border: none;
     cursor: pointer;
