@@ -362,8 +362,9 @@ style.
   margin: 24px 0 12px 0;
   position: relative;
   }
-  .container {
+  #checkboxContainer {
   padding: 16px;
+  text-align: center;
   }
   span.psw {
   float: right;
@@ -403,6 +404,9 @@ style.
   .close:focus {
   color: red;
   cursor: pointer;
+  }
+  #checkboxContainer {
+	  float:left;
   }
   /* Add Zoom Animation */
   .animate {
