@@ -362,9 +362,12 @@ style.
   margin: 24px 0 12px 0;
   position: relative;
   }
-  #checkboxContainer {
+  #loginContainer {
   padding: 16px;
   text-align: center;
+  }
+  #checkboxContainer {
+	  float: left;
   }
   span.psw {
   float: right;
