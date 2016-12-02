@@ -667,16 +667,17 @@ body.mode-search .control .btn {
     background-color: lightgrey;
     color: black;
     padding: 13px;
-    font-size: 16px;
+    font-size: 1.4em;
     border: none;
     cursor: pointer;
-	margin-top:7px;
+    margin-top:7px;
+    width: auto;
 }
 
 .sort_dropdown {
     position: relative;
     display: inline-block;
-    margin-left:30%;
+    margin: 0 2%;
 }
 
 .sort_dropdown-content {
@@ -754,18 +755,18 @@ body.mode-search .control .btn {
     background-color: lightgrey;
     color: black;
     padding: 13px;
-    font-size: 16px;
+    font-size: 1.4em;
     border: none;
     cursor: pointer;
-	margin-top:7px;
+    margin-top:7px;
+    width: auto;
 
 }
 
 .category_dropdown {
     position: relative;
     display: inline-block;
-    margin-right: 10.5%;
-    margin-left: 10.5%;
+    margin: 0 2%;
 }
 
 .category_dropdown-content {
@@ -849,14 +850,14 @@ body.mode-search .control .btn {
     font-size: 16px;
     border: none;
     cursor: pointer;
-	margin-top:7px;
+    margin-top:7px;
+    width: auto;
 }
 
 .price_dropdown {
     position: relative;
     display: inline-block;
-    float:right;
-    margin-right:30%;
+    margin: 0 2%;
 }
 
 .price_dropdown-content {
