@@ -369,6 +369,7 @@ style.
   #loginContainer {
   padding: 16px;
   text-align: center;
+  padding-bottom: 25px
   }
   #checkboxContainer {
 	  float: left;
