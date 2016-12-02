@@ -130,12 +130,18 @@ style.
   {
   margin: auto;
   width: 30%;
-  margin-top:30px;
+  margin-left:50px;
+  margin-top:50px;
   font-size: 25px;
   /*Chagne this to 'inline-block' to display button, and 'none' to hide button*/
   display: inline-block;
   }
-
+  #signupButton2 {
+	margin: auto;
+  	width: 30%;
+  	margin-top:30px;
+  	font-size: 25px;	  
+  }
   /*Semi-Transparent buttons*/
   .semi-transparent-button {
 	  background: #fff;
