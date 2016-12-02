@@ -18,12 +18,14 @@ html#index
       form.modal-content.animate(action='/login', method='POST')
         .imgcontainer
           span.close(onclick="document.getElementById('id01').style.display='none'", title='Close Modal') ×
-        .container
-          label
+        .container(style='text-align:center')
+          label.loginLabel
             b Username
+          div.clear
           input#uname(type='text', placeholder='uname@plattsburgh.edu', name='uname', required='')
-          label
+          label.loginLabel
             b Password
+          div.clear
           input#psw(type='password', placeholder='Enter Password', name='psw', onkeypress="changeLoginText()", required='')
           button#loginButton2(type='button', onclick='login()') Login
           input(type='checkbox', checked='checked')
