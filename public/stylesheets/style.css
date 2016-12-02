@@ -374,7 +374,7 @@ style.
   #checkboxContainer {
 	  float: left;
   }
-  span.psw {
+  .psw {
   float: right;
   padding-top: 16px;
   }
