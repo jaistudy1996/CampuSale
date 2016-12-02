@@ -11,7 +11,7 @@ html
       form.modal-content.animate(action='#')
         .imgcontainer
           span.close(onclick="document.getElementById('id03').style.display='none'", title='Close Modal') ×
-        .container
+        .container.sellContainer
           h1.w3-center  Add an Item
           input#title(type='text', placeholder='Title', name='title', style='width:50%;', required='')
           input#price(type='text', placeholder='Price', name='price', style='width:49%;', required='')
@@ -31,7 +31,7 @@ html
             option(value='used') Used
             option(value='poor') Poor
           input#description(type='text', placeholder='Item Description', name='description', style='width:99%;', required='')
-          button#addButton(type='button', onclick='add()') Add
+          button#addButton2(type='button', onclick='add()') Add
     // Change Password Overlay
     #id04.modal
       form.modal-content.animate(action='#', style='background-color:grey; border:solid')
