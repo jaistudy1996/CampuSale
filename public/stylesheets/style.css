@@ -989,6 +989,7 @@ body.mode-search .control .btn {
   font-size: .9em;
   line-height: 1.5em;
   color: #999;
+  padding-left: 15px;
   }
   /* class for 4 columns */
   ul.rig.columns-4 li {
