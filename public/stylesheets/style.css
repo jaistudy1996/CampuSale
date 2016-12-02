@@ -144,10 +144,11 @@ style.
   }
 
   #loginButton2 {
-	display: inline-block;
+	display: block;
 	width: auto;
-	margin: auto;
 	font-size: 25px;
+	margin: 10px 0;
+
   }
   .loginLabel {
 	  font-size: 1.2em;
