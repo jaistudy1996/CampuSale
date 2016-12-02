@@ -130,7 +130,7 @@ style.
   {
   margin: auto;
   width: 30%;
-  margin-top:50px;
+  margin-top:30px;
   font-size: 25px;
   /*Chagne this to 'inline-block' to display button, and 'none' to hide button*/
   display: inline-block;
@@ -407,7 +407,7 @@ style.
   }
   #id02 .container h1{
   color:red;
-  margin-bottom:15px;
+  margin-bottom:20px;
   }
 
   /*PROFILE PAGE*/
