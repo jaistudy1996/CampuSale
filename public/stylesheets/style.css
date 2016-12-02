@@ -131,7 +131,6 @@ style.
   margin: auto;
   width: 30%;
   margin-top:50px;
-  margin-left:50px;
   font-size: 25px;
   /*Chagne this to 'inline-block' to display button, and 'none' to hide button*/
   display: inline-block;
