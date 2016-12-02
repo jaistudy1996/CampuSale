@@ -145,8 +145,17 @@ style.
 
   #loginButton2 {
 	display: inline-block;
+	width: auto;
 	margin: auto;
 	font-size: 25px;
+  }
+  .loginLabel {
+	  font-size: 1.2em;
+	  float: left;
+	  margin: 10px 0;
+  }
+  .clear {
+	  clear: both;
   }
   /*Semi-Transparent buttons*/
   .semi-transparent-button {
