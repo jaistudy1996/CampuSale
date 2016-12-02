@@ -18,7 +18,7 @@ html#index
       form.modal-content.animate(action='/login', method='POST')
         .imgcontainer
           span.close(onclick="document.getElementById('id01').style.display='none'", title='Close Modal') ×
-        .container(style='text-align:center')
+        .container#loginContainer
           label.loginLabel
             b Username
           div.clear
@@ -28,8 +28,9 @@ html#index
           div.clear
           input#psw(type='password', placeholder='Enter Password', name='psw', onkeypress="changeLoginText()", required='')
           button#loginButton2(type='button', onclick='login()') Login
-          input(type='checkbox', checked='checked')
-          |  Remember me
+          div#checkboxContainer
+            input(type='checkbox', checked='checked')
+            |  Remember me
         .container(style='background-color:#f1f1f1')
           button.cancelbtn(type='button', onclick="document.getElementById('id01').style.display='none'") Cancel
           span.psw
