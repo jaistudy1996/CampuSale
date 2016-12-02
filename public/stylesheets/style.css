@@ -1199,7 +1199,9 @@ hr{
     margin-right:15px;
     float:left;
 }
-
+.sellContainer {
+	text-align: center;
+}
 .sellInput {
     height: 25px;
     width: 300px;
