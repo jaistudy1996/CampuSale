@@ -143,18 +143,6 @@ style.
   	font-size: 25px;	  
   }
 
-  #loginButton2 {
-	display: block;
-	width: auto;
-	font-size: 25px;
-	margin: 10px 0;
-
-  }
-  .loginLabel {
-	  font-size: 1.2em;
-	  float: left;
-	  margin: 10px 0;
-  }
   .clear {
 	  clear: both;
   }
@@ -350,6 +338,19 @@ style.
   cursor: pointer;
   width: 100%;
   }
+
+  #loginButton2 {
+	display: block;
+	width: 100%;
+	font-size: 25px;
+	margin: 10px 0;
+
+  }
+  .loginLabel {
+	  font-size: 1.2em;
+	  float: left;
+	  margin: 10px 0;
+  }
   /* Extra styles for the cancel button */
   .cancelbtn {
   width: auto;
@@ -361,6 +362,9 @@ style.
   text-align: center;
   margin: 24px 0 12px 0;
   position: relative;
+  }
+  .container {
+	  padding 16px;
   }
   #loginContainer {
   padding: 16px;
