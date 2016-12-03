@@ -33,6 +33,10 @@ html
             option(value='used') Used
             option(value='poor') Poor
           input#description(type='text', placeholder='Item Description', name='description', style='width:99%;', required='')
+          | form(action='/users/image', method='POST')
+          | input(type='file', name='file' value="")
+          | input(type='submit', name='Upload' value="Upload")
+
           button#addButton2(type='button', onclick='add()') Add
     // Change Password Overlay
     #id04.modal
