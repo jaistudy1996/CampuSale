@@ -3,9 +3,36 @@ html
   title CampuSale
   meta(name='viewport', content='width=device-width, initial-scale=1')
   link(rel='stylesheet', href='http://www.w3schools.com/lib/w3.css')
+  script(type='text/javascript', src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js')
+  script(type='text/javascript', src='javascripts/smoothscroll.js')
+  script(type='text/javascript', src='javascripts/login.js')
   link(rel='stylesheet', type='text/css', href='stylesheets/style.css')
   link(rel='stylesheet', href='http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css')
+  
   body#logoutPage
+    // Login Overlay
+    #id01.modal
+      form.modal-content.animate(action='/login', method='POST')
+        .imgcontainer
+          span.close(onclick="document.getElementById('id01').style.display='none'", title='Close Modal') ×
+        .container#loginContainer
+          label.loginLabel
+            b Username
+          div.clear
+          input#uname(type='text', placeholder='uname@plattsburgh.edu', name='uname', required='')
+          label.loginLabel
+            b Password
+          div.clear
+          input#psw(type='password', placeholder='Enter Password', name='psw', onkeypress="changeLoginText()", required='')
+          button#loginButton2(type='button', onclick='login()') Login
+          div#checkboxContainer
+            input(type='checkbox', checked='checked')
+            |  Remember me
+          div.psw
+            | Forgot 
+            a(href='#') password?
+
+    // Login Overlay Ending
   // Navbar (sit on top)
   .w3-top
     ul.w3-black.nav
@@ -15,6 +42,8 @@ html
           span#name CAMPUSALE
       li(style='float:right')
         a.dropbtn(style='padding-bottom: 21px')(href='#') Login
+        button#loginButton.button.button1.semi-transparent-button(type='button', onclick="document.getElementById('id01').style.display='block'") Login
+
   // Details
   .details
     h3.header#logoutMessage You have successfully logged out, login to continue
