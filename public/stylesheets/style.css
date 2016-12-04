@@ -1428,8 +1428,8 @@ color:red;
 
 
 .inputfile {
-	width: 0.1px;
-	height: 0.1px;
+	width: 0.5px;
+	height: 0.5px;
 	opacity: 0;
 	overflow: hidden;
 	position: absolute;
@@ -1446,13 +1446,13 @@ color:red;
 
 .inputfile:focus + label,
 .inputfile + label:hover {
-    background-color: red;
+    background-color: white;
 }
 
 .inputfile + label {
 	cursor: pointer; /* "hand" cursor */
-/*}
-
+}
+/*
 .inputfile:focus + label {
 	outline: 1px dotted #000;
 	outline: -webkit-focus-ring-color auto 5px;
