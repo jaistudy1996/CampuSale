@@ -1,6 +1,13 @@
 // Author: Jayant Arora
 // Login JS for client side webpage. 
 
+window.onload = function(){
+	var cookies = document.cookie;
+	cookies = cookies.split(";");
+	console.log(cookies);
+	console.log(getCookie('loginName'));
+}
+
 function login(){
 	console.log("hello");
 	var username = document.getElementById("uname").value;
