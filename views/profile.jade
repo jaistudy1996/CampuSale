@@ -66,7 +66,7 @@ html
         button#sell_span(onclick="document.getElementById('id03').style.display='block'")
         li.dropdown(style='float:right')
           a.dropbtn(href='#')
-            | Username
+            | #{Username}
             img#dropdown(src='images/drop_down.png', alt='v')
           .dropdown-content
             a(href='/listing') Browse Items
@@ -82,7 +82,7 @@ html
         br
         br
         p  Name 
-        p  Username 
+        p  Username: #{Username} 
         p#profile_messagebox  Personal Message 
       .w3-container.second_container
         .w3-container(style='background-color:#f6f6f6;height:80px;')
