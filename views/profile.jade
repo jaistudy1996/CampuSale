@@ -31,7 +31,10 @@ html
             option(value='used') Used
             option(value='poor') Poor
           input#description(type='text', placeholder='Item Description', name='description', style='width:99%;', required='')
-          button#addButton2(type='button', onclick='add()') Add
+          input#file.inputfile(type='file', name='file')
+          label(for='file') Choose a file
+          
+          button#addButton2(type='button', onclick='add()', style='font-size: 28px') Add
     // Change Password Overlay
     #id04.modal
       form.modal-content.animate(action='#', style='background-color:grey; border:solid')
