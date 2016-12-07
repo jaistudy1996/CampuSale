@@ -730,7 +730,7 @@ body.mode-search .control .btn {
     display: block;
 }
 
-.sort_dropdown-content a:hover {background-color: ligthgrey}
+.sort_dropdown-content a:hover {background-color: lightgrey}
 
 .sort_dropdown:hover .sort_dropdown-content {
     display: block;
@@ -913,7 +913,7 @@ body.mode-search .control .btn {
     display: block;
 }
 
-.price_dropdown-content a:hover {background-color: lightgrey}
+/*.price_dropdown-content a:hover {background-color: lightgrey}*/
 
 .price_dropdown:hover .price_dropdown-content {
     display: block;
