@@ -730,7 +730,7 @@ body.mode-search .control .btn {
     display: block;
 }
 
-.sort_dropdown-content a:hover {background-color: #f1f1f1}
+.sort_dropdown-content a:hover {background-color: ligthgrey}
 
 .sort_dropdown:hover .sort_dropdown-content {
     display: block;
@@ -821,7 +821,7 @@ body.mode-search .control .btn {
     display: block;
 }
 
-.category_dropdown-content a:hover {background-color: #f1f1f1}
+.category_dropdown-content a:hover {background-color: lightgrey}
 
 .category_dropdown:hover .category_dropdown-content {
     display: block;
@@ -913,7 +913,7 @@ body.mode-search .control .btn {
     display: block;
 }
 
-.price_dropdown-content a:hover {background-color: #f1f1f1}
+.price_dropdown-content a:hover {background-color: lightgrey}
 
 .price_dropdown:hover .price_dropdown-content {
     display: block;
@@ -1441,14 +1441,14 @@ color:black;
 .inputfile + label {
     font-size: 2.25em;
     font-weight: 200;
-    color: black;
-    background-color: white;
+    color: white;
+    background-color: red;
     display: inline-block;
 }
 
 .inputfile:focus + label,
 .inputfile + label:hover {
-    color: red;
+    background-color: lightgrey;
 }
 
 .inputfile + label {
