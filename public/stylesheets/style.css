@@ -1441,14 +1441,14 @@ color:black;
 .inputfile + label {
     font-size: 2.25em;
     font-weight: 200;
-    color: white;
-    background-color: red;
+    color: black;
+    background-color: white;
     display: inline-block;
 }
 
 .inputfile:focus + label,
 .inputfile + label:hover {
-    background-color: lightgrey;
+    color: red;
 }
 
 .inputfile + label {
