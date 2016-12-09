@@ -47,18 +47,18 @@ html
             #passw_form
               form.register(action='', method='post', name='registration')
                 .password_container
-                  h4.header Change Password
+                  h4.header(style='color:white;') Change Password
                   #form
                     form.register(action='', method='post', name='registration')
                       fieldset
                         .form-group
-                          label.passwLabel(for='old') Old Password:
+                          label.passwLabel(for='old', style='color:white;') Old Password:
                           input.passwInput(name='old', required='')
                         .form-group
-                          label.passwLabel(for='new') New Password:
+                          label.passwLabel(for='new', style='color:white;') New Password:
                           input.passwInput(name='new', required='')
                         .form-group
-                          label.passwLabel(for='confirm') Confirm Password:
+                          label.passwLabel(for='confirm', style='color:white;') Confirm Password:
                           input.passwInput(name='confirm', required='')
                          input#changePass.passwInput(type='submit', name='Upload', value='Change Password')
     // Navbar (sit on top)
@@ -83,7 +83,7 @@ html
             a(href='/profile') Profile
             a(href='/listing') Browse Items
             a(onclick="document.getElementById('id04').style.display='block'", href='#') Change Password
-            a(href='/logout') Logout
+            a(onclick="logout_function()") Logout
     #return.container_item
       .other_images
         | image1
@@ -166,3 +166,9 @@ html
           $('.icon-close').click(function () {
           $('body').removeClass('mode-search');
           });
+          function logout_function() {
+          alert("You have successfully logged out, click OK to continue");
+          var timer = setTimeout(function logout_function() {
+          window.location='/#'
+          }, 100);
+          }
