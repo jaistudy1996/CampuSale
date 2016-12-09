@@ -986,6 +986,9 @@ body.mode-search .control .btn {
   ul.rig li h3 {
   margin: 0 0 5px;
   }
+  ul.rig li h4 {
+	float: right;  
+  }
   ul.rig li p {
   font-size: .9em;
   line-height: 1.5em;
