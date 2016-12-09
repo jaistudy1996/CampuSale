@@ -14,9 +14,10 @@ var dbconn = db.createConnection({
 
 // GET request
 router.get('/', function(req, res, next){
-	user = req.signedCookies.loginName;
+	name = req.signedCookies.loginName;
+	user = req.signedCookies.userName;
 	if(user){
-		res.render('profile', {Name: user, Username: user});
+		res.render('profile', {Name: name, Username: user});
 	}
 	else{
 		res.redirect('/');

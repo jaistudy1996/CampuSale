@@ -34,6 +34,7 @@ router.post('/', function(req, res, next) {
 			// 3600000  -- Change to 1 hr when testing is complete
 			// res.cookie('login', true, {expires: new Date(Date.now() + 30000), signed: true});
 			res.cookie('loginName', result[0].firstName, {expires: new Date(Date.now() + 3600000), signed: true});
+			res.cookie('userName', result[0].email, {expires: new Date(Date.now() + 3600000), signed: true});
 			res.cookie('cart', {items: []});
 			res.send("/listing");
 		}
