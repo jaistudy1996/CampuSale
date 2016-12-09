@@ -25,12 +25,20 @@ function login(){
 			console.log(http.responseText);
 		}
 		if(this.readyState == 4 && this.status == 404){
-			document.getElementById("loginButton").innerHTML = http.responseText;
+			document.getElementById("loginButton2").innerHTML = http.responseText;
 		}
 	}
 	http.send(params);
 }
 
 function changeLoginText(){
-	document.getElementById("loginButton").innerHTML = "Login";
+	document.getElementById("psw").onkeypress = function(event){
+		if(event.keyCode == 13){
+			// Taking keyboard event code 13 and executing login function
+			login();
+		}
+		else{
+			document.getElementById("loginButton2").innerHTML = "Login";
+		}
+	}
 }
