@@ -32,12 +32,12 @@ router.post("/category", function(req, res, next){
 });
 
 router.post("/items", function(req, res, next){
-	db.query("SELECT itemID, price, description, categoryID, title FROM items", function(err, result){
+	db.query("SELECT itemID, price, description, categoryID, title, imagePath FROM items", function(err, result){
 		if(err){
 			console.log(err)
 		}
-		res.send(result)
-	});
+		res.send(result);
+	}); 
 });
 
 router.get("/items/:categoryID", function(req, res, next){

@@ -61,6 +61,7 @@ function getItems(){
 				allItems.push(response[i]);
 			}
 			viewItems(allItems);
+			console.log(allItems);
 		}
 	}
 	xhr.send(null);
@@ -72,7 +73,8 @@ function viewItems(items){
 	// long list of items which will be sorted after the first one is listed. 
 	document.getElementById("items-list").innerHTML = "";
 	for(var i = 0; i < items.length; i++){
-		document.getElementById("items-list").innerHTML += "<li><img src='images/img-1.jpg'/><a href="+"/listing/items/"+
+		console.log(items[i].imagePath);
+		document.getElementById("items-list").innerHTML += "<li><img src="+items[i].imagePath+"><a href="+"/listing/items/"+
 		items[i].itemID+" class='itemLink'>"+"<h3>"+items[i].title+"</h3></a><p>"+items[i].description+"</p></li>";
 	}
 }
