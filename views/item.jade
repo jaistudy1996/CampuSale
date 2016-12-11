@@ -5,6 +5,7 @@ html
   link(rel='stylesheet', href='stylesheets/w3.css')
   link(rel='stylesheet', type='text/css', href='stylesheets/style.css')
   link(rel='stylesheet', href='http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css')
+  script(type='text/javascript', src='javascripts/item.js')
   body
     // For zoom in feature
     script(src='javascripts/jquery-1.8.3.min.js')
@@ -19,13 +20,7 @@ html
           input#price(type='text', placeholder='Price', name='price', style='width:49%;', required='')
           input#location(type='text', placeholder='Pick up location', name='location', style='width:99%;', required='')
           select#category(type='select', placeholder='Select a category', name='category', style='width:50%;', required='')
-            option(value='category') Select a category
-            option(value='men') Men
-            option(value='women') Women
-            option(value='appliances') Appliances
-            option(value='electronics') Electronics
-            option(value='games') Video Games
-            option(value='movies') Movies and Music
+            option(value='category' disabled selected) Select a category
           select#condition(type='select', placeholder='Choose Item Condition', name='condition', style='width:49%;', required='')
             option(value='condition') Choose Item Condition
             option(value='new') New
