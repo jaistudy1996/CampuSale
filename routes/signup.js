@@ -27,8 +27,8 @@ router.post('/', function(req, res, next){
 	// SQL query
 	dbconn.query('INSERT INTO students (firstName, lastName, email, phone, zip, password) values (?, ?, ?, ?, ?, PASSWORD(?)) ', [fname, lname, email, phone_num, zip, pass1], function(err, result){
 		if(err){
-			console.log(err);
-			res.send(err);
+			console.log(err.code);
+			res.status(404).send(err.code);
 		}
 		//var result1 = result;
 		//dbconn.query("SHOW WARNINGS", function(err, result){

@@ -18,7 +18,7 @@ dbpool.connect();
 router.get('/', function(req, res, next) {
   dbpool.query('select * from items limit 10', function(err, rows, fields) {
         if(err){
-                throw err;
+                console.log(err);
         }
         console.log("Lines are: ", rows);
 	res.render('index', { title: rows });

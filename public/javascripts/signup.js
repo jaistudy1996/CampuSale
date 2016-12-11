@@ -22,6 +22,13 @@ function signup() {
 					console.log(http.responseText);
 					console.log(params);
 				}
+				if(this.readyState == 4 && this.status == 404){
+					if(http.responseText == "ER_DUP_ENTRY"){
+						document.getElementById("signupButton2").innerHTML = "account already exists";
+						document.getElementById("signupButton2").style.backgroundColor = "red";
+					}
+					console.log(http.responseText);
+				}
 			}
 			http.send(params);
 		}
