@@ -10,7 +10,7 @@ html
     script(src='javascripts/jquery-1.8.3.min.js')
     script(src='javascripts/jquery.elevatezoom.js')
     #id03.modal
-      form.modal-content.animate(action='#')
+      form.modal-content.animate(method="POST" action='item/upload' encType="multipart/form-data")
         .imgcontainer
           span.close(onclick="document.getElementById('id03').style.display='none'", title='Close Modal') ×
         .container.sellContainer
@@ -36,7 +36,7 @@ html
           input#file.inputfile(type='file', name='file')
           label(for='file') Choose a file
           
-          button#addButton2(type='button', onclick='add()', style='font-size: 28px') Add
+          button#addButton2(type='submit', onclick='add()', style='font-size: 28px') Add
     // Change Password Overlay
     #id04.modal
       form.modal-content.animate(action='#')
