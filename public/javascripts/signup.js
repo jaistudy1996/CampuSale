@@ -23,6 +23,7 @@ function signup() {
 					console.log(params);
 					document.getElementById("signupButton2").innerHTML = "Signup successful. Now you can go to login";
 					document.getElementById("signupButton2").style.width = "90%";
+					document.getElementById("signupButton2").style.backgroundColor = "green";
 				}
 				if(this.readyState == 4 && this.status == 404){
 					if(http.responseText == "ER_DUP_ENTRY"){
