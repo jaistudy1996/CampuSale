@@ -986,6 +986,7 @@ body.mode-search .control .btn {
   max-width: 100%;
   height: auto;
   margin: 0 0 10px;
+  display: block;
   }
   ul.rig li h3 {
   margin: 0 0 5px;
