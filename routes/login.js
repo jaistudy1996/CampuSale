@@ -19,6 +19,7 @@ router.post('/', function(req, res, next) {
 	console.log(req.body.psw);
 	var uname = req.body.uname;
 	var psw = req.body.psw;
+	var cart = req.signedCookies.cart;
 	//DB query
 	dbconn.query("SELECT * FROM students where email = ? and password = password(?) LIMIT 1", [uname, psw], function(err, result){
 		if(err){
@@ -36,7 +37,12 @@ router.post('/', function(req, res, next) {
 			res.cookie('userID', result[0].id, {expires: new Date(Date.now() + 3600000), signed: true});
 			res.cookie('loginName', result[0].firstName, {expires: new Date(Date.now() + 3600000), signed: true});
 			res.cookie('userName', result[0].email, {expires: new Date(Date.now() + 3600000), signed: true});
-			res.cookie('cart', {items: []});
+			if(cart = undefined){
+				res.cookie('cart', {items: []});
+			}
+			else{
+				res.cookie('cart', {items: cart});
+			}
 			res.send("/listing");
 		}
 	});
