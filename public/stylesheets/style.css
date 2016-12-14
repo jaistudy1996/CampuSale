@@ -990,11 +990,12 @@ body.mode-search .control .btn {
   }
   ul.rig li h3 {
   margin: 0 0 5px;
-  display: inline-block;
+  /*display: inline-block;*/
+  float: left;
   }
   ul.rig li h4 {
-	display: inline-block; 
-	margin-left: 45px;
+	margin: 0 0 5px;
+	float: right;
   }
   ul.rig li p {
   font-size: .9em;
