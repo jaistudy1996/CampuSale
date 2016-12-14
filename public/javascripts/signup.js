@@ -35,6 +35,7 @@ function signup() {
 		}
 		else{
 			// show error for password not valid or do not match.
+			document.getElementById("signup5").style.backgroundColor = "white";
 			document.getElementById("signupButton2").innerHTML = "passwords do not match.";
 			document.getElementById("signupButton2").style.backgroundColor = "red";
 			document.getElementById("signupButton2").style.width = "70%";
