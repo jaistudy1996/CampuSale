@@ -50,3 +50,17 @@ function signup() {
 		document.getElementById("signup5").style.backgroundColor = "red";
 	}
 }
+
+
+// Submit signup form on enter key press
+
+function submitSignup(){
+	document.getElementById("signup7").onkeypress = function(event){
+		if(event.keyCode == 13){
+			signup();
+		}
+		else{
+			document.getElementById("signupButton2").innerHTML = "Signup";
+		}
+	}
+}
