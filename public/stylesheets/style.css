@@ -174,7 +174,7 @@ style.
   #goto {
 	  /*Chagne this to 'block' to display button, and 'none' to hide button*/
 	  display: none;
-	  margin: auto;
+	  margin-left:25%;
 	  margin-top: 100px;
 	  width: auto;
   }
