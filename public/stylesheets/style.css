@@ -1100,7 +1100,6 @@ hr{
 
 #buy{
 	text-decoration:none;
-	margin-left:50%;
 	margin-top:8px;
 	position:absolute;
 }
@@ -1123,6 +1122,7 @@ hr{
 	width:90%;
 	height:30px;
 	margin-left:25px;
+	text-align: center;
 }
 .buy_button:before {
   content: "";
