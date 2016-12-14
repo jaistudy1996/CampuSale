@@ -4,8 +4,15 @@
 window.onload = function(){
 	var cookies = document.cookie;
 	cookies = cookies.split(";");
-	console.log(cookies);
-	console.log(getCookie('loginName'));
+	for(var i=0; i<cookies.length; i++){
+		var temp = cookies[i].split("=");
+		cookies[i] = temp;
+		if(cookies[i][0] == "userID"){
+			document.getElementById("loginButton").style.display = "none";
+			document.getElementById("signupButton").style.display = "none";
+			document.getElementById("goto").style.display = "inline";
+		}
+	}
 }
 
 function login(){
