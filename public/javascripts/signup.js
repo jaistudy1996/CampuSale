@@ -13,7 +13,7 @@ function signup() {
 	var url = "/signup";
 	var http = new XMLHttpRequest();
 	var params = "fname="+fname+"&lname="+lname+"&email="+email+"&password="+password+"&confirm_pass="+confirm_pass+"&phone_number="+phone_number+"&zip="+zip_code;
-	if(typeof(email.slice(0, 5)) == "string" && typeof(Number(email.slice(6))) == "number"){
+	if(typeof(email.slice(0, 5)) == "string" && typeof(Number(email.slice(6))) == "number" && email.length == 8){
 		if(password === confirm_pass){
 			http.open("POST", url, true);
 			http.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
@@ -38,10 +38,15 @@ function signup() {
 			document.getElementById("signupButton2").innerHTML = "passwords do not match.";
 			document.getElementById("signupButton2").style.backgroundColor = "red";
 			document.getElementById("signupButton2").style.width = "70%";
+			document.getElementById("signup6").style.backgroundColor = "red";
+			document.getElementById("signup7").style.backgroundColor = "red";
 		}
 	}
 	else{
 		// Show error for email not valid.
-		document.getElementById("signupButton2").innerHTML = "username should be: uname001";
+		document.getElementById("signupButton2").innerHTML = "username should be of the form: uname001";
+		document.getElementById("signupButton2").style.backgroundColor = "red";
+		document.getElementById("signupButton2").style.width = "80%";
+		document.getElementById("signup5").style.backgroundColor = "red";
 	}
 }
