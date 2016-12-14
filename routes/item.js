@@ -12,7 +12,13 @@ var dbconn = db.createConnection({
 });
 
 router.get("/", function(req, res, next){
-	res.render("item", {});
+	username = req.signedCookies.loginName
+	if(username){
+		res.render("item", {Username: username});
+	}
+	else{
+		res.redirect("/");
+	}
 });
 
 router.get("/:itemID", function(req, res, next){

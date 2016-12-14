@@ -9,7 +9,7 @@ html
   link(href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300', rel='stylesheet')
   body#listin_page
     #id03.modal
-      form.modal-content.animate(action='#')
+      form.modal-content.animate(method="POST" action='item/upload' encType="multipart/form-data")
         .imgcontainer
           span.close(onclick="document.getElementById('id03').style.display='none'", title='Close Modal') ×
         .container.sellContainer
@@ -18,13 +18,7 @@ html
           input#price(type='text', placeholder='Price', name='price', style='width:49%;', required='')
           input#location(type='text', placeholder='Pick up location', name='location', style='width:99%;', required='')
           select#category(type='select', placeholder='Select a category', name='category', style='width:50%;', required='')
-            option(value='category') Select a category
-            option(value='men') Men
-            option(value='women') Women
-            option(value='appliances') Appliances
-            option(value='electronics') Electronics
-            option(value='games') Video Games
-            option(value='movies') Movies and Music
+            option(value='category' selected disabled) Select a category
           select#condition(type='select', placeholder='Choose Item Condition', name='condition', style='width:49%;', required='')
             option(value='condition') Choose Item Condition
             option(value='new') New
@@ -35,7 +29,7 @@ html
           input#file.inputfile(type='file', name='file')
           label(for='file') Choose a file
           
-          button#addButton2(type='button', onclick='add()', style='font-size: 28px') Add
+          button#addButton2(type='submit', onclick='add()', style='font-size: 28px') Add
     // Change Password Overlay
     #id04.modal
       form.modal-content.animate(action='#')

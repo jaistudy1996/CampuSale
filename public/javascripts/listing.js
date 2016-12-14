@@ -31,6 +31,7 @@ function addLinks(object){
 		//categories.push(object[i].categoryID);
 		var func = "addCat(" + object[i].categoryID + ")";
 		document.getElementById("Category").innerHTML += "<a href='#' onclick=" + func + ">" + object[i].categoryName + "</a>";
+		document.getElementById("category").innerHTML += "<option value="+ object[i].categoryID + ">"+object[i].categoryName+"</option>";
 	}
 }
 
