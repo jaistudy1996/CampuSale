@@ -22,7 +22,23 @@ router.get("/", function(req, res, next){
 });
 
 router.get("/:itemID", function(req, res, next){
-	res.redirect("/item");
+	username = req.signedCookies.loginName;
+	itemID = req.params.itemID;
+	if(username){
+		dbconn.query("SELECT price, sellerID, description, title, imagePath, categoryID FROM items where itemID = ?", [itemID], function(err, results){
+			if(err){
+				console.log(err);
+			}
+			else{
+				console.log(results);
+				res.render("item", {items: results[0], Username: username});
+			}
+		});
+		//res.redirect("/item");
+	}
+	else{
+		res.redirect("/");
+	}
 });
 
 router.post("/upload", function(req, res, next){

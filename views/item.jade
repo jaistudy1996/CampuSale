@@ -2,14 +2,14 @@ doctype html
 html
   title CampuSale
   meta(name='viewport', content='width=device-width, initial-scale=1')
-  link(rel='stylesheet', href='stylesheets/w3.css')
-  link(rel='stylesheet', type='text/css', href='stylesheets/style.css')
+  link(rel='stylesheet', href='../stylesheets/w3.css')
+  link(rel='stylesheet', type='text/css', href='../stylesheets/style.css')
   link(rel='stylesheet', href='http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css')
-  script(type='text/javascript', src='javascripts/item.js')
+  script(type='text/javascript', src='../javascripts/item.js')
   body
     // For zoom in feature
-    script(src='javascripts/jquery-1.8.3.min.js')
-    script(src='javascripts/jquery.elevatezoom.js')
+    script(src='../javascripts/jquery-1.8.3.min.js')
+    script(src='../javascripts/jquery.elevatezoom.js')
     #id03.modal
       form.modal-content.animate(method="POST" action='item/upload' encType="multipart/form-data")
         .imgcontainer
@@ -67,13 +67,13 @@ html
       ul.w3-black.nav
         li.navLink
           a(href='/')
-            img(src='images/logo.png', alt='logo')
+            img(src='../images/logo.png', alt='logo')
             span#name CAMPUSALE
         button#sell_span(onclick="document.getElementById('id03').style.display='block'")
         li.dropdown(style='float:right')
           a.dropbtn(href='#')
             | #{Username}
-            img#dropdown(src='images/drop_down.png', alt='v')
+            img#dropdown(src='../images/drop_down.png', alt='v')
           .dropdown-content
             a(href='#') Cart(0)
             a(href='/profile') Profile
@@ -82,13 +82,8 @@ html
             a(href='/logout') Logout
     #return.container_item
       .other_images
-        | image1
-        hr(style='margin-top:50%')
-        | 		image2
-        hr(style='margin-top:50%')
-        | 		image3
       .product_image
-        img#zoom_01(src='images/product.jpeg', data-zoom-image='images/product.jpg', style='width:450px; height:449px;')
+        img#zoom_01(src='../images/product.jpeg', data-zoom-image='../images/product.jpg', style='width:450px; height:449px;')
         script.
           $('#zoom_01').elevateZoom({
           zoomType: "inner",
@@ -98,14 +93,14 @@ html
           });
       .product_info
         #left_1
-          h6 Name of the Product
-          h6#short_desc  Short Description 
+          h6 Name of the Product: #{items.title}
+          h6#short_desc  Short Description: #{items.description}
         #right_1
-          #price(style='width:50%;height:25%;margin-top:10px;') $
+          #price(style='width:50%;height:25%;margin-top:10px;') $#{items.price}
         hr
         #left(style='float:left;')
           h6#seller_text Seller
-          img(src='images/profile.png', style='width:100px;height:100px;margin-left:25px;margin-top:5px;')
+          img(src='../images/profile.png', style='width:100px;height:100px;margin-left:25px;margin-top:5px;')
           #about_seller(style='float:right;margin-right:80px;')
             h6 Name
             h6(style='margin-top:25px;') Rating
@@ -120,27 +115,27 @@ html
       | People also like
       h6
         .other_products(style='background-color:rgba(208,208,208,0.3);')
-          img(src='images/img-1.jpg', style='width:200px; height:180px; margin-left:40px;')
+          img(src='../images/img-1.jpg', style='width:200px; height:180px; margin-left:40px;')
           em(style='padding:20px')
-          img(src='images/img-2.jpg', style='width:200px; height:180px;')
+          img(src='../images/img-2.jpg', style='width:200px; height:180px;')
           em(style='padding:20px')
-          img(src='images/img-3.jpg', style='width:200px; height:180px;')
+          img(src='../images/img-3.jpg', style='width:200px; height:180px;')
           em(style='padding:20px')
-          img(src='images/img-4.jpg', style='width:200px; height:180px;')
+          img(src='../images/img-4.jpg', style='width:200px; height:180px;')
         // Footer
         footer.footer.w3-center(style='margin-top:30px')
           #copyright
             p  © CampuSale Inc. 2016
           .social_media
             #facebook
-              img(src='images/facebook.png', alt='facebook')
+              img(src='../images/facebook.png', alt='facebook')
             #twitter
-              img(src='images/Twitter.png', alt='twitter')
+              img(src='../images/Twitter.png', alt='twitter')
             #linkedin
-              img(src='images/linkedin.png', alt='linkedin')
+              img(src='../images/linkedin.png', alt='linkedin')
           #top
             a.smoothScroll(href='#return')
-              input(type='image', src='images/top-button.png', name='top')
+              input(type='image', src='../images/top-button.png', name='top')
         script(src='http://code.jquery.com/jquery-1.11.2.min.js')
         script.
           // Change style of navbar on scroll
