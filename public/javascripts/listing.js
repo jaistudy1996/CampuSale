@@ -76,7 +76,7 @@ function viewItems(items){
 	for(var i = 0; i < items.length; i++){
 		console.log(items[i].imagePath);
 		document.getElementById("items-list").innerHTML += "<li><img src="+items[i].imagePath+"><a href="+"/listing/items/"+
-		items[i].itemID+" class='itemLink'>"+"<h3>"+items[i].title+"</h3></a><p>"+items[i].description+"</p></li>";
+		items[i].itemID+" class='itemLink'>"+"<h3>"+items[i].title+"</h3><h4>$"+items[i].price+"</h4></a><p>"+items[i].description+"</p></li>";
 	}
 }
 
