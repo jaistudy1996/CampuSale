@@ -1028,6 +1028,7 @@ body.mode-search .control .btn {
 
 .itemLink {
 	color: black;
+	width: 100%;
 }
 
 .itemLink:hover {
