@@ -984,7 +984,7 @@ body.mode-search .control .btn {
   }
   ul.rig li img {
   max-width: 100%;
-  height: auto;
+  height: 400px;
   margin: 0 0 10px;
   display: block;
   }
