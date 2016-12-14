@@ -26,6 +26,7 @@ function signup() {
 					if(http.responseText == "ER_DUP_ENTRY"){
 						document.getElementById("signupButton2").innerHTML = "account already exists";
 						document.getElementById("signupButton2").style.backgroundColor = "red";
+						document.getElementById("signupButton2").style.width = "50%";
 					}
 					console.log(http.responseText);
 				}
@@ -34,9 +35,13 @@ function signup() {
 		}
 		else{
 			// show error for password not valid or do not match.
+			document.getElementById("signupButton2").innerHTML = "passwords do not match.";
+			document.getElementById("signupButton2").style.backgroundColor = "red";
+			document.getElementById("signupButton2").style.width = "70%";
 		}
 	}
 	else{
 		// Show error for email not valid.
+		document.getElementById("signupButton2").innerHTML = "username should be: uname001";
 	}
 }
