@@ -72,9 +72,11 @@ html
           a.dropbtn(href='#') #{Username}
             img#dropdown(src='images/drop_down.png', alt='v')
           .dropdown-content
+            a(href='#') Cart(0)
             a(href='/profile') Profile
             a(onclick="document.getElementById('id04').style.display='block'", href='#') Change Password
             a(onclick="logout_function()") Logout
+            
     .menu
       #main
         .filter(style='background-color:lightgrey;')
