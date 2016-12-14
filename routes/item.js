@@ -48,6 +48,12 @@ router.post("/upload", function(req, res, next){
 		}
 	});
 
+	dbconn.query('INSERT INTO seller (sellerID) values (?)', [userID], function(err, result){
+		if(err){
+			console.log(err);
+		}
+	});
+
 	dbconn.query('INSERT INTO items (price, sellerID, description, categoryID, title, imagePath) values(?, ?, ?, ?, ?, ?)', [price, sellerID, description, category, title, path], function(err, result){
 		if(err){
 			console.log(err);
