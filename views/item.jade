@@ -94,12 +94,14 @@ html
       .product_info
         #left_1
           h6 #{items.title}
+          <br>
           h6 #{items.description}
         #right_1
           #price(style='width:50%;height:25%;margin-top:10px;') $#{items.price}
         hr
         #left(style='float:left;')
-          h6#seller_text Seller
+          
+          #seller_text Seller
           img(src='../images/profile.png', style='width:100px;height:100px;margin-left:25px;margin-top:5px;')
           #about_seller(style='float:right;margin-right:80px;')
             h6 Name
