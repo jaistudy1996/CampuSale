@@ -21,20 +21,34 @@ router.get("/:itemID", function(req, res, next){
 
 router.post("/upload", function(req, res, next){
 	userID = req.signedCookies.userID;
+	var sellerID = userID;
 	console.log("Item upload");
-	console.log(req.files);
-	console.log(req.body);
+	var title = req.body.title;
+	var price = req.body.price;
+	var location = req.body.location;
+	var description = req.body.description;
+	var category = req.body.category;
 	var file;
 	file = req.files.file;
-	console.log(file);
-	var path = "public/itemImages/"+userID+"-"+req.body.title+"-"+userID+".jpg";
-	file.mv(path, function(err){
+	var path = "itemImages/"+userID+"-"+req.body.title+"-"+userID+".jpg";
+	file.mv(("public/"+path), function(err){
 		if(err){
 			console.log("NOT UPLOADED");
 			console.log(err);
+			res.send("Image uplaod failed");
 		}
 		else{
 			console.log("File uploaded");
+		}
+	});
+
+	dbconn.query('INSERT INTO items (price, sellerID, description, categoryID, title, imagePath) values(?, ?, ?, ?, ?, ?)', [price, sellerID, description, category, title, path], function(err, result){
+		if(err){
+			console.log(err);
+			res.send(err.code);
+		}
+		else{
+			console.log(result);
 		}
 	});
 	res.redirect("/listing");
