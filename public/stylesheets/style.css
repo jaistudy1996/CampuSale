@@ -963,8 +963,8 @@ body.mode-search .control .btn {
   font-size: 0px;
   margin-left: -0.5%; /* should match li left margin */
   margin-top:3%;
-  width:100%;
-  height:auto;  
+  width:400px;
+  height:400px;  
 	
 	  
   }
