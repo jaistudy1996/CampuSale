@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "DEBUG=campus:* PORT=9000 node bin/www"
   },
   "dependencies": {
     "body-parser": "~1.15.1",
