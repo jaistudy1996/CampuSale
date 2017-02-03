@@ -4,7 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-//var db = require('mysql');
+var db = require('mysql');
 var fileUpload = require('express-fileupload');
 
 
@@ -22,15 +22,22 @@ var routes = require('./routes/index');
 var app = express();
 
 // Database
-//var dbpool = db.createConnection({
-//	//connectionLimit: 10,
-//	host: '137.142.1.54',
-//	user: 'amos',
-//	password: 'olasoji',
+var dbpool = db.createConnection({
+	//connectionLimit: 10,
+	host: 'rtzsaka6vivj2zp1.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+	user: 'bfynpup47tg4w9s7',
+	password: 'dcv5v5fj7l26qt7w',
 //	database: 'campuSale'
-//});
+});
 
-//dbpool.connect();
+dbpool.connect();
+
+dbpool.query('show databases', function(err, rows, fields){
+	if(err){
+		console.log(err);
+	}
+	else{console.log(rows);}
+});
 
 //dbpool.query('select * from items limit 10', function(err, rows, fields) {
 //	if(err){
