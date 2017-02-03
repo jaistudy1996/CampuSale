@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "DEBUG=campus:* PORT=9000 node bin/www"
+    "start-test": "DEBUG=campus:* PORT=9000 node bin/www",
+    "start": "node bin/www"
   },
   "dependencies": {
     "body-parser": "~1.15.1",
