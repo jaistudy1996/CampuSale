@@ -10,14 +10,14 @@ var fileUpload = require('express-fileupload');
 
 var routes = require('./routes/index');
 //var users = require('./routes/users');
-//var profile = require('./routes/profile');
-//var login = require('./routes/login');
-//var signup = require('./routes/signup');
-//var listing = require('./routes/listing');
-//var item = require('./routes/item');
-//var selling = require('./routes/selling');
-//var changePassword = require('./routes/changePassword');
-//var logout = require('./routes/logout');
+var profile = require('./routes/profile');
+var login = require('./routes/login');
+var signup = require('./routes/signup');
+var listing = require('./routes/listing');
+var item = require('./routes/item');
+var selling = require('./routes/selling');
+var changePassword = require('./routes/changePassword');
+var logout = require('./routes/logout');
 
 var app = express();
 
@@ -63,14 +63,14 @@ app.use(fileUpload());
 
 app.use('/', routes);
 //app.use('/users', users);
-//app.use('/profile', profile);
-//app.use('/login', login);
-//app.use('/signup', signup);
-//app.use('/listing', listing);
-//app.use('/item', item);
-//app.use('/selling', selling);
-//app.use('/changePassword', changePassword);
-//app.use('/logout', logout);
+app.use('/profile', profile);
+app.use('/login', login);
+app.use('/signup', signup);
+app.use('/listing', listing);
+app.use('/item', item);
+app.use('/selling', selling);
+app.use('/changePassword', changePassword);
+app.use('/logout', logout);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
