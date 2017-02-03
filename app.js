@@ -22,24 +22,24 @@ var logout = require('./routes/logout');
 var app = express();
 
 // Database
-var dbpool = db.createConnection({
-	//connectionLimit: 10,
-	host: '137.142.1.54',
-	user: 'amos',
-	password: 'olasoji',
-	database: 'campuSale'
-});
+//var dbpool = db.createConnection({
+//	//connectionLimit: 10,
+//	host: '137.142.1.54',
+//	user: 'amos',
+//	password: 'olasoji',
+//	database: 'campuSale'
+//});
 
-dbpool.connect();
+//dbpool.connect();
 
-dbpool.query('select * from items limit 10', function(err, rows, fields) {
-	if(err){
-		throw err;
-	}
-	console.log("Lines are: ", rows);
-});
+//dbpool.query('select * from items limit 10', function(err, rows, fields) {
+//	if(err){
+//		throw err;
+//	}
+//	console.log("Lines are: ", rows);
+//});
 
-dbpool.end();
+//dbpool.end();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
