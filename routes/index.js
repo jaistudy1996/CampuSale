@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var db = require('mysql');
+//var db = require('mysql');
 
 //database
 //var dbpool = db.createConnection({
